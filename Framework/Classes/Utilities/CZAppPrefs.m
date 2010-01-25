@@ -278,6 +278,10 @@
 	CFPreferencesSynchronize((CFStringRef)bundleID, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
 
 }
+- (void)removeObjectForKey:(NSString *)key {
+	CFPreferencesSetValue((CFStringRef)key, NULL, (CFStringRef)bundleID, (global ? kCFPreferencesAnyUser : kCFPreferencesCurrentUser), kCFPreferencesAnyHost);
+	CFPreferencesSynchronize((CFStringRef)bundleID, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
+}
 #pragma mark Convenience Methods
 - (BOOL)appExists {
 	return ([[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:self.bundleID] ? YES : NO);

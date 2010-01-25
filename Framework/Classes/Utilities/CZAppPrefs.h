@@ -80,6 +80,7 @@ typedef enum {
 - (void)setObject:(id)value forKey:(NSString *)key;
 - (void)setDouble:(double)value forKey:(NSString *)key;
 - (void)setURL:(NSURL *)value forKey:(NSString *)key;
+- (void)removeObjectForKey:(NSString *)key;
 #pragma mark Properties
 @property (assign) BOOL global;
 @property (assign) NSString *bundleID;
