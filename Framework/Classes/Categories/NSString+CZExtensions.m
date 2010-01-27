@@ -24,6 +24,6 @@
 #pragma mark RegEx Support
 - (BOOL)matchesRegularExpression:(NSString *)expression {
 	NSPredicate *regexSearch = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", expression];
-	return [regexSearch evaluateWithObject:self];	
+	return [regexSearch evaluateWithObject:self];
 }
 @end
