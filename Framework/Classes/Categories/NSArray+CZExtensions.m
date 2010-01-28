@@ -8,7 +8,6 @@
 
 #import "NSArray+CZExtensions.h"
 
-
 @implementation NSArray (CZExtensions)
 - (BOOL)containsOnlyStrings {
 	for (id i in self) { if ([i class] != [NSString class]) return NO; }
