@@ -40,11 +40,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+/** 
+ A value indicating the successfulness of a reading operation.
+ */
 typedef enum {
-	CZAppPrefsSuccessful,
-	CZAppPrefsAppNotFound,
-	CZAppPrefsKeyNotFound,
-	CZAppPrefsKeyNotOfExpectedType
+	CZAppPrefsSuccessful, /**< No errors were encountered. */
+	CZAppPrefsAppNotFound, /**< The bundle identifier specified was not found on the system. */
+	CZAppPrefsKeyNotFound, /**< The key specified was not found. */
+	CZAppPrefsKeyNotOfExpectedType /**< The value of the specified key was not of the expected type. */
 } CZAppPrefsResponse;
 
 @interface CZAppPrefs : NSObject {
@@ -64,7 +67,20 @@ This is the designated initializer for CZAppPrefs. Use it to create an autorelea
 + (CZAppPrefs *)prefsForBundleID:(NSString *)identifier;
 - (id)initWithBundleID:(NSString *)identifier;
 #pragma mark Accessors
+/** Returns the array associated with the specified key.￼
+
+@param key A key in the preference domain specified.
+@return The array associated with the specified key, or nil if the key does not exist or its value is not an NSArray object.
+@see arrayForKey:response:
+*/
 - (NSArray *)arrayForKey:(NSString *)key;
+/** Returns the array associated with the specified key as well as a CZAppPrefsResponse value indicating the successfulness of the operation.
+ 
+ @param key A key in the preference domain specified.
+ @param response A value indicating the successfulness of the reading.
+ @return The array associated with the specified key, or nil if the key does not exist or its value is not an NSArray object.
+ @see arrayForKey:
+ */
 - (NSArray *)arrayForKey:(NSString *)key response:(CZAppPrefsResponse *)response;
 - (BOOL)boolForKey:(NSString *)key;
 - (BOOL)boolForKey:(NSString *)key response:(CZAppPrefsResponse *)response;
