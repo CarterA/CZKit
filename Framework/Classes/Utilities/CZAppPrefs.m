@@ -284,7 +284,7 @@
 }
 #pragma mark Convenience Methods
 - (BOOL)appExists {
-	return ([[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:self.bundleID] ? YES : NO);
+	return ([[NSWorkspace sharedWorkspace] absolutePathForAppBundleWithIdentifier:self.bundleID] ? YES : NO);
 }
 #pragma mark Properties
 @synthesize global;

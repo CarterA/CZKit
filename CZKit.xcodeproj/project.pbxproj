@@ -312,9 +312,9 @@
 		54D33B2C06778E4400C9C163 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				C0894DA40C32F4C100401507 /* Classes */,
 				53DF68FE067E5B5A0090B5B0 /* CZKit-Info.plist */,
 				4A2949E610D0AAF900043D99 /* CZKit.h */,
-				C0894DA40C32F4C100401507 /* Classes */,
 				4AA474B410E8C17200353A15 /* Tests */,
 			);
 			path = Framework;
@@ -381,6 +381,7 @@
 				53DF68F9067E5B5A0090B5B0 /* Resources */,
 				53DF68FA067E5B5A0090B5B0 /* Sources */,
 				53DF68FB067E5B5A0090B5B0 /* Frameworks */,
+				4A21A16A11112FD8008E6862 /* Generate Docset */,
 			);
 			buildRules = (
 			);
@@ -461,6 +462,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4A21A16A11112FD8008E6862 /* Generate Docset */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Docset";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $BUILD_STYLE = \"Release\" ]; then\nDocumentation/appledoc -p \"$PROJECT_NAME\" -i Framework -o Documentation -c Documentation/Doxyfile -d Documentation/doxygen --docset -t Documentation/Templates --docid com.cz.documentation.CZKit --docplist Documentation/DocSet-Info.plist --clean-temp-files\nrm -rf Products/CZKit.docset\nmv Documentation/docset Products/CZKit.docset\nfi\nexit;";
+		};
 		4AA4748910E8C09100353A15 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,7 +586,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "CZKitUnitTests-Info.plist";
+				INFOPLIST_FILE = "Framework/Tests/CZKitUnitTests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -581,6 +596,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = CZKitUnitTests;
+				SYMROOT = Products;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -618,12 +634,13 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "CZKit-Info.plist";
+				INFOPLIST_FILE = "Framework/CZKit-Info.plist";
 				INSTALL_MODE_FLAG = "go-w,a+rX";
 				INSTALL_PATH = "@loader_path/../ Frameworks";
 				PRODUCT_NAME = CZKit;
 				SDKROOT = macosx10.5;
 				SKIP_INSTALL = NO;
+				SYMROOT = Products;
 			};
 			name = Release;
 		};
@@ -663,10 +680,11 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/Library/Frameworks\"";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CZKit_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
+				GCC_PREFIX_HEADER = Plugin/CZKit_Prefix.pch;
+				INFOPLIST_FILE = Plugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks/CZKit.framework/Resources";
 				PRODUCT_NAME = CZKit;
+				SYMROOT = Products;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Release;

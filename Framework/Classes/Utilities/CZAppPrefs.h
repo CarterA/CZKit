@@ -34,6 +34,10 @@
  
  */
 
+/** A utility class for reading and writing to and from applications other then your own.
+
+*/
+
 #import <Cocoa/Cocoa.h>
 
 typedef enum {
@@ -48,6 +52,15 @@ typedef enum {
 	NSString *bundleID;
 }
 #pragma mark Initializers
+/** Returns an initialized CZAppPrefs instance for the specified bundle ID.￼
+
+This is the designated initializer for CZAppPrefs. Use it to create an autoreleased instance
+ of CZAppPrefs for the specified bundle ID. You can then read and write preference values
+ to the bundle ID's corresponding preference domain.
+
+@param identifier The bundle identifier for the application whose preferences you'd like to edit or read from.
+@return An autoreleased CZAppPrefs instance for the specified bundle ID.
+*/
 + (CZAppPrefs *)prefsForBundleID:(NSString *)identifier;
 - (id)initWithBundleID:(NSString *)identifier;
 #pragma mark Accessors
