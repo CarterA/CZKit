@@ -227,29 +227,6 @@
 - (void)setBool:(BOOL)value forKey:(NSString *)key {
 	CFPreferencesSetValue((CFStringRef)key, (value ? kCFBooleanTrue : kCFBooleanFalse), (CFStringRef)bundleID, (global ? kCFPreferencesAnyUser : kCFPreferencesCurrentUser), kCFPreferencesAnyHost);
 	CFPreferencesSynchronize((CFStringRef)bundleID, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
-	/* The following code was going to make this method self-authorize for global prefs. Don't use it.
-	AuthorizationRef myAuthorizationRef;
-	OSStatus myStatus;
-	myStatus = AuthorizationCreate (NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagDefaults, &myAuthorizationRef);
-	
-	AuthorizationItem myItems[2];
-	
-	myItems[0].name = "com.cz.CZKit.SetGlobalPreference";
-	myItems[0].valueLength = 0;
-	myItems[0].value = NULL;
-	myItems[0].flags = 0;
-	AuthorizationRights myRights;
-	myRights.count = sizeof (myItems) / sizeof (myItems[0]);
-	myRights.items = myItems;
-	AuthorizationFlags myFlags;
-	myFlags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed | kAuthorizationFlagExtendRights;
-	myStatus = AuthorizationCopyRights(myAuthorizationRef, &myRights, kAuthorizationEmptyEnvironment, myFlags, NULL);
-	if(myStatus == errAuthorizationSuccess) {
-		CFPreferencesSetValue((CFStringRef)key, (CFBooleanRef)value, (CFStringRef)bundleID, kCFPreferencesAnyUser, kCFPreferencesAnyHost);
-		CFPreferencesSynchronize((CFStringRef)bundleID, kCFPreferencesAnyUser, kCFPreferencesAnyHost);
-		return YES;
-	}
-	else return NO; */
 }
 - (void)setFloat:(float)value forKey:(NSString *)key {
 	CFNumberRef floatValue = CFNumberCreate(kCFAllocatorDefault, kCFNumberFloatType, &value);
