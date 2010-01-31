@@ -6,8 +6,6 @@
 //  Copyright 2009 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 #import "CZAppPrefs.h"
 // Views
 #import "CZIconImageView.h"
