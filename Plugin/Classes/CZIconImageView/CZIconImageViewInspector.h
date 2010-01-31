@@ -9,6 +9,5 @@
 #import <InterfaceBuilderKit/InterfaceBuilderKit.h>
 #import <CZKit/CZKit.h>
 
-@interface CZIconImageViewInspector : IBInspector {
-}
+@interface CZIconImageViewInspector : IBInspector {}
 @end

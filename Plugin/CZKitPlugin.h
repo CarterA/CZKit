@@ -7,5 +7,6 @@
 //
 
 #import <InterfaceBuilderKit/InterfaceBuilderKit.h>
+
 @interface CZKitPlugin : IBPlugin {}
 @end

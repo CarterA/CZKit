@@ -8,7 +8,6 @@
 
 #import "CZObnoxiousToggle.h"
 
-
 @implementation CZObnoxiousToggle
 
 @end

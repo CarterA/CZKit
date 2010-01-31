@@ -8,7 +8,6 @@
 
 #import "NSImage+CZExtensions.h"
 
-
 @implementation NSImage (CZExtensions)
 #pragma mark View Conversion
 - (NSImage *)initWithContentsOfView:(NSView *)view {

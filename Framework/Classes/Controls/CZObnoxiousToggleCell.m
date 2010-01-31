@@ -8,7 +8,6 @@
 
 #import "CZObnoxiousToggleCell.h"
 
-
 @implementation CZObnoxiousToggleCell
 -(void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
 	/*cellFrame.size.height = 27;

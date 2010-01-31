@@ -12,11 +12,9 @@
 - (NSArray *)libraryNibNames {
     return [NSArray arrayWithObjects:@"CZKitLibrary", nil];
 }
-
 - (NSArray *)requiredFrameworks {
     return [NSArray arrayWithObjects:[NSBundle bundleWithIdentifier:@"com.cz.CZKit"], nil];
 }
-
 - (NSString *)label {
 	return @"CZKit";
 }

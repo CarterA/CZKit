@@ -10,15 +10,12 @@
 #import "CZIconImageViewInspector.h"
 
 @implementation CZIconImageView ( CZIconImageViewIntegration )
-
 - (void)ibPopulateKeyPaths:(NSMutableDictionary *)keyPaths {
     [super ibPopulateKeyPaths:keyPaths];
     [[keyPaths objectForKey:IBAttributeKeyPaths] addObjectsFromArray:[NSArray arrayWithObjects:@"isDragSource", @"representedFile", @"iconSize", @"canDoubleClickIcon", nil]];
 }
-
 - (void)ibPopulateAttributeInspectorClasses:(NSMutableArray *)classes {
     [super ibPopulateAttributeInspectorClasses:classes];
     [classes addObject:[CZIconImageViewInspector class]];
 }
-
 @end

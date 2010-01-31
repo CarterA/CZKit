@@ -8,7 +8,6 @@
 
 #import "CZFileObserver.h"
 
-
 static CZFileObserver *globalInstance;
 @implementation CZFileObserver
 - (id)init {
