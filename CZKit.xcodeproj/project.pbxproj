@@ -105,7 +105,7 @@
 		4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZObnoxiousToggleCell.h; path = Classes/Controls/CZObnoxiousToggleCell.h; sourceTree = "<group>"; };
 		4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggleCell.m; path = Classes/Controls/CZObnoxiousToggleCell.m; sourceTree = "<group>"; };
 		4AA4748B10E8C09100353A15 /* CZKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA4748C10E8C09100353A15 /* CZKitUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CZKitUnitTests-Info.plist"; path = "Tests/CZKitUnitTests-Info.plist"; sourceTree = "<group>"; };
+		4AA4748C10E8C09100353A15 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UnitTests-Info.plist"; path = "Tests/UnitTests-Info.plist"; sourceTree = "<group>"; };
 		4AA474B710E8C1A000353A15 /* CZAppPrefsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZAppPrefsTest.h; path = Tests/CZAppPrefsTest.h; sourceTree = "<group>"; };
 		4AA474B810E8C1A000353A15 /* CZAppPrefsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZAppPrefsTest.m; path = Tests/CZAppPrefsTest.m; sourceTree = "<group>"; };
 		4AA4758910E9CE6900353A15 /* NSImage+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+CZExtensions.h"; path = "Classes/Categories/NSImage+CZExtensions.h"; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 		4AFE8BB610E707B700FD5ACD /* CZIconImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CZIconImageView.png; path = Plugin/Classes/CZIconImageView/CZIconImageView.png; sourceTree = "<group>"; };
 		4AFE8BBC10E7082300FD5ACD /* CZKitLibrary.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = CZKitLibrary.nib; path = Plugin/CZKitLibrary.nib; sourceTree = "<group>"; };
 		53DF68FD067E5B5A0090B5B0 /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53DF68FE067E5B5A0090B5B0 /* CZKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZKit-Info.plist"; sourceTree = "<group>"; };
-		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Plugin/Info.plist; sourceTree = "<group>"; };
+		53DF68FE067E5B5A0090B5B0 /* Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Framework-Info.plist"; sourceTree = "<group>"; };
+		8D1AC9730486D14A00FE50C9 /* Plugin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Plugin-Info.plist"; path = "Plugin/Plugin-Info.plist"; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* CZKit.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZKit.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = /Developer/Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = "<absolute>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -223,7 +223,7 @@
 				4AFE8BBC10E7082300FD5ACD /* CZKitLibrary.nib */,
 				4AFE8B6610E7029E00FD5ACD /* CZKitPlugin.h */,
 				4AFE8B6710E7029E00FD5ACD /* CZKitPlugin.m */,
-				8D1AC9730486D14A00FE50C9 /* Info.plist */,
+				8D1AC9730486D14A00FE50C9 /* Plugin-Info.plist */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 		4AA474B410E8C17200353A15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				4AA4748C10E8C09100353A15 /* CZKitUnitTests-Info.plist */,
+				4AA4748C10E8C09100353A15 /* UnitTests-Info.plist */,
 				4AA474B710E8C1A000353A15 /* CZAppPrefsTest.h */,
 				4AA474B810E8C1A000353A15 /* CZAppPrefsTest.m */,
 				4AA4759410E9D03800353A15 /* CZExtensionsTest.h */,
@@ -313,7 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				C0894DA40C32F4C100401507 /* Classes */,
-				53DF68FE067E5B5A0090B5B0 /* CZKit-Info.plist */,
+				53DF68FE067E5B5A0090B5B0 /* Framework-Info.plist */,
 				4A2949E610D0AAF900043D99 /* CZKit.h */,
 				4AA474B410E8C17200353A15 /* Tests */,
 			);
@@ -586,7 +586,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Framework/Tests/CZKitUnitTests-Info.plist";
+				INFOPLIST_FILE = "Framework/Tests/UnitTests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -634,7 +634,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Framework/CZKit-Info.plist";
+				INFOPLIST_FILE = "Framework/Framework-Info.plist";
 				INSTALL_MODE_FLAG = "go-w,a+rX";
 				INSTALL_PATH = "@loader_path/../ Frameworks";
 				PRODUCT_NAME = CZKit;
@@ -681,7 +681,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Plugin/CZKit_Prefix.pch;
-				INFOPLIST_FILE = Plugin/Info.plist;
+				INFOPLIST_FILE = "Plugin/Plugin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks/CZKit.framework/Resources";
 				PRODUCT_NAME = CZKit;
 				SYMROOT = Products;
