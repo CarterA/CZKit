@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.m";
+	"CounterpartTemplateFile" = "class.h";
+	Description = "An Objective-C class file that has a built-in singleton method (for use as a shared instance), with an optional header which includes the <Cocoa/Cocoa.h> header.";
+}
