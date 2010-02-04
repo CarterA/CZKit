@@ -15,5 +15,5 @@ profile
 
 #temp doc files
 Documentation/xml*
-Documention/cxml*
+Documentation/cxml*
 Documentation/cxhtml*
