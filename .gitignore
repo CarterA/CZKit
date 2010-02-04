@@ -12,3 +12,8 @@ build/*
 # osx noise
 .DS_Store
 profile
+
+#temp doc files
+Documentation/xml*
+Documention/cxml*
+Documentation/cxhtml*
