@@ -20,7 +20,7 @@
 - (IBAction)install:(id)sender {
 	NSString *templatesPath = [[NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:@"/Developer/Shared/XCode/File Templates/CZKit"];
 	NSArray *templates = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CZTemplates"];
-	[[NSFileManager defaultManager] createDirectoryAtPath:templatesPath attributes:nil];
+	[[NSFileManager defaultManager] createDirectoryAtPath:templatesPath withIntermediateDirectories:YES attributes:nil error:nil];
 	for (NSString *template in templates) {
 		[[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle] pathForResource:template ofType:@"pbfiletemplate"] toPath:[templatesPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.pbfiletemplate", template]] error:nil];
 	}

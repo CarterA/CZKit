@@ -540,7 +540,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ $BUILD_STYLE = \"Release\" ]; then\nDocumentation/appledoc -p \"$PROJECT_NAME\" -i Framework -o Documentation -c Documentation/Doxyfile -d Documentation/doxygen --docset -t Documentation/Templates --docid com.cz.documentation.CZKit --docplist Documentation/DocSet-Info.plist --clean-temp-files\nrm -rf Products/Release/CZKit.docset\nmv Documentation/docset Products/Release/CZKit.docset\nfi\nexit;";
+			shellScript = "if [ $BUILD_STYLE = \"Release\" ]; then\nDocumentation/appledoc -p \"$PROJECT_NAME\" -i Framework -o Documentation -c Documentation/Doxyfile -d Documentation/doxygen --docset -t Documentation/Templates --docid com.cz.documentation.CZKit --docplist Documentation/DocSet-Info.plist\nrm -rf Products/Release/CZKit.docset\nmv Documentation/docset Products/Release/CZKit.docset\nfi\nexit;";
 		};
 		4AA4748910E8C09100353A15 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
