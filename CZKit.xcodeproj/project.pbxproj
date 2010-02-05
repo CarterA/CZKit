@@ -688,7 +688,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Templates-Info.plist";
+				INFOPLIST_FILE = "Templates/Templates-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
