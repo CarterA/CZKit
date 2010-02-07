@@ -53,6 +53,16 @@
 }
 #pragma mark -
 #pragma mark General
++ (void)initialize {
+	if (self == [CZIconImageView class]) {
+		[self exposeBinding:@"iconSize"];
+		[self exposeBinding:@"isDragSource"];
+		[self exposeBinding:@"canDoubleClickIcon"];
+		[self exposeBinding:@"allowedFileExtensions"];
+		[self exposeBinding:@"otherEditor"];
+		[self exposeBinding:@"representedFile"];
+	}
+}
 - (void)awakeFromNib {
 	//Set default values
 	[self setIsDragSource:YES];
@@ -62,13 +72,21 @@
 	[self setTarget:self];
 	[self setAction:@selector(mouseDown:)];
 }
+- (void)dealloc {
+	[self unbind:@"iconSize"];
+	[self unbind:@"isDragSource"];
+	[self unbind:@"canDoubleClickIcon"];
+	[self unbind:@"allowedFileExtensions"];
+	[self unbind:@"otherEditor"];
+	[self unbind:@"representedFile"];
+}
 #pragma mark -
 #pragma mark Custom Getters/Setters
 - (NSString *)representedFile {
 	return representedFile;
 }
 - (void)setRepresentedFile:(NSString *)filePath {
-	representedFile = [filePath copy];
+	representedFile = [[filePath stringByStandardizingPath] copy];
 	if ([delegate respondsToSelector:@selector(CZIconImageView:representedFileDidChangeToFile:)])
 		[[self delegate] CZIconImageView:self representedFileDidChangeToFile:representedFile];
 	if ([representedFile isEqualToString:@""] || representedFile == nil)
@@ -192,5 +210,13 @@
 }
 - (BOOL)acceptsFirstMouse:(NSEvent *)theEvent {
 	return YES;
+}
+#pragma mark -
+#pragma mark Bindings
+- (Class)valueClassForBinding:(NSString*)binding {
+	if ([binding isEqualToString:@"otherEditor"] || [binding isEqualToString:@"representedFile"]) return [NSString class];
+	else if ([binding isEqualToString:@"allowedFileExtensions"]) return [NSArray class];
+	else if ([binding isEqualToString:@"iconSize"] || [binding isEqualToString:@"isDragSource"] || [binding isEqualToString:@"canDoubleClickIcon"]) return nil;
+	else return [super valueClassForBinding:binding];
 }
 @end
