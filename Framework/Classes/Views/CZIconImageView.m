@@ -68,7 +68,7 @@
 	return representedFile;
 }
 - (void)setRepresentedFile:(NSString *)filePath {
-	representedFile = filePath;
+	representedFile = [filePath copy];
 	if ([delegate respondsToSelector:@selector(CZIconImageView:representedFileDidChangeToFile:)])
 		[[self delegate] CZIconImageView:self representedFileDidChangeToFile:representedFile];
 	if ([representedFile isEqualToString:@""] || representedFile == nil)

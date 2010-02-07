@@ -58,6 +58,7 @@ typedef enum {
 @property(assign) id delegate;
 @property(nonatomic, copy) NSArray *allowedFileExtensions;
 @property(nonatomic, copy) NSString *otherEditor;
+@property (nonatomic, copy) NSString *representedFile;
 @end
 @interface CZIconImageViewDelegate
 - (void)CZIconImageView:(CZIconImageView *)iconImageView representedFileDidChangeToFile:(NSString *)file;

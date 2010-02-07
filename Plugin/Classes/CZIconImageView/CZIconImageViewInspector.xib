@@ -454,7 +454,7 @@
 						</object>
 					</object>
 				</object>
-				<string key="NSFrameSize">{271, 188}</string>
+				<string key="NSFrameSize">{272, 188}</string>
 				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -906,7 +906,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{322, 668}, {271, 188}}</string>
+					<string>{{322, 668}, {272, 188}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSMutableArray">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1011,7 +1011,7 @@
 					<string key="superclassName">IBInspector</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">CZIconImageViewInspector.h</string>
+						<string key="minorKey">Plugin/Classes/CZIconImageView/CZIconImageViewInspector.h</string>
 					</object>
 				</object>
 			</object>

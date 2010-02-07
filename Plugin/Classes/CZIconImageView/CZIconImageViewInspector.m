@@ -13,7 +13,6 @@
     return @"CZIconImageViewInspector";
 }
 - (void)refresh {
-	// Synchronize your inspector's content view with the currently selected objects
 	[super refresh];
 }
 @end
