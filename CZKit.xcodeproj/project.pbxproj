@@ -25,6 +25,11 @@
 
 /* Begin PBXBuildFile section */
 		13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		4A0BCE8511213309004AD1C2 /* CZInsetTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BCE8311213309004AD1C2 /* CZInsetTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A0BCE8611213309004AD1C2 /* CZInsetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCE8411213309004AD1C2 /* CZInsetTextField.m */; };
+		4A0BCE9E11213456004AD1C2 /* CZInsetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCE9C11213450004AD1C2 /* CZInsetTextField.m */; };
+		4A0BCE9F1121345B004AD1C2 /* CZInsetTextField.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCE96112133ED004AD1C2 /* CZInsetTextField.classdescription */; };
+		4A0BCEDB11213B02004AD1C2 /* CZInsetTextField.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCEDA11213B02004AD1C2 /* CZInsetTextField.png */; };
 		4A1F0FE211057D21003D2171 /* NSData+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */; };
 		4A1F10A41105F8D1003D2171 /* Hashable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A1F10A31105F8D1003D2171 /* Hashable.txt */; };
@@ -143,6 +148,11 @@
 		13F8B88907B434F6008AE28D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		13F8B88A07B434F6008AE28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF980370C29C00C91783 /* CZKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZKit_Prefix.pch; path = Plugin/CZKit_Prefix.pch; sourceTree = "<group>"; };
+		4A0BCE8311213309004AD1C2 /* CZInsetTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZInsetTextField.h; path = Classes/Controls/CZInsetTextField.h; sourceTree = "<group>"; };
+		4A0BCE8411213309004AD1C2 /* CZInsetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZInsetTextField.m; path = Classes/Controls/CZInsetTextField.m; sourceTree = "<group>"; };
+		4A0BCE96112133ED004AD1C2 /* CZInsetTextField.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = CZInsetTextField.classdescription; sourceTree = "<group>"; };
+		4A0BCE9C11213450004AD1C2 /* CZInsetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZInsetTextField.m; sourceTree = "<group>"; };
+		4A0BCEDA11213B02004AD1C2 /* CZInsetTextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CZInsetTextField.png; sourceTree = "<group>"; };
 		4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+CZExtensions.h"; path = "Classes/Categories/NSData+CZExtensions.h"; sourceTree = "<group>"; };
 		4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+CZExtensions.m"; path = "Classes/Categories/NSData+CZExtensions.m"; sourceTree = "<group>"; };
 		4A1F10A31105F8D1003D2171 /* Hashable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Hashable.txt; path = Tests/Hashable.txt; sourceTree = "<group>"; };
@@ -297,6 +307,17 @@
 			name = Plugin;
 			sourceTree = "<group>";
 		};
+		4A0BCE93112133A4004AD1C2 /* CZInsetTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4A0BCE96112133ED004AD1C2 /* CZInsetTextField.classdescription */,
+				4A0BCEDA11213B02004AD1C2 /* CZInsetTextField.png */,
+				4A0BCE9C11213450004AD1C2 /* CZInsetTextField.m */,
+			);
+			name = CZInsetTextField;
+			path = Plugin/Classes/CZInsetTextField;
+			sourceTree = "<group>";
+		};
 		4A219F8D110CEC4D008E6862 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +364,8 @@
 				4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */,
 				4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */,
 				4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */,
+				4A0BCE8311213309004AD1C2 /* CZInsetTextField.h */,
+				4A0BCE8411213309004AD1C2 /* CZInsetTextField.m */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -387,6 +410,7 @@
 		54D33B2506778DF000C9C163 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A0BCE93112133A4004AD1C2 /* CZInsetTextField */,
 				4A219FA2110CEED7008E6862 /* CZIconImageView */,
 			);
 			name = Classes;
@@ -430,6 +454,7 @@
 				4AE570F91100027A00238601 /* NSString+CZExtensions.h in Headers */,
 				4A1F0FE211057D21003D2171 /* NSData+CZExtensions.h in Headers */,
 				4A219E21110BEC4F008E6862 /* NSArray+CZExtensions.h in Headers */,
+				4A0BCE8511213309004AD1C2 /* CZInsetTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +593,8 @@
 				4AFE8BAC10E705E100FD5ACD /* CZIconImageViewInspector.xib in Resources */,
 				4AFE8BB710E707B700FD5ACD /* CZIconImageView.png in Resources */,
 				4AFE8BBD10E7082300FD5ACD /* CZKitLibrary.nib in Resources */,
+				4A0BCE9F1121345B004AD1C2 /* CZInsetTextField.classdescription in Resources */,
+				4A0BCEDB11213B02004AD1C2 /* CZInsetTextField.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +662,7 @@
 				4AE570FA1100027A00238601 /* NSString+CZExtensions.m in Sources */,
 				4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */,
 				4A219E22110BEC54008E6862 /* NSArray+CZExtensions.m in Sources */,
+				4A0BCE8611213309004AD1C2 /* CZInsetTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +673,7 @@
 				4AFE8B6810E7029E00FD5ACD /* CZKitPlugin.m in Sources */,
 				4AFE8B7F10E703F800FD5ACD /* CZIconImageViewIntegration.m in Sources */,
 				4AFE8B8410E7042A00FD5ACD /* CZIconImageViewInspector.m in Sources */,
+				4A0BCE9E11213456004AD1C2 /* CZInsetTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
