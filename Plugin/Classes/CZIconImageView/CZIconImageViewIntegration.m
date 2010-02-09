@@ -6,7 +6,6 @@
 //  Copyright 2009 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import <InterfaceBuilderKit/InterfaceBuilderKit.h>
 #import "CZIconImageViewInspector.h"
 
 @implementation CZIconImageView ( CZIconImageViewIntegration )
