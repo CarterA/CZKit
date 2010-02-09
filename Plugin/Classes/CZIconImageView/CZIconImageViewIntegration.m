@@ -8,7 +8,7 @@
 
 #import "CZIconImageViewInspector.h"
 
-@implementation CZIconImageView ( CZIconImageViewIntegration )
+@implementation CZIconImageView (CZIconImageViewIntegration)
 - (void)ibPopulateKeyPaths:(NSMutableDictionary *)keyPaths {
     [super ibPopulateKeyPaths:keyPaths];
     [[keyPaths objectForKey:IBAttributeKeyPaths] addObjectsFromArray:[NSArray arrayWithObjects:@"isDragSource", @"representedFile", @"iconSize", @"canDoubleClickIcon", nil]];
