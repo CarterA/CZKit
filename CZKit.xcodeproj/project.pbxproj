@@ -73,28 +73,28 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AF600801116520000B05DE3 /* Template Installer */;
+			remoteGlobalIDString = 4AF600801116520000B05DE3;
 			remoteInfo = "Template Installer";
 		};
 		4A0BCD061120F23C004AD1C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AA4748A10E8C09100353A15 /* Unit Tests */;
+			remoteGlobalIDString = 4AA4748A10E8C09100353A15;
 			remoteInfo = "Unit Tests";
 		};
 		4A0BCD081120F23C004AD1C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0 /* Framework */;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
 			remoteInfo = Framework;
 		};
 		4A0BCD0A1120F23C004AD1C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D1AC9600486D14A00FE50C9 /* IBPlugin */;
+			remoteGlobalIDString = 8D1AC9600486D14A00FE50C9;
 			remoteInfo = IBPlugin;
 		};
 		4AE570CB10FFBE0100238601 /* PBXContainerItemProxy */ = {
