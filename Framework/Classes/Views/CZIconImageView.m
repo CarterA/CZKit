@@ -79,6 +79,7 @@
 	[self unbind:@"allowedFileExtensions"];
 	[self unbind:@"otherEditor"];
 	[self unbind:@"representedFile"];
+	[super dealloc];
 }
 #pragma mark -
 #pragma mark Custom Getters/Setters
