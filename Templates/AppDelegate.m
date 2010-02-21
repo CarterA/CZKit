@@ -31,7 +31,7 @@
 	[install setTitle:@"Reinstall"];
 	[alert setIcon:[NSImage imageNamed:@"Logo.png"]];
 	[alert setMessageText:@"Templates Were Successfully Installed"];
-	[alert setInformativeText:@"They will appear when you next open the New File... dialog in XCode."];
+	[alert setInformativeText:@"They will appear when you next open the New File... dialog in Xcode."];
 	[alert beginSheetModalForWindow:[NSApp keyWindow] modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 - (IBAction)uninstall:(id)sender {
