@@ -11,6 +11,10 @@
 - (NSURL *)applicationSupportDirectoryForDomain:(NSSearchPathDomainMask)domain;
 - (NSURL *)cachesDirectory;
 - (NSURL *)cachesDirectoryForDomain:(NSSearchPathDomainMask)domain;
+- (NSURL *)desktopDirectory;
+- (NSURL *)desktopDirectoryForDomain:(NSSearchPathDomainMask)domain;
+- (NSURL *)documentsDirectory;
+- (NSURL *)documentsDirectoryForDomain:(NSSearchPathDomainMask)domain;
 - (NSURL *)libraryDirectory;
 - (NSURL *)libraryDirectoryForDomain:(NSSearchPathDomainMask)domain;
 @end
