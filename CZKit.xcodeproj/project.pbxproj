@@ -38,7 +38,6 @@
 		4A0BCF7811225827004AD1C2 /* CZDisclosureViewInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCF7711225827004AD1C2 /* CZDisclosureViewInspector.m */; };
 		4A0BCF7C1122583F004AD1C2 /* CZDisclosureViewInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCF7B1122583F004AD1C2 /* CZDisclosureViewInspector.xib */; };
 		4A0BCF8011225870004AD1C2 /* CZDisclosureViewIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCF7F11225870004AD1C2 /* CZDisclosureViewIntegration.m */; };
-		4A0BD0511123B671004AD1C2 /* NSCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0501123B671004AD1C2 /* NSCustomView.h */; };
 		4A1F0FE211057D21003D2171 /* NSData+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */; };
 		4A1F10A41105F8D1003D2171 /* Hashable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A1F10A31105F8D1003D2171 /* Hashable.txt */; };
@@ -50,6 +49,7 @@
 		4A5DC93A10E09BAE00CD567E /* CZAppPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */; };
 		4A6F7A3811324A9C00196147 /* CZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD0551123B709004AD1C2 /* CZCustomView.m */; };
 		4A6F7A4C11324AD400196147 /* CZCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0541123B709004AD1C2 /* CZCustomView.h */; };
+		4A6F7A7411324D7D00196147 /* NSCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0501123B671004AD1C2 /* NSCustomView.h */; };
 		4A77B37F10D1BA9F0017EC62 /* CZObnoxiousToggleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */; };
 		4A77B38010D1BAA40017EC62 /* CZObnoxiousToggleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A77B38110D1BAA80017EC62 /* CZObnoxiousToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -355,7 +355,6 @@
 		4A0BCEF2112142A3004AD1C2 /* CZDisclosureView */ = {
 			isa = PBXGroup;
 			children = (
-				4A0BD0501123B671004AD1C2 /* NSCustomView.h */,
 				4A0BCEEE1121429A004AD1C2 /* CZDisclosureViewHeader.h */,
 				4A0BCEEF1121429A004AD1C2 /* CZDisclosureViewHeader.m */,
 				4A0BCEF5112142E1004AD1C2 /* CZDisclosureView.h */,
@@ -375,6 +374,7 @@
 				4A0BCF7F11225870004AD1C2 /* CZDisclosureViewIntegration.m */,
 				4A0BD0541123B709004AD1C2 /* CZCustomView.h */,
 				4A0BD0551123B709004AD1C2 /* CZCustomView.m */,
+				4A0BD0501123B671004AD1C2 /* NSCustomView.h */,
 			);
 			name = CZDisclosureView;
 			path = Plugin/Classes/CZDisclosureView;
@@ -507,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6F7A4C11324AD400196147 /* CZCustomView.h in Headers */,
+				4A6F7A7411324D7D00196147 /* NSCustomView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +527,6 @@
 				4A0BCE8511213309004AD1C2 /* CZInsetTextField.h in Headers */,
 				4A0BCEF01121429A004AD1C2 /* CZDisclosureViewHeader.h in Headers */,
 				4A0BCEF7112142E1004AD1C2 /* CZDisclosureView.h in Headers */,
-				4A0BD0511123B671004AD1C2 /* NSCustomView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
