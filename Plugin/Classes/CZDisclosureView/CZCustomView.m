@@ -23,33 +23,35 @@
     return self;
 }
 - (void)drawRect:(NSRect)rect {
-	rect = self.bounds;
-	NSColor *insetColor = [NSColor colorWithCalibratedWhite:1 alpha:1.000];
-	NSColor *borderColor;
-	borderColor = [NSColor colorWithCalibratedWhite:0.665 alpha:1.000];
-	if (self.subviews.count == 0) [[NSColor colorWithCalibratedRed:0.630 green:0.701 blue:0.838 alpha:1.000] set];
-	else [[NSColor colorWithCalibratedRed:0.630 green:0.701 blue:0.838 alpha:1.000] set];
-	NSRectFillUsingOperation(rect,NSCompositeSourceOver);
-	NSArray *subviews = [[self superview] subviews];
-	if ([subviews objectAtIndex:0] == self) {
-		[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:NO flip:NO];
-		[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
-		[insetColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:NO];
-		[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
-		[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
-		[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:NO];
-		[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
-		if (rect.size.height > 16) [self drawTextInRect:rect];
-	}
-	else if ([subviews lastObject] == self) {
-		[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
-		[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:YES flip:NO];
-		[insetColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:NO];
-		[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
-		[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
-		[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
-		[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:NO];
-		if (rect.size.height > 16) [self drawTextInRect:rect];
+	if (self.subviews.count == 0) {
+		rect = self.bounds;
+		NSColor *insetColor = [NSColor colorWithCalibratedWhite:1 alpha:1.000];
+		NSColor *borderColor;
+		borderColor = [NSColor colorWithCalibratedWhite:0.665 alpha:1.000];
+		if (self.subviews.count == 0) [[NSColor colorWithCalibratedRed:0.630 green:0.701 blue:0.838 alpha:1.000] set];
+		else [[NSColor colorWithCalibratedRed:0.630 green:0.701 blue:0.838 alpha:1.000] set];
+		NSRectFillUsingOperation(rect,NSCompositeSourceOver);
+		NSArray *subviews = [[self superview] subviews];
+		if ([subviews objectAtIndex:0] == self) {
+			[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:NO flip:NO];
+			[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
+			[insetColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:NO];
+			[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
+			[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
+			[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:NO];
+			[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
+			if (rect.size.height > 16) [self drawTextInRect:rect];
+		}
+		else if ([subviews lastObject] == self) {
+			[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
+			[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:YES flip:NO];
+			[insetColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:NO];
+			[insetColor drawPixelThickLineAtPosition:1 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
+			[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:YES];
+			[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:NO flip:YES];
+			[borderColor drawPixelThickLineAtPosition:0 withInset:0 inRect:rect inView:self horizontal:YES flip:NO];
+			if (rect.size.height > 16) [self drawTextInRect:rect];
+		}
 	}
 }
 - (void)drawTextInRect:(NSRect)rect {
