@@ -7,7 +7,6 @@
 //
 
 #import "CZCustomView.h"
-#import "IBColor.h"
 
 @interface CZCustomView (Private)
 - (void)drawTextInRect:(NSRect)rect;
