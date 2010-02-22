@@ -176,7 +176,6 @@
 		4A0BD0501123B671004AD1C2 /* NSCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCustomView.h; sourceTree = "<group>"; };
 		4A0BD0541123B709004AD1C2 /* CZCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCustomView.h; sourceTree = "<group>"; };
 		4A0BD0551123B709004AD1C2 /* CZCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCustomView.m; sourceTree = "<group>"; };
-		4A0BD05A1123B977004AD1C2 /* IBColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBColor.h; sourceTree = "<group>"; };
 		4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+CZExtensions.h"; path = "Classes/Categories/NSData+CZExtensions.h"; sourceTree = "<group>"; };
 		4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+CZExtensions.m"; path = "Classes/Categories/NSData+CZExtensions.m"; sourceTree = "<group>"; };
 		4A1F10A31105F8D1003D2171 /* Hashable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Hashable.txt; path = Tests/Hashable.txt; sourceTree = "<group>"; };
@@ -356,7 +355,6 @@
 		4A0BCEF2112142A3004AD1C2 /* CZDisclosureView */ = {
 			isa = PBXGroup;
 			children = (
-				4A0BD05A1123B977004AD1C2 /* IBColor.h */,
 				4A0BD0501123B671004AD1C2 /* NSCustomView.h */,
 				4A0BCEEE1121429A004AD1C2 /* CZDisclosureViewHeader.h */,
 				4A0BCEEF1121429A004AD1C2 /* CZDisclosureViewHeader.m */,
