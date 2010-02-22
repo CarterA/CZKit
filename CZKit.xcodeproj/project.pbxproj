@@ -39,6 +39,8 @@
 		4A294A1D10D0B18000043D99 /* CZObnoxiousToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */; };
 		4A5DC93910E09BAE00CD567E /* CZAppPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A5DC93A10E09BAE00CD567E /* CZAppPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */; };
+		4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */; };
+		4A6F7AF7113270FC00196147 /* NSFileManager+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F7AF5113270FC00196147 /* NSFileManager+CZExtensions.m */; };
 		4A77B37F10D1BA9F0017EC62 /* CZObnoxiousToggleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */; };
 		4A77B38010D1BAA40017EC62 /* CZObnoxiousToggleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A77B38110D1BAA80017EC62 /* CZObnoxiousToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -163,6 +165,8 @@
 		4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggle.m; path = Classes/Controls/CZObnoxiousToggle.m; sourceTree = "<group>"; };
 		4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZAppPrefs.h; path = Classes/Utilities/CZAppPrefs.h; sourceTree = "<group>"; };
 		4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZAppPrefs.m; path = Classes/Utilities/CZAppPrefs.m; sourceTree = "<group>"; };
+		4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+CZExtensions.h"; path = "Classes/Categories/NSFileManager+CZExtensions.h"; sourceTree = "<group>"; };
+		4A6F7AF5113270FC00196147 /* NSFileManager+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+CZExtensions.m"; path = "Classes/Categories/NSFileManager+CZExtensions.m"; sourceTree = "<group>"; };
 		4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZObnoxiousToggleCell.h; path = Classes/Controls/CZObnoxiousToggleCell.h; sourceTree = "<group>"; };
 		4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggleCell.m; path = Classes/Controls/CZObnoxiousToggleCell.m; sourceTree = "<group>"; };
 		4AA4748B10E8C09100353A15 /* CZKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +353,8 @@
 				4A219E19110BEAAC008E6862 /* NSArray+CZExtensions.m */,
 				4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */,
 				4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */,
+				4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */,
+				4A6F7AF5113270FC00196147 /* NSFileManager+CZExtensions.m */,
 				4AA4758910E9CE6900353A15 /* NSImage+CZExtensions.h */,
 				4AA4758A10E9CE6900353A15 /* NSImage+CZExtensions.m */,
 				4AE570F71100027A00238601 /* NSString+CZExtensions.h */,
@@ -455,6 +461,7 @@
 				4A1F0FE211057D21003D2171 /* NSData+CZExtensions.h in Headers */,
 				4A219E21110BEC4F008E6862 /* NSArray+CZExtensions.h in Headers */,
 				4A0BCE8511213309004AD1C2 /* CZInsetTextField.h in Headers */,
+				4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +670,7 @@
 				4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */,
 				4A219E22110BEC54008E6862 /* NSArray+CZExtensions.m in Sources */,
 				4A0BCE8611213309004AD1C2 /* CZInsetTextField.m in Sources */,
+				4A6F7AF7113270FC00196147 /* NSFileManager+CZExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,5 +15,6 @@
 // Categories
 #import "NSArray+CZExtensions.h"
 #import "NSData+CZExtensions.h"
+#import "NSFileManager+CZExtensions.h"
 #import "NSImage+CZExtensions.h"
 #import "NSString+CZExtensions.h"
