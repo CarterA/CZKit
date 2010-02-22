@@ -8,6 +8,7 @@
 
 #import "CZAppPrefs.h"
 // Views
+#import "CZDisclosureView.h"
 #import "CZIconImageView.h"
 // Controls
 #import "CZInsetTextField.h"

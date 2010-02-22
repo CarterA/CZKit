@@ -1,0 +1,10 @@
+{
+	Actions = {
+		"toggle:" = id;
+		"open:" = id;
+		"close:" = id;
+	};
+	Outlets = {};
+	ClassName = CZDisclosureView;
+	SuperClass = NSView;
+}

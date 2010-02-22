@@ -30,6 +30,17 @@
 		4A0BCE9E11213456004AD1C2 /* CZInsetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCE9C11213450004AD1C2 /* CZInsetTextField.m */; };
 		4A0BCE9F1121345B004AD1C2 /* CZInsetTextField.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCE96112133ED004AD1C2 /* CZInsetTextField.classdescription */; };
 		4A0BCEDB11213B02004AD1C2 /* CZInsetTextField.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCEDA11213B02004AD1C2 /* CZInsetTextField.png */; };
+		4A0BCEF01121429A004AD1C2 /* CZDisclosureViewHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BCEEE1121429A004AD1C2 /* CZDisclosureViewHeader.h */; };
+		4A0BCEF11121429A004AD1C2 /* CZDisclosureViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCEEF1121429A004AD1C2 /* CZDisclosureViewHeader.m */; };
+		4A0BCEF7112142E1004AD1C2 /* CZDisclosureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BCEF5112142E1004AD1C2 /* CZDisclosureView.h */; };
+		4A0BCEF8112142E1004AD1C2 /* CZDisclosureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCEF6112142E1004AD1C2 /* CZDisclosureView.m */; };
+		4A0BCF731122580E004AD1C2 /* CZDisclosureView.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCF721122580E004AD1C2 /* CZDisclosureView.classdescription */; };
+		4A0BCF7811225827004AD1C2 /* CZDisclosureViewInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCF7711225827004AD1C2 /* CZDisclosureViewInspector.m */; };
+		4A0BCF7C1122583F004AD1C2 /* CZDisclosureViewInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BCF7B1122583F004AD1C2 /* CZDisclosureViewInspector.xib */; };
+		4A0BCF8011225870004AD1C2 /* CZDisclosureViewIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCF7F11225870004AD1C2 /* CZDisclosureViewIntegration.m */; };
+		4A0BD0511123B671004AD1C2 /* NSCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0501123B671004AD1C2 /* NSCustomView.h */; };
+		4A0BD0561123B709004AD1C2 /* CZCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0541123B709004AD1C2 /* CZCustomView.h */; };
+		4A0BD0571123B709004AD1C2 /* CZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD0551123B709004AD1C2 /* CZCustomView.m */; };
 		4A1F0FE211057D21003D2171 /* NSData+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */; };
 		4A1F10A41105F8D1003D2171 /* Hashable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A1F10A31105F8D1003D2171 /* Hashable.txt */; };
@@ -153,6 +164,19 @@
 		4A0BCE96112133ED004AD1C2 /* CZInsetTextField.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = CZInsetTextField.classdescription; sourceTree = "<group>"; };
 		4A0BCE9C11213450004AD1C2 /* CZInsetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZInsetTextField.m; sourceTree = "<group>"; };
 		4A0BCEDA11213B02004AD1C2 /* CZInsetTextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CZInsetTextField.png; sourceTree = "<group>"; };
+		4A0BCEEE1121429A004AD1C2 /* CZDisclosureViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZDisclosureViewHeader.h; sourceTree = "<group>"; };
+		4A0BCEEF1121429A004AD1C2 /* CZDisclosureViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDisclosureViewHeader.m; sourceTree = "<group>"; };
+		4A0BCEF5112142E1004AD1C2 /* CZDisclosureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZDisclosureView.h; sourceTree = "<group>"; };
+		4A0BCEF6112142E1004AD1C2 /* CZDisclosureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDisclosureView.m; sourceTree = "<group>"; };
+		4A0BCF721122580E004AD1C2 /* CZDisclosureView.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = CZDisclosureView.classdescription; sourceTree = "<group>"; };
+		4A0BCF7611225827004AD1C2 /* CZDisclosureViewInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZDisclosureViewInspector.h; sourceTree = "<group>"; };
+		4A0BCF7711225827004AD1C2 /* CZDisclosureViewInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDisclosureViewInspector.m; sourceTree = "<group>"; };
+		4A0BCF7B1122583F004AD1C2 /* CZDisclosureViewInspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CZDisclosureViewInspector.xib; sourceTree = "<group>"; };
+		4A0BCF7F11225870004AD1C2 /* CZDisclosureViewIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDisclosureViewIntegration.m; sourceTree = "<group>"; };
+		4A0BD0501123B671004AD1C2 /* NSCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCustomView.h; sourceTree = "<group>"; };
+		4A0BD0541123B709004AD1C2 /* CZCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCustomView.h; sourceTree = "<group>"; };
+		4A0BD0551123B709004AD1C2 /* CZCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCustomView.m; sourceTree = "<group>"; };
+		4A0BD05A1123B977004AD1C2 /* IBColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBColor.h; sourceTree = "<group>"; };
 		4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+CZExtensions.h"; path = "Classes/Categories/NSData+CZExtensions.h"; sourceTree = "<group>"; };
 		4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+CZExtensions.m"; path = "Classes/Categories/NSData+CZExtensions.m"; sourceTree = "<group>"; };
 		4A1F10A31105F8D1003D2171 /* Hashable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Hashable.txt; path = Tests/Hashable.txt; sourceTree = "<group>"; };
@@ -318,6 +342,46 @@
 			path = Plugin/Classes/CZInsetTextField;
 			sourceTree = "<group>";
 		};
+		4A0BCEE61121422F004AD1C2 /* CZObnoxiousToggle */ = {
+			isa = PBXGroup;
+			children = (
+				4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */,
+				4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */,
+				4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */,
+				4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */,
+			);
+			name = CZObnoxiousToggle;
+			sourceTree = "<group>";
+		};
+		4A0BCEF2112142A3004AD1C2 /* CZDisclosureView */ = {
+			isa = PBXGroup;
+			children = (
+				4A0BD05A1123B977004AD1C2 /* IBColor.h */,
+				4A0BD0501123B671004AD1C2 /* NSCustomView.h */,
+				4A0BCEEE1121429A004AD1C2 /* CZDisclosureViewHeader.h */,
+				4A0BCEEF1121429A004AD1C2 /* CZDisclosureViewHeader.m */,
+				4A0BCEF5112142E1004AD1C2 /* CZDisclosureView.h */,
+				4A0BCEF6112142E1004AD1C2 /* CZDisclosureView.m */,
+				4A0BD0541123B709004AD1C2 /* CZCustomView.h */,
+				4A0BD0551123B709004AD1C2 /* CZCustomView.m */,
+			);
+			name = CZDisclosureView;
+			path = Classes/Views/CZDisclosureView;
+			sourceTree = "<group>";
+		};
+		4A0BCF6F112257BF004AD1C2 /* CZDisclosureView */ = {
+			isa = PBXGroup;
+			children = (
+				4A0BCF721122580E004AD1C2 /* CZDisclosureView.classdescription */,
+				4A0BCF7611225827004AD1C2 /* CZDisclosureViewInspector.h */,
+				4A0BCF7711225827004AD1C2 /* CZDisclosureViewInspector.m */,
+				4A0BCF7B1122583F004AD1C2 /* CZDisclosureViewInspector.xib */,
+				4A0BCF7F11225870004AD1C2 /* CZDisclosureViewIntegration.m */,
+			);
+			name = CZDisclosureView;
+			path = Plugin/Classes/CZDisclosureView;
+			sourceTree = "<group>";
+		};
 		4A219F8D110CEC4D008E6862 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,12 +424,9 @@
 		4AA4742710E8BD8C00353A15 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */,
-				4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */,
-				4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */,
-				4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */,
 				4A0BCE8311213309004AD1C2 /* CZInsetTextField.h */,
 				4A0BCE8411213309004AD1C2 /* CZInsetTextField.m */,
+				4A0BCEE61121422F004AD1C2 /* CZObnoxiousToggle */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -373,6 +434,7 @@
 		4AA4742810E8BD9C00353A15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A0BCEF2112142A3004AD1C2 /* CZDisclosureView */,
 				4AFE8B2C10E6FE6300FD5ACD /* CZIconImageView.h */,
 				4AFE8B2D10E6FE6300FD5ACD /* CZIconImageView.m */,
 			);
@@ -410,8 +472,9 @@
 		54D33B2506778DF000C9C163 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4A0BCE93112133A4004AD1C2 /* CZInsetTextField */,
+				4A0BCF6F112257BF004AD1C2 /* CZDisclosureView */,
 				4A219FA2110CEED7008E6862 /* CZIconImageView */,
+				4A0BCE93112133A4004AD1C2 /* CZInsetTextField */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -455,6 +518,10 @@
 				4A1F0FE211057D21003D2171 /* NSData+CZExtensions.h in Headers */,
 				4A219E21110BEC4F008E6862 /* NSArray+CZExtensions.h in Headers */,
 				4A0BCE8511213309004AD1C2 /* CZInsetTextField.h in Headers */,
+				4A0BCEF01121429A004AD1C2 /* CZDisclosureViewHeader.h in Headers */,
+				4A0BCEF7112142E1004AD1C2 /* CZDisclosureView.h in Headers */,
+				4A0BD0511123B671004AD1C2 /* NSCustomView.h in Headers */,
+				4A0BD0561123B709004AD1C2 /* CZCustomView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +662,8 @@
 				4AFE8BBD10E7082300FD5ACD /* CZKitLibrary.nib in Resources */,
 				4A0BCE9F1121345B004AD1C2 /* CZInsetTextField.classdescription in Resources */,
 				4A0BCEDB11213B02004AD1C2 /* CZInsetTextField.png in Resources */,
+				4A0BCF731122580E004AD1C2 /* CZDisclosureView.classdescription in Resources */,
+				4A0BCF7C1122583F004AD1C2 /* CZDisclosureViewInspector.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +732,9 @@
 				4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */,
 				4A219E22110BEC54008E6862 /* NSArray+CZExtensions.m in Sources */,
 				4A0BCE8611213309004AD1C2 /* CZInsetTextField.m in Sources */,
+				4A0BCEF11121429A004AD1C2 /* CZDisclosureViewHeader.m in Sources */,
+				4A0BCEF8112142E1004AD1C2 /* CZDisclosureView.m in Sources */,
+				4A0BD0571123B709004AD1C2 /* CZCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +746,8 @@
 				4AFE8B7F10E703F800FD5ACD /* CZIconImageViewIntegration.m in Sources */,
 				4AFE8B8410E7042A00FD5ACD /* CZIconImageViewInspector.m in Sources */,
 				4A0BCE9E11213456004AD1C2 /* CZInsetTextField.m in Sources */,
+				4A0BCF7811225827004AD1C2 /* CZDisclosureViewInspector.m in Sources */,
+				4A0BCF8011225870004AD1C2 /* CZDisclosureViewIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
