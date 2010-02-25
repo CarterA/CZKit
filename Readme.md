@@ -12,18 +12,18 @@ One of the nice things about CZKit is the uniformity of all of its source code. 
 
 * Comments that describe code should have a space after the '//' or '/*', but lines of code that are commented out for debugging purposes should not.  
 	Example:  
-		`// The following code is courtesy of some other person`  
-		`//[class runMethod];`
+		// The following code is courtesy of some other person  
+		//[class runMethod];
 * All implementation code should be self-documenting whenever possible, so comments explaining code shouldn't be necessary. If they are, the comment should be brief, and added to the same line as the code file, one space after the ';'. Although brief, they should always be complete sentences, ending with a period.  
 	Example:  
-		`TheClass *class = [[TheClass alloc] init]; // Create an instance of TheClass for us to work with.`  
+		TheClass *class = [[TheClass alloc] init]; // Create an instance of TheClass for us to work with.  
 * Public headers must be documented with Doxygen-style comments, which follow this syntax:  
-		`/** The first line is a brief, one-sentence description of the function/method.`  
-		`This are describes anything else someone might need to know about the function/method. It can describe the way it works, best practices, etc. and can use multiple sentences. It should be no more then a paragraph in length.`
-		`@param paramName This describes what paramName means in the context of the function/method, in one sentence.`  
-		`@return This describes the return value of the function, and can be multiple sentences if possible.`
-		`*/`  
-		`- (NSString *)runMethod:(TheParam *)paramName;`  
+		/** The first line is a brief, one-sentence description of the function/method.  
+		This are describes anything else someone might need to know about the function/method. It can describe the way it works, best practices, etc. and can use multiple sentences. It should be no more then a paragraph in length.
+		@param paramName This describes what paramName means in the context of the function/method, in one sentence.  
+		@return This describes the return value of the function, and can be multiple sentences if possible.
+		*/  
+		- (NSString *)runMethod:(TheParam *)paramName;  
 		
 ###Methods  
 
