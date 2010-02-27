@@ -17,3 +17,6 @@ profile
 Documentation/xml*
 Documentation/cxml*
 Documentation/cxhtml*
+
+#temp template files
+Templates/tmp
