@@ -17,6 +17,9 @@
 @end
 
 @implementation CZCustomView
+- (id)initWithCoder:(id)coder {
+	return [super initWithCoder:coder];
+}
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {}
