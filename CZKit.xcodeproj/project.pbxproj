@@ -16,10 +16,21 @@
 				4A0BCD0B1120F23C004AD1C2 /* PBXTargetDependency */,
 				4A0BCD091120F23C004AD1C2 /* PBXTargetDependency */,
 				4A0BCD071120F23C004AD1C2 /* PBXTargetDependency */,
-				4A0BCD051120F23C004AD1C2 /* PBXTargetDependency */,
 			);
 			name = "Build All";
 			productName = "Build All";
+		};
+		4A8AD4001138C3AD0096ABF1 /* Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4A8AD4031138C3ED0096ABF1 /* Build configuration list for PBXAggregateTarget "Templates" */;
+			buildPhases = (
+				4A8AD3FF1138C3AD0096ABF1 /* CopyFiles */,
+				4A8AD4261138C5D60096ABF1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Templates;
+			productName = "Template Setup";
 		};
 /* End PBXAggregateTarget section */
 
@@ -50,11 +61,14 @@
 		4A6F7A3811324A9C00196147 /* CZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD0551123B709004AD1C2 /* CZCustomView.m */; };
 		4A6F7A4C11324AD400196147 /* CZCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0541123B709004AD1C2 /* CZCustomView.h */; };
 		4A6F7A7411324D7D00196147 /* NSCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0501123B671004AD1C2 /* NSCustomView.h */; };
+		4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */; };
+		4A6F7AF7113270FC00196147 /* NSFileManager+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F7AF5113270FC00196147 /* NSFileManager+CZExtensions.m */; };
 		4A77B37F10D1BA9F0017EC62 /* CZObnoxiousToggleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */; };
 		4A77B38010D1BAA40017EC62 /* CZObnoxiousToggleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A77B38110D1BAA80017EC62 /* CZObnoxiousToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A7ECFD7113E176A002AFF3E /* CZCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0BD0541123B709004AD1C2 /* CZCustomView.h */; };
 		4A7ECFD8113E176E002AFF3E /* CZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD0551123B709004AD1C2 /* CZCustomView.m */; };
+		4A8AD4091138C4620096ABF1 /* Objective-C Shared Instance.pbfiletemplate in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AF6008A1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate */; };
 		4AA474B910E8C1A000353A15 /* CZAppPrefsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA474B810E8C1A000353A15 /* CZAppPrefsTest.m */; };
 		4AA474D110E8C50600353A15 /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* CZKit.framework */; };
 		4AA474F010E9435600353A15 /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* CZKit.framework */; };
@@ -65,12 +79,6 @@
 		4AA476BD10EDCDF800353A15 /* CZFileObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA476BC10EDCDF800353A15 /* CZFileObserver.m */; };
 		4AE570F91100027A00238601 /* NSString+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE570F71100027A00238601 /* NSString+CZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE570FA1100027A00238601 /* NSString+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE570F81100027A00238601 /* NSString+CZExtensions.m */; };
-		4AF6008F1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6008A1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate */; };
-		4AF600A1111653DA00B05DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF600A0111653DA00B05DE3 /* main.m */; };
-		4AF600CA1116549700B05DE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
-		4AF600FF111656DF00B05DE3 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF600FE111656DF00B05DE3 /* Logo.png */; };
-		4AF601061116578100B05DE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF601051116578100B05DE3 /* MainMenu.xib */; };
-		4AF6012D11165A9A00B05DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6012C11165A9A00B05DE3 /* AppDelegate.m */; };
 		4AFE8B2E10E6FE6300FD5ACD /* CZIconImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFE8B2C10E6FE6300FD5ACD /* CZIconImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AFE8B2F10E6FE6300FD5ACD /* CZIconImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE8B2D10E6FE6300FD5ACD /* CZIconImageView.m */; };
 		4AFE8B6810E7029E00FD5ACD /* CZKitPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE8B6710E7029E00FD5ACD /* CZKitPlugin.m */; };
@@ -87,13 +95,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A0BCD041120F23C004AD1C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AF600801116520000B05DE3;
-			remoteInfo = "Template Installer";
-		};
 		4A0BCD061120F23C004AD1C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
@@ -132,6 +133,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4A8AD3FF1138C3AD0096ABF1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../CZKit;
+			dstSubfolderSpec = 16;
+			files = (
+				4A8AD4091138C4620096ABF1 /* Objective-C Shared Instance.pbfiletemplate in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AA474D610E8C53200353A15 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +199,8 @@
 		4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggle.m; path = Classes/Controls/CZObnoxiousToggle.m; sourceTree = "<group>"; };
 		4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZAppPrefs.h; path = Classes/Utilities/CZAppPrefs.h; sourceTree = "<group>"; };
 		4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZAppPrefs.m; path = Classes/Utilities/CZAppPrefs.m; sourceTree = "<group>"; };
+		4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+CZExtensions.h"; path = "Classes/Categories/NSFileManager+CZExtensions.h"; sourceTree = "<group>"; };
+		4A6F7AF5113270FC00196147 /* NSFileManager+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+CZExtensions.m"; path = "Classes/Categories/NSFileManager+CZExtensions.m"; sourceTree = "<group>"; };
 		4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZObnoxiousToggleCell.h; path = Classes/Controls/CZObnoxiousToggleCell.h; sourceTree = "<group>"; };
 		4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggleCell.m; path = Classes/Controls/CZObnoxiousToggleCell.m; sourceTree = "<group>"; };
 		4AA4748B10E8C09100353A15 /* CZKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,14 +216,8 @@
 		4AA476BC10EDCDF800353A15 /* CZFileObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZFileObserver.m; path = Classes/Utilities/CZFileObserver.m; sourceTree = "<group>"; };
 		4AE570F71100027A00238601 /* NSString+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CZExtensions.h"; path = "Classes/Categories/NSString+CZExtensions.h"; sourceTree = "<group>"; };
 		4AE570F81100027A00238601 /* NSString+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CZExtensions.m"; path = "Classes/Categories/NSString+CZExtensions.m"; sourceTree = "<group>"; };
-		4AF600811116520000B05DE3 /* Install Templates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Install Templates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AF600831116520000B05DE3 /* Templates-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Templates-Info.plist"; path = "Templates/Templates-Info.plist"; sourceTree = "<group>"; };
 		4AF6008A1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Objective-C Shared Instance.pbfiletemplate"; path = "Templates/Objective-C Shared Instance.pbfiletemplate"; sourceTree = "<group>"; };
-		4AF600A0111653DA00B05DE3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Templates/main.m; sourceTree = "<group>"; };
 		4AF600FE111656DF00B05DE3 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Images/Logo.png; sourceTree = "<group>"; };
-		4AF601051116578100B05DE3 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = Templates/MainMenu.xib; sourceTree = "<group>"; };
-		4AF6012B11165A9A00B05DE3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Templates/AppDelegate.h; sourceTree = "<group>"; };
-		4AF6012C11165A9A00B05DE3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Templates/AppDelegate.m; sourceTree = "<group>"; };
 		4AFE8B2C10E6FE6300FD5ACD /* CZIconImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZIconImageView.h; path = Classes/Views/CZIconImageView.h; sourceTree = "<group>"; };
 		4AFE8B2D10E6FE6300FD5ACD /* CZIconImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZIconImageView.m; path = Classes/Views/CZIconImageView.m; sourceTree = "<group>"; };
 		4AFE8B6610E7029E00FD5ACD /* CZKitPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZKitPlugin.h; path = Plugin/CZKitPlugin.h; sourceTree = "<group>"; };
@@ -236,14 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA474F010E9435600353A15 /* CZKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AF6007F1116520000B05DE3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AF600CA1116549700B05DE3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +304,6 @@
 				8D1AC9740486D14A00FE50C9 /* CZKit.ibplugin */,
 				53DF68FD067E5B5A0090B5B0 /* CZKit.framework */,
 				4AA4748B10E8C09100353A15 /* CZKitUnitTests.octest */,
-				4AF600811116520000B05DE3 /* Install Templates.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -413,6 +411,8 @@
 				4A219E19110BEAAC008E6862 /* NSArray+CZExtensions.m */,
 				4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */,
 				4A1F0FE111057D21003D2171 /* NSData+CZExtensions.m */,
+				4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */,
+				4A6F7AF5113270FC00196147 /* NSFileManager+CZExtensions.m */,
 				4AA4758910E9CE6900353A15 /* NSImage+CZExtensions.h */,
 				4AA4758A10E9CE6900353A15 /* NSImage+CZExtensions.m */,
 				4AE570F71100027A00238601 /* NSString+CZExtensions.h */,
@@ -459,12 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				4AF600FE111656DF00B05DE3 /* Logo.png */,
-				4AF600A0111653DA00B05DE3 /* main.m */,
-				4AF601051116578100B05DE3 /* MainMenu.xib */,
-				4AF600831116520000B05DE3 /* Templates-Info.plist */,
 				4AF6008A1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate */,
-				4AF6012B11165A9A00B05DE3 /* AppDelegate.h */,
-				4AF6012C11165A9A00B05DE3 /* AppDelegate.m */,
 			);
 			name = Templates;
 			sourceTree = "<group>";
@@ -530,6 +525,7 @@
 				4A0BCEF01121429A004AD1C2 /* CZDisclosureViewHeader.h in Headers */,
 				4A0BCEF7112142E1004AD1C2 /* CZDisclosureView.h in Headers */,
 				4A7ECFD7113E176A002AFF3E /* CZCustomView.h in Headers */,
+				4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,23 +551,6 @@
 			productName = CZKitUnitTests;
 			productReference = 4AA4748B10E8C09100353A15 /* CZKitUnitTests.octest */;
 			productType = "com.apple.product-type.bundle";
-		};
-		4AF600801116520000B05DE3 /* Template Installer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AF600861116520100B05DE3 /* Build configuration list for PBXNativeTarget "Template Installer" */;
-			buildPhases = (
-				4AF6007D1116520000B05DE3 /* Resources */,
-				4AF6007E1116520000B05DE3 /* Sources */,
-				4AF6007F1116520000B05DE3 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Template Installer";
-			productName = "Install Templates";
-			productReference = 4AF600811116520000B05DE3 /* Install Templates.app */;
-			productType = "com.apple.product-type.application";
 		};
 		53DF68FC067E5B5A0090B5B0 /* Framework */ = {
 			isa = PBXNativeTarget;
@@ -629,7 +608,7 @@
 				8D1AC9600486D14A00FE50C9 /* IBPlugin */,
 				53DF68FC067E5B5A0090B5B0 /* Framework */,
 				4AA4748A10E8C09100353A15 /* Unit Tests */,
-				4AF600801116520000B05DE3 /* Template Installer */,
+				4A8AD4001138C3AD0096ABF1 /* Templates */,
 			);
 		};
 /* End PBXProject section */
@@ -641,16 +620,6 @@
 			files = (
 				4AA475DA10EB29A400353A15 /* ViewConversionTestView.xib in Resources */,
 				4A1F10A41105F8D1003D2171 /* Hashable.txt in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AF6007D1116520000B05DE3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AF6008F1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate in Resources */,
-				4AF600FF111656DF00B05DE3 /* Logo.png in Resources */,
-				4AF601061116578100B05DE3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +662,19 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ $BUILD_STYLE = \"Release\" ]; then\nDocumentation/appledoc -p \"$PROJECT_NAME\" -i Framework -o Documentation -c Documentation/Doxyfile -d Documentation/doxygen --docset -t Documentation/Templates --docid com.cz.documentation.CZKit --docplist Documentation/DocSet-Info.plist\nrm -rf Products/Release/CZKit.docset\nmv Documentation/docset Products/Release/CZKit.docset\nfi\nexit;";
 		};
+		4A8AD4261138C5D60096ABF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PACKAGE_DOC=\"Templates/Installer.pmdoc\";\nPACKAGE_DEST=Products/$BUILD_STYLE/CZKit\\ Templates.pkg;\nPACKAGE_MAKER=\"/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker\";\n$PACKAGE_MAKER -d $PACKAGE_DOC -o \"$PACKAGE_DEST\";\nrm -rf Templates/build;";
+		};
 		4AA4748910E8C09100353A15 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -719,15 +701,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AF6007E1116520000B05DE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AF600A1111653DA00B05DE3 /* main.m in Sources */,
-				4AF6012D11165A9A00B05DE3 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		53DF68FA067E5B5A0090B5B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,6 +714,7 @@
 				4A1F0FE311057D21003D2171 /* NSData+CZExtensions.m in Sources */,
 				4A219E22110BEC54008E6862 /* NSArray+CZExtensions.m in Sources */,
 				4A0BCE8611213309004AD1C2 /* CZInsetTextField.m in Sources */,
+				4A6F7AF7113270FC00196147 /* NSFileManager+CZExtensions.m in Sources */,
 				4A0BCEF11121429A004AD1C2 /* CZDisclosureViewHeader.m in Sources */,
 				4A0BCEF8112142E1004AD1C2 /* CZDisclosureView.m in Sources */,
 				4A7ECFD8113E176E002AFF3E /* CZCustomView.m in Sources */,
@@ -764,11 +738,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4A0BCD051120F23C004AD1C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AF600801116520000B05DE3 /* Template Installer */;
-			targetProxy = 4A0BCD041120F23C004AD1C2 /* PBXContainerItemProxy */;
-		};
 		4A0BCD071120F23C004AD1C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AA4748A10E8C09100353A15 /* Unit Tests */;
@@ -814,6 +783,29 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "Build All";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4A8AD4011138C3AE0096ABF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Template Setup";
+				SYMROOT = Templates/build;
+			};
+			name = Debug;
+		};
+		4A8AD4021138C3AE0096ABF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Template Setup";
+				SYMROOT = Templates/build;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -873,54 +865,6 @@
 				PRODUCT_NAME = CZKitUnitTests;
 				SYMROOT = Products;
 				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		4AF600841116520100B05DE3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Templates/Templates-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Install Templates";
-			};
-			name = Debug;
-		};
-		4AF600851116520100B05DE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Templates/Templates-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Install Templates";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1067,20 +1011,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4A8AD4031138C3ED0096ABF1 /* Build configuration list for PBXAggregateTarget "Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8AD4011138C3AE0096ABF1 /* Debug */,
+				4A8AD4021138C3AE0096ABF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4AA4748F10E8C09200353A15 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AA4748D10E8C09200353A15 /* Debug */,
 				4AA4748E10E8C09200353A15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AF600861116520100B05DE3 /* Build configuration list for PBXNativeTarget "Template Installer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AF600841116520100B05DE3 /* Debug */,
-				4AF600851116520100B05DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
