@@ -12,7 +12,7 @@ Currently this category only adds one method.
 
 */
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 @interface NSArray (CZExtensions)
 /** Check if the array contains only NSString objects.
