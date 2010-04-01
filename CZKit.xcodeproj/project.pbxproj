@@ -48,6 +48,8 @@
 		4A219E22110BEC54008E6862 /* NSArray+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A219E19110BEAAC008E6862 /* NSArray+CZExtensions.m */; };
 		4A2949F310D0AB6700043D99 /* CZKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2949E610D0AAF900043D99 /* CZKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A294A1D10D0B18000043D99 /* CZObnoxiousToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */; };
+		4A4277C31164352500E453DD /* CZGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4277C11164352500E453DD /* CZGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A4277C41164352500E453DD /* CZGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4277C21164352500E453DD /* CZGraphics.m */; };
 		4A5DC93910E09BAE00CD567E /* CZAppPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A5DC93A10E09BAE00CD567E /* CZAppPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */; };
 		4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */; };
@@ -176,6 +178,8 @@
 		4A2949E610D0AAF900043D99 /* CZKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZKit.h; sourceTree = "<group>"; };
 		4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZObnoxiousToggle.h; path = Classes/Controls/CZObnoxiousToggle.h; sourceTree = "<group>"; };
 		4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggle.m; path = Classes/Controls/CZObnoxiousToggle.m; sourceTree = "<group>"; };
+		4A4277C11164352500E453DD /* CZGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZGraphics.h; path = Classes/Utilities/CZGraphics.h; sourceTree = "<group>"; };
+		4A4277C21164352500E453DD /* CZGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZGraphics.m; path = Classes/Utilities/CZGraphics.m; sourceTree = "<group>"; };
 		4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZAppPrefs.h; path = Classes/Utilities/CZAppPrefs.h; sourceTree = "<group>"; };
 		4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZAppPrefs.m; path = Classes/Utilities/CZAppPrefs.m; sourceTree = "<group>"; };
 		4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+CZExtensions.h"; path = "Classes/Categories/NSFileManager+CZExtensions.h"; sourceTree = "<group>"; };
@@ -333,6 +337,8 @@
 				4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */,
 				4AA476BB10EDCDF800353A15 /* CZFileObserver.h */,
 				4AA476BC10EDCDF800353A15 /* CZFileObserver.m */,
+				4A4277C11164352500E453DD /* CZGraphics.h */,
+				4A4277C21164352500E453DD /* CZGraphics.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 				4A0BCE8511213309004AD1C2 /* CZInsetTextField.h in Headers */,
 				4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */,
 				4A9E829D1161CBF8002A580B /* NSColor+CZExtensions.h in Headers */,
+				4A4277C31164352500E453DD /* CZGraphics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +658,7 @@
 				4A0BCE8611213309004AD1C2 /* CZInsetTextField.m in Sources */,
 				4A6F7AF7113270FC00196147 /* NSFileManager+CZExtensions.m in Sources */,
 				4A9E829E1161CBF8002A580B /* NSColor+CZExtensions.m in Sources */,
+				4A4277C41164352500E453DD /* CZGraphics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
