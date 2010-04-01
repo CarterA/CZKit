@@ -6,12 +6,6 @@
 //  Copyright 2009 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import "CZAppPrefs.h"
-// Views
-#import "CZIconImageView.h"
-// Controls
-#import "CZInsetTextField.h"
-#import "CZObnoxiousToggle.h"
 // Categories
 #import "NSArray+CZExtensions.h"
 #import "NSColor+CZExtensions.h"
@@ -19,3 +13,12 @@
 #import "NSFileManager+CZExtensions.h"
 #import "NSImage+CZExtensions.h"
 #import "NSString+CZExtensions.h"
+#import "CZAppPrefs.h"
+// Controls
+#import "CZInsetTextField.h"
+#import "CZObnoxiousToggle.h"
+// Utilities
+#import "CZAppPrefs.h"
+#import "CZGraphics.h"
+// Views
+#import "CZIconImageView.h"
