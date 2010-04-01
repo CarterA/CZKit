@@ -7,10 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "CZObnoxiousToggleCell.h"
+#import <QuartzCore/QuartzCore.h>
+#import "NSColor+CZExtensions.h"
 
-@interface CZObnoxiousToggle : NSButton {
-
+@interface CZObnoxiousToggle : NSView {
+	NSCellStateValue state;
+	CALayer *knobMaskLayer;
+	CAGradientLayer *knobLayer;
+	CAGradientLayer *backgroundTrackLayer;
 }
-
+#pragma mark -
+#pragma mark Properties
+@property (assign) NSCellStateValue state;
+@property (readonly) CALayer *knobMaskLayer;
+@property (readonly) CAGradientLayer *knobLayer;
+@property (readonly) CAGradientLayer *backgroundTrackLayer;
 @end

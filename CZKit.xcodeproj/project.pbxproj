@@ -56,8 +56,10 @@
 		4A77B38010D1BAA40017EC62 /* CZObnoxiousToggleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A77B37710D1B9F20017EC62 /* CZObnoxiousToggleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A77B38110D1BAA80017EC62 /* CZObnoxiousToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A294A1B10D0B17B00043D99 /* CZObnoxiousToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A8AD4091138C4620096ABF1 /* Objective-C Shared Instance.pbfiletemplate in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AF6008A1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate */; };
-		4A9E829D1161CBF8002A580B /* NSColor+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9E829B1161CBF8002A580B /* NSColor+CZExtensions.h */; };
+		4A9E829D1161CBF8002A580B /* NSColor+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9E829B1161CBF8002A580B /* NSColor+CZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A9E829E1161CBF8002A580B /* NSColor+CZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E829C1161CBF8002A580B /* NSColor+CZExtensions.m */; };
+		4A9E82E31161DB10002A580B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E82E21161DB10002A580B /* QuartzCore.framework */; };
+		4A9E831B1161DB16002A580B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E82E21161DB10002A580B /* QuartzCore.framework */; };
 		4AA474B910E8C1A000353A15 /* CZAppPrefsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA474B810E8C1A000353A15 /* CZAppPrefsTest.m */; };
 		4AA474D110E8C50600353A15 /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* CZKit.framework */; };
 		4AA474F010E9435600353A15 /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* CZKit.framework */; };
@@ -182,6 +184,7 @@
 		4A77B37810D1B9F20017EC62 /* CZObnoxiousToggleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggleCell.m; path = Classes/Controls/CZObnoxiousToggleCell.m; sourceTree = "<group>"; };
 		4A9E829B1161CBF8002A580B /* NSColor+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+CZExtensions.h"; path = "Classes/Categories/NSColor+CZExtensions.h"; sourceTree = "<group>"; };
 		4A9E829C1161CBF8002A580B /* NSColor+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+CZExtensions.m"; path = "Classes/Categories/NSColor+CZExtensions.m"; sourceTree = "<group>"; };
+		4A9E82E21161DB10002A580B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4AA4748B10E8C09100353A15 /* CZKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA4748C10E8C09100353A15 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UnitTests-Info.plist"; path = "Tests/UnitTests-Info.plist"; sourceTree = "<group>"; };
 		4AA474B710E8C1A000353A15 /* CZAppPrefsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZAppPrefsTest.h; path = Tests/CZAppPrefsTest.h; sourceTree = "<group>"; };
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */,
+				4A9E82E31161DB10002A580B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +244,7 @@
 				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
 				546DEAF3067F632A0098DCC4 /* CZKit.framework in Frameworks */,
 				C0D069560A49DF9100C95564 /* InterfaceBuilderKit.framework in Frameworks */,
+				4A9E831B1161DB16002A580B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +268,7 @@
 			children = (
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 				C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */,
+				4A9E82E21161DB10002A580B /* QuartzCore.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
