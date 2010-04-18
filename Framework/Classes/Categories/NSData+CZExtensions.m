@@ -16,8 +16,7 @@
 	unsigned char result[CC_MD5_DIGEST_LENGTH];
 	CC_MD5(toBeHashed_str, (CC_LONG)[self length], result);
 	NSMutableString *hash = [NSMutableString string];
-	for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-		[hash appendFormat:@"%02x", result[i]];
+	for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) [hash appendFormat:@"%02x", result[i]];
 	return hash;
 }
 - (NSString *)SHA1Hash {
@@ -25,8 +24,7 @@
 	unsigned char result[CC_SHA1_DIGEST_LENGTH];
 	CC_SHA1(toBeHashed_str, (CC_LONG)[self length], result);
 	NSMutableString *hash = [NSMutableString string];
-	for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++)
-		[hash appendFormat:@"%02x", result[i]];
+	for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++) [hash appendFormat:@"%02x", result[i]];
 	return hash;
 }
 @end
