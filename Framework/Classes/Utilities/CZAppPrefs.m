@@ -19,7 +19,7 @@
 	return [[[self alloc] initWithBundleID:identifier] autorelease];
 }
 - (id)initWithBundleID:(NSString *)identifier {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		self.bundleID = identifier;
 		self.global = NO;
 	}
@@ -110,8 +110,8 @@
 		if (rawValue == NULL) { if (response) *response = CZAppPrefsKeyNotFound; }
 		else {
 			NSArray *allowedTypes = [NSArray arrayWithObjects:[NSNumber numberWithInt:kCFNumberFloat32Type], [NSNumber numberWithInt:kCFNumberFloat64Type], [NSNumber numberWithInt:kCFNumberFloatType], nil];
-			NSLog(@"%d", CFNumberGetType((CFNumberRef)rawValue));
-			if ([allowedTypes containsObject:[NSNumber numberWithInt:CFNumberGetType((CFNumberRef)rawValue)]]) {
+			NSLog(@"%d", (int)CFNumberGetType((CFNumberRef)rawValue));
+			if ([allowedTypes containsObject:[NSNumber numberWithInt:(int)CFNumberGetType((CFNumberRef)rawValue)]]) {
 				CFNumberGetValue((CFNumberRef)rawValue, CFNumberGetType((CFNumberRef)rawValue), &result);
 				if (response) *response = CZAppPrefsSuccessful;
 			}
@@ -132,7 +132,7 @@
 		if (rawValue == NULL) { if (response) *response = CZAppPrefsKeyNotFound; }
 		else {
 			NSArray *allowedTypes = [NSArray arrayWithObjects:[NSNumber numberWithInt:kCFNumberSInt8Type], [NSNumber numberWithInt:kCFNumberSInt16Type], [NSNumber numberWithInt:kCFNumberSInt32Type], [NSNumber numberWithInt:kCFNumberSInt64Type], [NSNumber numberWithInt:kCFNumberIntType], nil];
-			if ([allowedTypes containsObject:[NSNumber numberWithInt:CFNumberGetType((CFNumberRef)rawValue)]]) {
+			if ([allowedTypes containsObject:[NSNumber numberWithInt:(int)CFNumberGetType((CFNumberRef)rawValue)]]) {
 				CFNumberGetValue((CFNumberRef)rawValue, CFNumberGetType((CFNumberRef)rawValue), &result);
 				if (response) *response = CZAppPrefsSuccessful;
 			}
@@ -196,7 +196,7 @@
 		if (rawValue == NULL) { if (response) *response = CZAppPrefsKeyNotFound; }
 		else {
 			NSArray *allowedTypes = [NSArray arrayWithObjects:[NSNumber numberWithInt:kCFNumberDoubleType], [NSNumber numberWithInt:kCFNumberFloat32Type], [NSNumber numberWithInt:kCFNumberFloat64Type], [NSNumber numberWithInt:kCFNumberFloatType], [NSNumber numberWithInt:kCFNumberSInt8Type], [NSNumber numberWithInt:kCFNumberSInt16Type], [NSNumber numberWithInt:kCFNumberSInt32Type], [NSNumber numberWithInt:kCFNumberSInt64Type], [NSNumber numberWithInt:kCFNumberIntType], nil];
-			if (![allowedTypes containsObject:[NSNumber numberWithInt:CFNumberGetType((CFNumberRef)rawValue)]]) { if (response) *response = CZAppPrefsKeyNotOfExpectedType; }
+			if (![allowedTypes containsObject:[NSNumber numberWithInt:(int)CFNumberGetType((CFNumberRef)rawValue)]]) { if (response) *response = CZAppPrefsKeyNotOfExpectedType; }
 			else { if (response) *response = CZAppPrefsSuccessful; }
 			CFNumberGetValue((CFNumberRef)rawValue, kCFNumberDoubleType, &result);
 		}

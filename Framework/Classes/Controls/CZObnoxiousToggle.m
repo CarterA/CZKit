@@ -12,7 +12,7 @@
 #pragma mark -
 #pragma mark Standard NSView Methods
 - (id)initWithFrame:(NSRect)frameRect {
-	if (self = [super initWithFrame:frameRect]) {
+	if ((self = [super initWithFrame:frameRect])) {
 		
 	}
 	return self;
