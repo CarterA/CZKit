@@ -1,0 +1,3 @@
+[submodule "Modules/pngmake"]
+	path = Modules/pngmake
+	url = git://github.com/CarterA/pngmake.git
