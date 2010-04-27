@@ -74,6 +74,7 @@
 		backgroundTrackLayer.colors = [NSArray arrayWithObjects:(id)backgroundStart, (id)backgroundMiddle, (id)backgroundEnd, nil];
 		backgroundTrackLayer.locations = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.25],[NSNumber numberWithFloat:1.0], nil];
 		CGColorRelease(backgroundStart);
+		CGColorRelease(backgroundMiddle);
 		CGColorRelease(backgroundEnd);
 	}
 	return [backgroundTrackLayer retain];
