@@ -11,7 +11,7 @@
 static CZFileObserver *globalInstance;
 @implementation CZFileObserver
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		if (!globalInstance) {
 			globalInstance = [self retain];
 		}

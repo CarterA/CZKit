@@ -9,8 +9,8 @@
 #import "CZObnoxiousToggleCell.h"
 
 @implementation CZObnoxiousToggleCell
--(void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
-	/*cellFrame.size.height = 27;
+/*-(void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
+	cellFrame.size.height = 27;
 	cellFrame.size.width = 95;
 	NSBezierPath *border = [NSBezierPath bezierPathWithRoundedRect:cellFrame xRadius:4.75 yRadius:4.75];
 	[border setLineWidth:1.0];
@@ -37,6 +37,6 @@
 	[transform scaleBy:2.0];
 	[transform translateXBy:-5 yBy:.1];
 	[largeBorder transformUsingAffineTransform:transform];
-	[largeBorder stroke];*/
-}
+	[largeBorder stroke];
+}*/
 @end
