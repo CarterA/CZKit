@@ -1,0 +1,22 @@
+//
+//  Framework-Shared.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 4/25/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "../Global/Global-Shared.xcconfig"
+
+// Deployment
+INSTALL_PATH					= @loader_path/../Frameworks
+SKIP_INSTALL					= NO
+
+// Packaging
+FRAMEWORK_VERSION				= A
+INFOPLIST_FILE					= Framework/Framework-Info.plist
+PRODUCT_NAME					= CZKit
+
+// Language
+GCC_PRECOMPILE_PREFIX_HEADER	= YES
+GCC_PREFIX_HEADER				= $(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h

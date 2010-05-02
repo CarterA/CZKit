@@ -1,0 +1,13 @@
+//
+//  Templates-Shared.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 5/2/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+// Build Locations
+SYMROOT = Templates/build
+
+// Packaging
+PRODUCT_NAME = Template Setup

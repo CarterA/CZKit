@@ -1,0 +1,16 @@
+//
+//  Global-Release.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 4/25/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "Global-Shared.xcconfig"
+
+// Build Options
+DEBUG_INFORMATION_FORMAT	= dwarf-with-dsym
+
+// Deployment
+COPY_PHASE_STRIP = YES
+INSTALL_MODE_FLAG			= go-w,a+rX

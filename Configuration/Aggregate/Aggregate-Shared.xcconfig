@@ -1,0 +1,10 @@
+//
+//  Aggregate-Shared.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 5/2/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+// Packaging
+PRODUCT_NAME = "Build All"

@@ -16,6 +16,7 @@
 				4A0BCD0B1120F23C004AD1C2 /* PBXTargetDependency */,
 				4A0BCD091120F23C004AD1C2 /* PBXTargetDependency */,
 				4A0BCD071120F23C004AD1C2 /* PBXTargetDependency */,
+				4A568F1E118E0D18004BC0FA /* PBXTargetDependency */,
 			);
 			name = "Build All";
 			productName = "Build All";
@@ -50,6 +51,7 @@
 		4A294A1D10D0B18000043D99 /* CZObnoxiousToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */; };
 		4A4277C31164352500E453DD /* CZGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4277C11164352500E453DD /* CZGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A4277C41164352500E453DD /* CZGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4277C21164352500E453DD /* CZGraphics.m */; };
+		4A568EEB118E09F1004BC0FA /* Plugin-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A568EEA118E09F1004BC0FA /* Plugin-Shared.xcconfig */; };
 		4A5DC93910E09BAE00CD567E /* CZAppPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A5DC93A10E09BAE00CD567E /* CZAppPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */; };
 		4A6F7AF6113270FC00196147 /* NSFileManager+CZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */; };
@@ -108,6 +110,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D1AC9600486D14A00FE50C9;
 			remoteInfo = IBPlugin;
+		};
+		4A568F1D118E0D18004BC0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8AD4001138C3AD0096ABF1 /* Templates */;
+			remoteInfo = Templates;
 		};
 		4AE570CB10FFBE0100238601 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -180,6 +189,14 @@
 		4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZObnoxiousToggle.m; path = Classes/Controls/CZObnoxiousToggle.m; sourceTree = "<group>"; };
 		4A4277C11164352500E453DD /* CZGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZGraphics.h; path = Classes/Utilities/CZGraphics.h; sourceTree = "<group>"; };
 		4A4277C21164352500E453DD /* CZGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZGraphics.m; path = Classes/Utilities/CZGraphics.m; sourceTree = "<group>"; };
+		4A568EE8118E09E0004BC0FA /* Plugin-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Plugin-Debug.xcconfig"; sourceTree = "<group>"; };
+		4A568EE9118E09E7004BC0FA /* Plugin-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Plugin-Release.xcconfig"; sourceTree = "<group>"; };
+		4A568EEA118E09F1004BC0FA /* Plugin-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Plugin-Shared.xcconfig"; sourceTree = "<group>"; };
+		4A568EF7118E0C69004BC0FA /* Templates-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Templates-Shared.xcconfig"; sourceTree = "<group>"; };
+		4A568F0D118E0CC6004BC0FA /* Aggregate-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Aggregate-Shared.xcconfig"; sourceTree = "<group>"; };
+		4A568F26118E0E0E004BC0FA /* Unit Tests-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Unit Tests-Shared.xcconfig"; sourceTree = "<group>"; };
+		4A568F27118E0E15004BC0FA /* Unit Tests-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Unit Tests-Debug.xcconfig"; sourceTree = "<group>"; };
+		4A568F28118E0E1D004BC0FA /* Unit Tests-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Unit Tests-Release.xcconfig"; sourceTree = "<group>"; };
 		4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZAppPrefs.h; path = Classes/Utilities/CZAppPrefs.h; sourceTree = "<group>"; };
 		4A5DC93810E09BAE00CD567E /* CZAppPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZAppPrefs.m; path = Classes/Utilities/CZAppPrefs.m; sourceTree = "<group>"; };
 		4A6F7AF4113270FC00196147 /* NSFileManager+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+CZExtensions.h"; path = "Classes/Categories/NSFileManager+CZExtensions.h"; sourceTree = "<group>"; };
@@ -200,6 +217,12 @@
 		4AA475D910EB29A400353A15 /* ViewConversionTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewConversionTestView.xib; path = Tests/ViewConversionTestView.xib; sourceTree = "<group>"; };
 		4AA476BB10EDCDF800353A15 /* CZFileObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZFileObserver.h; path = Classes/Utilities/CZFileObserver.h; sourceTree = "<group>"; };
 		4AA476BC10EDCDF800353A15 /* CZFileObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZFileObserver.m; path = Classes/Utilities/CZFileObserver.m; sourceTree = "<group>"; };
+		4ACFBDE61185055100892C79 /* Global-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Global-Debug.xcconfig"; sourceTree = "<group>"; };
+		4ACFBDED1185056000892C79 /* Global-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Global-Release.xcconfig"; sourceTree = "<group>"; };
+		4ACFBDF8118505B600892C79 /* Global-Shared.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; fileEncoding = 4; path = "Global-Shared.xcconfig"; sourceTree = "<group>"; };
+		4ACFBE1211854CCC00892C79 /* Framework-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Framework-Debug.xcconfig"; sourceTree = "<group>"; };
+		4ACFBE1911854CE700892C79 /* Framework-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Framework-Release.xcconfig"; sourceTree = "<group>"; };
+		4ACFBE2011854CFA00892C79 /* Framework-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Framework-Shared.xcconfig"; sourceTree = "<group>"; };
 		4AE570F71100027A00238601 /* NSString+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CZExtensions.h"; path = "Classes/Categories/NSString+CZExtensions.h"; sourceTree = "<group>"; };
 		4AE570F81100027A00238601 /* NSString+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CZExtensions.m"; path = "Classes/Categories/NSString+CZExtensions.m"; sourceTree = "<group>"; };
 		4AF6008A1116533B00B05DE3 /* Objective-C Shared Instance.pbfiletemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Objective-C Shared Instance.pbfiletemplate"; path = "Templates/Objective-C Shared Instance.pbfiletemplate"; sourceTree = "<group>"; };
@@ -258,8 +281,9 @@
 		0259C574FE90428111CA0C5A /* CZKit */ = {
 			isa = PBXGroup;
 			children = (
-				32DBCF9E0370C38000C91783 /* Plugin */,
+				4ACFBDE3118504F700892C79 /* Configuration */,
 				54D33B2C06778E4400C9C163 /* Framework */,
+				32DBCF9E0370C38000C91783 /* Plugin */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
 				4AF6006D11162DF800B05DE3 /* Templates */,
@@ -356,6 +380,42 @@
 			name = CZIconImageView;
 			sourceTree = "<group>";
 		};
+		4A568EE0118E0990004BC0FA /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				4A568EE8118E09E0004BC0FA /* Plugin-Debug.xcconfig */,
+				4A568EE9118E09E7004BC0FA /* Plugin-Release.xcconfig */,
+				4A568EEA118E09F1004BC0FA /* Plugin-Shared.xcconfig */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		4A568EF4118E0C49004BC0FA /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				4A568EF7118E0C69004BC0FA /* Templates-Shared.xcconfig */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		4A568F05118E0CA0004BC0FA /* Aggregate */ = {
+			isa = PBXGroup;
+			children = (
+				4A568F0D118E0CC6004BC0FA /* Aggregate-Shared.xcconfig */,
+			);
+			path = Aggregate;
+			sourceTree = "<group>";
+		};
+		4A568F23118E0DD0004BC0FA /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4A568F27118E0E15004BC0FA /* Unit Tests-Debug.xcconfig */,
+				4A568F28118E0E1D004BC0FA /* Unit Tests-Release.xcconfig */,
+				4A568F26118E0E0E004BC0FA /* Unit Tests-Shared.xcconfig */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
 		4AA4742610E8BD6500353A15 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +469,39 @@
 				4A1F10A31105F8D1003D2171 /* Hashable.txt */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		4ACFBDE3118504F700892C79 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4ACFBE2211854D0A00892C79 /* Global */,
+				4A568F05118E0CA0004BC0FA /* Aggregate */,
+				4ACFBE2311854D0F00892C79 /* Framework */,
+				4A568EE0118E0990004BC0FA /* Plugin */,
+				4A568EF4118E0C49004BC0FA /* Templates */,
+				4A568F23118E0DD0004BC0FA /* Unit Tests */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		4ACFBE2211854D0A00892C79 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				4ACFBDE61185055100892C79 /* Global-Debug.xcconfig */,
+				4ACFBDED1185056000892C79 /* Global-Release.xcconfig */,
+				4ACFBDF8118505B600892C79 /* Global-Shared.xcconfig */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		4ACFBE2311854D0F00892C79 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4ACFBE1211854CCC00892C79 /* Framework-Debug.xcconfig */,
+				4ACFBE1911854CE700892C79 /* Framework-Release.xcconfig */,
+				4ACFBE2011854CFA00892C79 /* Framework-Shared.xcconfig */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		4AF6006D11162DF800B05DE3 /* Templates */ = {
@@ -564,6 +657,7 @@
 			files = (
 				4AA475DA10EB29A400353A15 /* ViewConversionTestView.xib in Resources */,
 				4A1F10A41105F8D1003D2171 /* Hashable.txt in Resources */,
+				4A568EEB118E09F1004BC0FA /* Plugin-Shared.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +785,11 @@
 			target = 8D1AC9600486D14A00FE50C9 /* IBPlugin */;
 			targetProxy = 4A0BCD0A1120F23C004AD1C2 /* PBXContainerItemProxy */;
 		};
+		4A568F1E118E0D18004BC0FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A8AD4001138C3AD0096ABF1 /* Templates */;
+			targetProxy = 4A568F1D118E0D18004BC0FA /* PBXContainerItemProxy */;
+		};
 		4AE570CC10FFBE0100238601 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8D1AC9600486D14A00FE50C9 /* IBPlugin */;
@@ -706,244 +805,85 @@
 /* Begin XCBuildConfiguration section */
 		4A0BCD021120F221004AD1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568F0D118E0CC6004BC0FA /* Aggregate-Shared.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = "Build All";
 			};
 			name = Debug;
 		};
 		4A0BCD031120F221004AD1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568F0D118E0CC6004BC0FA /* Aggregate-Shared.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PRODUCT_NAME = "Build All";
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
 		4A8AD4011138C3AE0096ABF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568EF7118E0C69004BC0FA /* Templates-Shared.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = "Template Setup";
-				SYMROOT = Templates/build;
 			};
 			name = Debug;
 		};
 		4A8AD4021138C3AE0096ABF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568EF7118E0C69004BC0FA /* Templates-Shared.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PRODUCT_NAME = "Template Setup";
-				SYMROOT = Templates/build;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
 		4AA4748D10E8C09200353A15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568F27118E0E15004BC0FA /* Unit Tests-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Framework/Tests/UnitTests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = CZKitUnitTests;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		4AA4748E10E8C09200353A15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568F28118E0E1D004BC0FA /* Unit Tests-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"@loader_path/../**",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Framework/Tests/UnitTests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = CZKitUnitTests;
-				SYMROOT = Products;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
 		C056398008A954F8003078D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACFBE1211854CCC00892C79 /* Framework-Debug.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_SHADOW = YES;
-				INFOPLIST_FILE = "Framework/Framework-Info.plist";
-				INSTALL_PATH = "@loader_path/../Frameworks";
-				PRODUCT_NAME = CZKit;
-				SKIP_INSTALL = NO;
-				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
 		};
 		C056398108A954F8003078D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACFBE1911854CE700892C79 /* Framework-Release.xcconfig */;
 			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_SHADOW = YES;
-				INFOPLIST_FILE = "Framework/Framework-Info.plist";
-				INSTALL_MODE_FLAG = "go-w,a+rX";
-				INSTALL_PATH = "@loader_path/../Frameworks";
-				PRODUCT_NAME = CZKit;
-				SKIP_INSTALL = NO;
-				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
 		};
 		C056398408A954F8003078D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568EE8118E09E0004BC0FA /* Plugin-Debug.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "\"/Developer/Library/Frameworks\"";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Plugin/CZKit_Prefix.pch;
-				INFOPLIST_FILE = "Plugin/Plugin-Info.plist";
-				PRODUCT_NAME = CZKit;
-				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Debug;
 		};
 		C056398508A954F8003078D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A568EE9118E09E7004BC0FA /* Plugin-Release.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					$inherited,
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/Library/Frameworks\"";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Plugin/CZKit_Prefix.pch;
-				INFOPLIST_FILE = "Plugin/Plugin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks/CZKit.framework/Resources";
-				PRODUCT_NAME = CZKit;
-				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Release;
 		};
 		C056398C08A954F8003078D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACFBDE61185055100892C79 /* Global-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_MODEL_TUNING = "";
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				SYMROOT = Products;
 			};
 			name = Debug;
 		};
 		C056398D08A954F8003078D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACFBDED1185056000892C79 /* Global-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_MODEL_TUNING = "";
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
-				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = NO;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
-				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MISSING_PARENTHESES = NO;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_PEDANTIC = NO;
-				GCC_WARN_PROTOTYPE_CONVERSION = NO;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_PARAMETER = NO;
-				GCC_WARN_UNUSED_VALUE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.5;
-				SYMROOT = Products;
 			};
 			name = Release;
 		};

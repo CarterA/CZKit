@@ -1,0 +1,20 @@
+//
+//  Debug.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 4/25/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "Global-Shared.xcconfig"
+
+// Architectures
+ONLY_ACTIVE_ARCH			= YES
+
+// Deployment
+COPY_PHASE_STRIP			= NO
+
+// Code Generation
+GCC_OPTIMIZATION_LEVEL		= 0
+GCC_ENABLE_FIX_AND_CONTINUE = YES
+GCC_DYNAMIC_NO_PIC			= NO
