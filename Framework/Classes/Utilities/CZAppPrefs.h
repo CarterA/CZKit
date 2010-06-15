@@ -38,6 +38,8 @@
 
 */
 
+#if !TARGET_OS_IPHONE
+
 #import <Cocoa/Cocoa.h>
 
 /** 
@@ -114,3 +116,4 @@ This is the designated initializer for CZAppPrefs. Use it to create an autorelea
 @property (assign) BOOL global;
 @property (assign) NSString *bundleID;
 @end
+#endif

@@ -8,6 +8,7 @@
 
 #import "NSFileManager+CZExtensions.h"
 
+#if !TARGET_OS_IPHONE
 @implementation NSFileManager (CZExtensions)
 - (NSURL *)applicationSupportDirectory { return [self applicationSupportDirectoryForDomain:NSUserDomainMask]; }
 - (NSURL *)applicationSupportDirectoryForDomain:(NSSearchPathDomainMask)domain { return [[self URLsForDirectory:NSApplicationSupportDirectory inDomains:domain] objectAtIndex:0]; }
@@ -20,3 +21,4 @@
 - (NSURL *)libraryDirectory { return [self libraryDirectoryForDomain:NSUserDomainMask]; }
 - (NSURL *)libraryDirectoryForDomain:(NSSearchPathDomainMask)domain { return [[self URLsForDirectory:NSLibraryDirectory inDomains:domain] objectAtIndex:0]; }
 @end
+#endif

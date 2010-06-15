@@ -8,6 +8,7 @@
 
 #import "NSImage+CZExtensions.h"
 
+#if !TARGET_OS_IPHONE
 @implementation NSImage (CZExtensions)
 #pragma mark View Conversion
 - (NSImage *)initWithContentsOfView:(NSView *)view {
@@ -19,3 +20,4 @@
 	return self;
 }
 @end
+#endif

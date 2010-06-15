@@ -10,13 +10,9 @@
 
 
 @implementation CZExtensionsTest
-- (void)setUp {
-	hashableFilePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"Hashable" ofType:@"txt"];
-	NSLog(@"%@", hashableFilePath);
-}
+- (void)setUp { hashableFilePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"Hashable" ofType:@"txt"]; }
 - (void)testViewConversion {
-    if (![NSBundle loadNibNamed:@"ViewConversionTestView" owner:self])
-        STFail(@"Could not load ViewConversionTestView.xib\n");
+    if (![NSBundle loadNibNamed:@"ViewConversionTestView" owner:self]) STFail(@"Could not load ViewConversionTestView.xib\n");
 	STAssertNotNil(viewConversionTestView, @"ViewConversionTestView is equal to nil.");
 	NSImage *image = [[NSImage alloc] initWithContentsOfView:viewConversionTestView];
 	STAssertNotNil(image, @"Image generated from ViewConversionTestView is equal to nil.");

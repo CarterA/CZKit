@@ -6,6 +6,8 @@
 //  Copyright 2009 Opt-6 Products, LLC. All rights reserved.
 //
 
+#if !TARGET_OS_IPHONE
+
 #import "CZAppPrefs.h"
 #import "../Categories/NSArray+CZExtensions.h"
 
@@ -15,9 +17,7 @@
 
 @implementation CZAppPrefs
 #pragma mark Initializers
-+ (CZAppPrefs *)prefsForBundleID:(NSString *)identifier {
-	return [[[self alloc] initWithBundleID:identifier] autorelease];
-}
++ (CZAppPrefs *)prefsForBundleID:(NSString *)identifier { return [[[self alloc] initWithBundleID:identifier] autorelease]; }
 - (id)initWithBundleID:(NSString *)identifier {
 	if ((self = [super init])) {
 		self.bundleID = identifier;
@@ -26,9 +26,7 @@
 	return self;
 }
 #pragma mark Accessors
-- (NSArray *)arrayForKey:(NSString *)key {
-	return [self arrayForKey:key response:nil];
-}
+- (NSArray *)arrayForKey:(NSString *)key { return [self arrayForKey:key response:nil]; }
 - (NSArray *)arrayForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	NSArray *result = nil;
     if ([self appExists]) {
@@ -44,9 +42,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
     return result;
 }
-- (BOOL)boolForKey:(NSString *)key {
-	return [self boolForKey:key response:nil];
-}
+- (BOOL)boolForKey:(NSString *)key { return [self boolForKey:key response:nil]; }
 - (BOOL)boolForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	BOOL result = NO;
 	if ([self appExists]) {
@@ -64,9 +60,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
 	return result;
 }
-- (NSData *)dataForKey:(NSString *)key {
-	return [self dataForKey:key response:nil];
-}
+- (NSData *)dataForKey:(NSString *)key { return [self dataForKey:key response:nil]; }
 - (NSData *)dataForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	NSData *result = nil;
     if ([self appExists]) {
@@ -82,9 +76,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
     return result;
 }
-- (NSDictionary *)dictionaryForKey:(NSString *)key {
-	return [self dictionaryForKey:key response:nil];
-}
+- (NSDictionary *)dictionaryForKey:(NSString *)key { return [self dictionaryForKey:key response:nil]; }
 - (NSDictionary *)dictionaryForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	NSDictionary *result = nil;
     if ([self appExists]) {
@@ -100,9 +92,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
     return result;
 }
-- (float)floatForKey:(NSString *)key {
-	return [self floatForKey:key response:nil];
-}
+- (float)floatForKey:(NSString *)key { return [self floatForKey:key response:nil]; }
 - (float)floatForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	float result = 0.0f;
 	if ([self appExists]) {
@@ -122,9 +112,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
 	return result;
 }
-- (int)integerForKey:(NSString *)key {
-	return [self integerForKey:key response:nil];
-}
+- (int)integerForKey:(NSString *)key { return [self integerForKey:key response:nil]; }
 - (int)integerForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	int result = 0;
 	if ([self appExists]) {
@@ -143,9 +131,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
 	return result;
 }
-- (id)objectForKey:(NSString *)key {
-	return [self objectForKey:key response:nil];
-}
+- (id)objectForKey:(NSString *)key { return [self objectForKey:key response:nil]; }
 - (id)objectForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
     id result = nil;
     if ([self appExists]) {
@@ -160,17 +146,13 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
     return result;
 }
-- (NSArray *)stringArrayForKey:(NSString *)key {
-	return [self stringArrayForKey:key response:nil];
-}
+- (NSArray *)stringArrayForKey:(NSString *)key { return [self stringArrayForKey:key response:nil]; }
 - (NSArray *)stringArrayForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	NSArray *result = [self arrayForKey:key response:response];
 	if (![result containsOnlyStrings]) { if (response) *response = CZAppPrefsKeyNotOfExpectedType; }
     return result;
 }
-- (NSString *)stringForKey:(NSString *)key {
-	return [self stringForKey:key response:nil];
-}
+- (NSString *)stringForKey:(NSString *)key { return [self stringForKey:key response:nil]; }
 - (NSString *)stringForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	NSString *result = nil;
     if ([self appExists]) {
@@ -186,9 +168,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
     return result;
 }
-- (double)doubleForKey:(NSString *)key {
-	return [self doubleForKey:key response:nil];
-}
+- (double)doubleForKey:(NSString *)key { return [self doubleForKey:key response:nil]; }
 - (double)doubleForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	double result = (double)0;
 	if ([self appExists]) {
@@ -205,9 +185,7 @@
 	else { if (response) *response = CZAppPrefsAppNotFound; }
 	return result;
 }
-- (NSURL *)URLForKey:(NSString *)key {
-	return [self URLForKey:key response:nil];
-}
+- (NSURL *)URLForKey:(NSString *)key { return [self URLForKey:key response:nil]; }
 - (NSURL *)URLForKey:(NSString *)key response:(CZAppPrefsResponse *)response {
 	NSURL *result = nil;
     if ([self appExists]) {
@@ -260,10 +238,9 @@
 	CFPreferencesSynchronize((CFStringRef)bundleID, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
 }
 #pragma mark Convenience Methods
-- (BOOL)appExists {
-	return ([[NSWorkspace sharedWorkspace] absolutePathForAppBundleWithIdentifier:self.bundleID] ? YES : NO);
-}
+- (BOOL)appExists { return ([[NSWorkspace sharedWorkspace] absolutePathForAppBundleWithIdentifier:self.bundleID] ? YES : NO); }
 #pragma mark Properties
 @synthesize global;
 @synthesize bundleID;
 @end
+#endif

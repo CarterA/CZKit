@@ -8,7 +8,9 @@
 
 /** Adds a method for initializing an NSImage object based on the contents of an NSView.￼*/
 
-#import <Foundation/Foundation.h>
+#if !TARGET_OS_IPHONE
+
+#import <AppKit/AppKit.h>
 
 @interface NSImage (CZExtensions)
 #pragma mark View Conversion
@@ -22,3 +24,4 @@ This method takes the contents of the NSView provided and makes an NSImage that 
 */
 - (NSImage *)initWithContentsOfView:(NSView *)view;
 @end
+#endif

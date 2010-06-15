@@ -13,12 +13,12 @@
 #import "NSFileManager+CZExtensions.h"
 #import "NSImage+CZExtensions.h"
 #import "NSString+CZExtensions.h"
-#import "CZAppPrefs.h"
 // Controls
 #import "CZInsetTextField.h"
 #import "CZObnoxiousToggle.h"
 // Utilities
 #import "CZAppPrefs.h"
+#import "CZColors.h"
 #import "CZGraphics.h"
 // Views
 #import "CZIconImageView.h"

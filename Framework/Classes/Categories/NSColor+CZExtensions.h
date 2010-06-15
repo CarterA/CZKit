@@ -12,7 +12,7 @@
  
  */
 
-#import <Cocoa/Cocoa.h>
+#import <AppKit/AppKit.h>
 
 @interface NSColor (CZExtensions)
 /** Obtain a CGColorRef based on the receiver.

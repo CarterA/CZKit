@@ -38,7 +38,7 @@
 - (CAGradientLayer *)knobLayer {
 	if (!knobLayer) {
 		knobLayer = [CAGradientLayer layer];
-		knobLayer.frame = CGRectMake(1.0f, 2.0f, self.frame.size.width / 2.5, self.frame.size.height - 3);
+		knobLayer.frame = CGRectMake(1.0f, 2.0f, self.frame.size.width / 2.5f, self.frame.size.height - 3);
 		//knobLayer.mask = self.knobMaskLayer;
 		knobLayer.cornerRadius = 4.0f;
 		knobLayer.shadowColor = CGColorCreateGenericGray(0.0f, 1.0f);
@@ -65,14 +65,14 @@
 		backgroundTrackLayer.shadowRadius = 1.0f;
 		backgroundTrackLayer.shadowOffset = CGSizeMake(0.0f, 1.0f);
 		backgroundTrackLayer.shadowOpacity = 50.0f;
-		backgroundTrackLayer.borderColor = CGColorCreateGenericGray(0.253, 1.000);
+		backgroundTrackLayer.borderColor = CGColorCreateGenericGray(0.253f, 1.000f);
 		backgroundTrackLayer.borderWidth = 1.0f;
 		backgroundTrackLayer.geometryFlipped = YES;
-		CGColorRef backgroundStart = CGColorCreateGenericGray(0.387, 1.000);
-		CGColorRef backgroundMiddle = CGColorCreateGenericGray(0.496, 1.000);
-		CGColorRef backgroundEnd = CGColorCreateGenericGray(0.669, 1.000);
+		CGColorRef backgroundStart = CGColorCreateGenericGray(0.387f, 1.000f);
+		CGColorRef backgroundMiddle = CGColorCreateGenericGray(0.496f, 1.000f);
+		CGColorRef backgroundEnd = CGColorCreateGenericGray(0.669f, 1.000f);
 		backgroundTrackLayer.colors = [NSArray arrayWithObjects:(id)backgroundStart, (id)backgroundMiddle, (id)backgroundEnd, nil];
-		backgroundTrackLayer.locations = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.25],[NSNumber numberWithFloat:1.0], nil];
+		backgroundTrackLayer.locations = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0f], [NSNumber numberWithFloat:0.25f],[NSNumber numberWithFloat:1.0f], nil];
 		CGColorRelease(backgroundStart);
 		CGColorRelease(backgroundMiddle);
 		CGColorRelease(backgroundEnd);

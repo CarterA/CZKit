@@ -12,6 +12,9 @@
 INSTALL_PATH					= @loader_path/../Frameworks
 SKIP_INSTALL					= NO
 
+// Linking
+OTHER_LDFLAGS					= -ObjC -all_load -lCZKitCategories -lCZKitUtilities
+
 // Packaging
 FRAMEWORK_VERSION				= A
 INFOPLIST_FILE					= Framework/Framework-Info.plist

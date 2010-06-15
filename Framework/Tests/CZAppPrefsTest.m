@@ -10,7 +10,7 @@
 
 @implementation CZAppPrefsTest
 - (void)setUp {
-	appPrefs = [CZAppPrefs prefsForBundleID:@"com.cz.CZKit-Demo"];
+	appPrefs = [CZAppPrefs prefsForBundleID:@"com.apple.finder"];
 	nonExistentAppPrefs = [CZAppPrefs prefsForBundleID:@"com.undefined.undefined"];
 }
 - (void)tearDown {

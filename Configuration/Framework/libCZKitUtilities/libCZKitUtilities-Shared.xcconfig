@@ -1,0 +1,16 @@
+//
+//  libCZKitUtilities-Shared.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 6/5/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "../../Global/Global-Shared.xcconfig"
+
+// Packaging
+PRODUCT_NAME					= CZKitUtilities
+
+// Language
+GCC_PRECOMPILE_PREFIX_HEADER	= YES
+GCC_PREFIX_HEADER				= $(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h

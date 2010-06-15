@@ -23,6 +23,7 @@ GCC_VERSION						= com.apple.compilers.llvm.clang.1_0
 PREBINDING						= NO
 DYLIB_COMPATIBILITY_VERSION		= 1
 DYLIB_CURRENT_VERSION			= 1
+ZERO_LINK						= NO
 
 // Code Generation
 GCC_ENABLE_OBJC_GC				= supported

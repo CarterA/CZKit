@@ -1,0 +1,10 @@
+//
+//  libCZKitUtilities-Debug.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 6/5/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "../../Global/Global-Debug.xcconfig"
+#include "libCZKitUtilities-Shared.xcconfig"

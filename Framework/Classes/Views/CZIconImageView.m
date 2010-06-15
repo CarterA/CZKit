@@ -197,7 +197,7 @@
     dragImage = [[[NSImage alloc] initWithSize: [[self image] size]] autorelease];
 	if (!([dragImage size].height == 0.0 && [dragImage size].width == 0.0)) {
 		[dragImage lockFocus];
-		[[self image] dissolveToPoint: NSMakePoint(0.0,0.0) fraction: .5];
+		[[self image] dissolveToPoint: NSMakePoint(0.0f,0.0f) fraction: .5f];
 		[dragImage unlockFocus];
 	}
     [self dragImage:dragImage at:dragPoint offset:NSMakeSize(0,0) event:event pasteboard:pb source:self slideBack:YES];

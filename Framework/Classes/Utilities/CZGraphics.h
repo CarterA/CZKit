@@ -6,8 +6,6 @@
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 @interface CZGraphics : NSObject {}
 @end
 

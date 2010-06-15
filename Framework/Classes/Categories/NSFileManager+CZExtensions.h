@@ -6,6 +6,7 @@
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
+#if !TARGET_OS_IPHONE
 @interface NSFileManager (CZExtensions)
 - (NSURL *)applicationSupportDirectory;
 - (NSURL *)applicationSupportDirectoryForDomain:(NSSearchPathDomainMask)domain;
@@ -18,3 +19,4 @@
 - (NSURL *)libraryDirectory;
 - (NSURL *)libraryDirectoryForDomain:(NSSearchPathDomainMask)domain;
 @end
+#endif
