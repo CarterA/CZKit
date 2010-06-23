@@ -29,3 +29,24 @@ void CZGraphicsCGContextAddRectWithRoundedCorners(CGContextRef context, CGRect r
 	CGContextAddArcToPoint(context, minx, maxy, minx, midy, blr);
 	CGContextClosePath(context);
 }
+CGPathRef CZGraphicsMakeRectangularPathWithRoundedCorners(CGRect rect, CGFloat tlr, CGFloat trr, CGFloat brr, CGFloat blr) {
+	CGFloat minx = CGRectGetMinX(rect);
+	CGFloat midx = CGRectGetMidX(rect);
+	CGFloat maxx = CGRectGetMaxX(rect);
+	CGFloat miny = CGRectGetMinY(rect);
+	CGFloat midy = CGRectGetMidY(rect);
+	CGFloat maxy = CGRectGetMaxY(rect);
+	CGMutablePathRef path = CGPathCreateMutable();
+	CGPathMoveToPoint(path, NULL, minx, midy);
+	CGPathAddArcToPoint(path, NULL, minx, miny, midx, miny, tlr);
+	CGPathAddLineToPoint(path, NULL, minx, miny);
+	CGPathAddArcToPoint(path, NULL, maxx, miny, maxx, midy, trr);
+	CGPathAddLineToPoint(path, NULL, maxx, miny);
+	CGPathAddLineToPoint(path, NULL, maxx, midy);
+	CGPathAddArcToPoint(path, NULL, maxx, maxy, midx, maxy, brr);
+	CGPathAddArcToPoint(path, NULL, minx, maxy, minx, midy, blr);
+	CGPathCloseSubpath(path);
+	CGPathRef returnPath = CGPathCreateCopy(path);
+	CGPathRelease(path);
+	return returnPath;
+}

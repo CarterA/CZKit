@@ -11,3 +11,4 @@
 
 void CZGraphicsCGContextAddRoundedRect(CGContextRef context, CGRect rect, CGFloat radius);
 void CZGraphicsCGContextAddRectWithRoundedCorners(CGContextRef context, CGRect rect, CGFloat tlr, CGFloat trr, CGFloat blr, CGFloat brl);
+CGPathRef CZGraphicsMakeRectangularPathWithRoundedCorners(CGRect rect, CGFloat tlr, CGFloat trr, CGFloat brr, CGFloat blr);
