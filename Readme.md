@@ -51,11 +51,15 @@ That's all! You can now add `#import <CZKit/CZKit.h>` in any of your files and s
 
 I'm afraid I have no good news for you if you want to use CZKit with an iOS app. First of all, a large portion of the code isn't iOS compatible (though that is dynamically removed from the iOS version). Second, the system Apple has set up for shared code is really annoying. Frameworks are not allowed because they are wrappers around dynamic libraries, which are banned on the App Store. What that means is that we have to use a static library, which does not include a way to package headers, resources, and code all together. Thus, this is way more complicated than it should have to be.
 
-1. Follow steps 1-4 in the "Adding as a Dependency" section (inside the "Adding to a Mac Application").  
+1. Follow step 1 in the "Adding as a Dependency" section (inside the "Adding to a Mac Application").  
 
-2. Before you leave the Target Inspector, switch to the "Build" tab and search for the "Other Linker Flags" property. Double click it and add two flags:  `-ObjC` and `-all_load`.  
+2. Click the disclosure triangle next to `CZKit.xcodeproj` in the organizer, as well as the triangle next to `Targets` and then your own application's target. Drag `libCZKit.a` from inside `CZKit.xcodeproj` into the "Link Binary with Libraries" group inside your application's target.  
 
-3. Confirm the previous sheet's changes and then search for the "Header Search Paths" property. Double click it. You need to add the relative path to a folder that doesn't actually exist yet, but that isn't as bad as it sounds, I promise. Get the relative path to the CZKit folder, then append "Products/$(CONFIGURATION)/Headers". This tells Xcode where to look for the CZKit headers.
+3. Select your application's target and hit Command-I. Make sure you're in the "General" tab and hit the "+" button under the "Direct Dependencies" table. From the sheet that slides in, select `CZKit` under `CZKit.xcodeproj`, then press "Add Target".  
+
+4. Before you leave the Target Inspector, switch to the "Build" tab and search for the "Other Linker Flags" property. Double click it and add two flags:  `-ObjC` and `-all_load`.  
+
+5. Confirm the previous sheet's changes and then search for the "Header Search Paths" property. Double click it. You need to add the relative path to a folder that doesn't actually exist yet, but that isn't as bad as it sounds, I promise. Get the relative path to the CZKit folder, then append "Products/$(CONFIGURATION)/Headers". This tells Xcode where to look for the CZKit headers.
 
 Done! That was painful, right? So sorry. You can now add `#import "CZKit.h"` in any of your files and start using the framework.
 
