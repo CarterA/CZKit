@@ -8,9 +8,12 @@
 
 #include "../../Global/Global-Shared.xcconfig"
 
+// Architectures
+ARCHS							= x86_64 i386 ppc ppc64 armv6 armv7
+
 // Packaging
 PRODUCT_NAME					= CZKitUtilities
 
 // Language
 GCC_PRECOMPILE_PREFIX_HEADER	= YES
-GCC_PREFIX_HEADER				= $(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h
+GCC_PREFIX_HEADER				= Framework/Prefix.pch

@@ -12,6 +12,9 @@
 INSTALL_PATH					= @loader_path/../Frameworks
 SKIP_INSTALL					= NO
 
+// Compiler Version
+//GCC_VERSION						= com.apple.compilers.llvm.clang.1_0
+
 // Linking
 OTHER_LDFLAGS					= -ObjC -all_load -lCZKitCategories -lCZKitUtilities
 
@@ -22,4 +25,4 @@ PRODUCT_NAME					= CZKit
 
 // Language
 GCC_PRECOMPILE_PREFIX_HEADER	= YES
-GCC_PREFIX_HEADER				= $(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h
+GCC_PREFIX_HEADER				= Framework/Prefix.pch

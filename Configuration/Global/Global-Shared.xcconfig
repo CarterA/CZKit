@@ -7,17 +7,15 @@
 //
 
 // Architectures
-ARCHS							= $(ARCHS_STANDARD_32_64_BIT)
-SDKROOT							= macosx10.5
+VALID_ARCHS						= i386 ppc ppc64 ppc7400 ppc970 x86_64 armv6 armv7
+ARCHS							= x86_64 i386 ppc ppc64
+//SDKROOT							= macosx10.5
 
 // Build Locations
 SYMROOT							= Products
 
 // Build Options
 RUN_CLANG_STATIC_ANALYZER		= YES
-
-// Compiler Version
-GCC_VERSION						= com.apple.compilers.llvm.clang.1_0
 
 // Linking
 PREBINDING						= NO

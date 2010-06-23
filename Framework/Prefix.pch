@@ -1,0 +1,14 @@
+//
+//  Prefix.h
+//  CZKit
+//
+//  Created by Carter Allen on 3/31/10.
+//  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#if	TARGET_OS_IPHONE
+	#import <CoreGraphics/CoreGraphics.h>
+#else
+	#import <AppKit/AppKit.h>
+#endif

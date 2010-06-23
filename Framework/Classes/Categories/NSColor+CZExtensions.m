@@ -6,6 +6,8 @@
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
+#if !TARGET_OS_IPHONE
+
 #import "NSColor+CZExtensions.h"
 
 @implementation NSColor (CZExtensions)
@@ -27,3 +29,4 @@
 	return (CGColorRef)[(id)color autorelease];
 }
 @end
+#endif

@@ -12,6 +12,8 @@
  
  */
 
+#if !TARGET_OS_IPHONE
+
 #import <AppKit/AppKit.h>
 
 @interface NSColor (CZExtensions)
@@ -23,3 +25,4 @@
  */
 - (CGColorRef)CGColor;
 @end
+#endif

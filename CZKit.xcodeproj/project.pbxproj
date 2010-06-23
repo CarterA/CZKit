@@ -249,6 +249,7 @@
 		4ACFBE1211854CCC00892C79 /* Framework-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Framework-Debug.xcconfig"; sourceTree = "<group>"; };
 		4ACFBE1911854CE700892C79 /* Framework-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Framework-Release.xcconfig"; sourceTree = "<group>"; };
 		4ACFBE2011854CFA00892C79 /* Framework-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Framework-Shared.xcconfig"; sourceTree = "<group>"; };
+		4ADB156211D26CDA0019966A /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		4AE570F71100027A00238601 /* NSString+CZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CZExtensions.h"; path = "Classes/Categories/NSString+CZExtensions.h"; sourceTree = "<group>"; };
 		4AE570F81100027A00238601 /* NSString+CZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CZExtensions.m"; path = "Classes/Categories/NSString+CZExtensions.m"; sourceTree = "<group>"; };
 		4AE5E85D11BACF5C004BE66C /* libCZKitCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZKitCategories.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -626,6 +627,7 @@
 				4AA4742710E8BD8C00353A15 /* Controls */,
 				4A219F8D110CEC4D008E6862 /* Utilities */,
 				4AA4742810E8BD9C00353A15 /* Views */,
+				4ADB156211D26CDA0019966A /* Prefix.pch */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
