@@ -6,5 +6,5 @@
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
-#include "../../Global/Global-Debug.xcconfig"
+#include "../../../Global/Global-Debug.xcconfig"
 #include "libCZKitUtilities-Shared.xcconfig"

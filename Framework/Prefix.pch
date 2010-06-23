@@ -6,9 +6,11 @@
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#if	TARGET_OS_IPHONE
-	#import <CoreGraphics/CoreGraphics.h>
-#else
-	#import <AppKit/AppKit.h>
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#if	TARGET_OS_IPHONE
+		#import <CoreGraphics/CoreGraphics.h>
+	#else
+		#import <AppKit/AppKit.h>
+	#endif
 #endif

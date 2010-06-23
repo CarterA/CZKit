@@ -16,7 +16,7 @@ SKIP_INSTALL					= NO
 //GCC_VERSION						= com.apple.compilers.llvm.clang.1_0
 
 // Linking
-OTHER_LDFLAGS					= -ObjC -all_load -lCZKitCategories -lCZKitUtilities
+OTHER_LDFLAGS					= -ObjC -all_load -lCZKit
 
 // Packaging
 FRAMEWORK_VERSION				= A

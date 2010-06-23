@@ -8,17 +8,27 @@
 
 // Categories
 #import "NSArray+CZExtensions.h"
-#import "NSColor+CZExtensions.h"
+#if !TARGET_OS_IPHONE
+	#import "NSColor+CZExtensions.h"
+#endif
 #import "NSData+CZExtensions.h"
-#import "NSFileManager+CZExtensions.h"
-#import "NSImage+CZExtensions.h"
+#if !TARGET_OS_IPHONE
+	#import "NSFileManager+CZExtensions.h"
+	#import "NSImage+CZExtensions.h"
+#endif
 #import "NSString+CZExtensions.h"
 // Controls
-#import "CZInsetTextField.h"
-#import "CZObnoxiousToggle.h"
+#if !TARGET_OS_IPHONE
+	#import "CZInsetTextField.h"
+	#import "CZObnoxiousToggle.h"
+#endif
 // Utilities
-#import "CZAppPrefs.h"
+#if !TARGET_OS_IPHONE
+	#import "CZAppPrefs.h"
+#endif
 #import "CZColors.h"
 #import "CZGraphics.h"
 // Views
-#import "CZIconImageView.h"
+#if !TARGET_OS_IPHONE
+	#import "CZIconImageView.h"
+#endif

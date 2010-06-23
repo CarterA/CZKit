@@ -1,18 +1,18 @@
 //
-//  libCZKitUtilities-Shared.xcconfig
+//  libCZKit-Shared.xcconfig
 //  CZKit
 //
 //  Created by Carter Allen on 6/5/10.
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
-#include "../../Global/Global-Shared.xcconfig"
+#include "../../../Global/Global-Shared.xcconfig"
 
 // Architectures
 ARCHS							= x86_64 i386 ppc ppc64 armv6 armv7
 
 // Packaging
-PRODUCT_NAME					= CZKitUtilities
+PRODUCT_NAME					= CZKit
 
 // Language
 GCC_PRECOMPILE_PREFIX_HEADER	= YES
