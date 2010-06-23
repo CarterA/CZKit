@@ -45,6 +45,12 @@
 		4A1F10A41105F8D1003D2171 /* Hashable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A1F10A31105F8D1003D2171 /* Hashable.txt */; };
 		4A2949F310D0AB6700043D99 /* CZKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2949E610D0AAF900043D99 /* CZKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A294A1D10D0B18000043D99 /* CZObnoxiousToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A294A1C10D0B17B00043D99 /* CZObnoxiousToggle.m */; };
+		4A32E8AE11D2AB5A001E29BB /* CZGraphics.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A4277C11164352500E453DD /* CZGraphics.h */; };
+		4A32E8AF11D2AB6E001E29BB /* NSArray+CZExtensions.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A219E18110BEAAC008E6862 /* NSArray+CZExtensions.h */; };
+		4A32E8B011D2AB6E001E29BB /* NSData+CZExtensions.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A1F0FE011057D21003D2171 /* NSData+CZExtensions.h */; };
+		4A32E8B111D2AB6E001E29BB /* NSString+CZExtensions.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4AE570F71100027A00238601 /* NSString+CZExtensions.h */; };
+		4A32E8B211D2AB6E001E29BB /* CZColors.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4AA17A8D11C7DE1900878549 /* CZColors.h */; };
+		4A32E8B311D2AB6E001E29BB /* CZKit.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A2949E610D0AAF900043D99 /* CZKit.h */; };
 		4A4277C31164352500E453DD /* CZGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4277C11164352500E453DD /* CZGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A568EEB118E09F1004BC0FA /* Plugin-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A568EEA118E09F1004BC0FA /* Plugin-Shared.xcconfig */; };
 		4A5DC93910E09BAE00CD567E /* CZAppPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5DC93710E09BAE00CD567E /* CZAppPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,6 +175,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4A32E8AD11D2AB3E001E29BB /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers;
+			dstSubfolderSpec = 16;
+			files = (
+				4A32E8AF11D2AB6E001E29BB /* NSArray+CZExtensions.h in Copy Headers */,
+				4A32E8B011D2AB6E001E29BB /* NSData+CZExtensions.h in Copy Headers */,
+				4A32E8B111D2AB6E001E29BB /* NSString+CZExtensions.h in Copy Headers */,
+				4A32E8B211D2AB6E001E29BB /* CZColors.h in Copy Headers */,
+				4A32E8B311D2AB6E001E29BB /* CZKit.h in Copy Headers */,
+				4A32E8AE11D2AB5A001E29BB /* CZGraphics.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A8AD3FF1138C3AD0096ABF1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,13 +701,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4ADB15C911D277700019966A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		53DF68F8067E5B5A0090B5B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -734,9 +749,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ADB15DC11D277ED0019966A /* Build configuration list for PBXNativeTarget "CZKit" */;
 			buildPhases = (
-				4ADB15C911D277700019966A /* Headers */,
 				4ADB15CA11D277700019966A /* Sources */,
 				4ADB15CB11D277700019966A /* Frameworks */,
+				4A32E8AD11D2AB3E001E29BB /* Copy Headers */,
 			);
 			buildRules = (
 			);
@@ -781,9 +796,9 @@
 			productReference = 4AF1614911C6CE1300529A90 /* libCZKitUtilities.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		53DF68FC067E5B5A0090B5B0 /* Mac Framework */ = {
+		53DF68FC067E5B5A0090B5B0 /* Framework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "Mac Framework" */;
+			buildConfigurationList = C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "Framework" */;
 			buildPhases = (
 				53DF68F8067E5B5A0090B5B0 /* Headers */,
 				53DF68F9067E5B5A0090B5B0 /* Resources */,
@@ -796,7 +811,7 @@
 			dependencies = (
 				4ADB15D611D277B80019966A /* PBXTargetDependency */,
 			);
-			name = "Mac Framework";
+			name = Framework;
 			productName = CZKitFramework;
 			productReference = 53DF68FD067E5B5A0090B5B0 /* CZKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -836,7 +851,7 @@
 				4A0BCD011120F221004AD1C2 /* Build All */,
 				4AE5E85C11BACF5C004BE66C /* CZKitCategories */,
 				4AF1613C11C6CE1300529A90 /* CZKitUtilities */,
-				53DF68FC067E5B5A0090B5B0 /* Mac Framework */,
+				53DF68FC067E5B5A0090B5B0 /* Framework */,
 				8D1AC9600486D14A00FE50C9 /* IBPlugin */,
 				4AA4748A10E8C09100353A15 /* Unit Tests */,
 				4A8AD4001138C3AD0096ABF1 /* Templates */,
@@ -996,7 +1011,7 @@
 		};
 		4A0BCD091120F23C004AD1C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53DF68FC067E5B5A0090B5B0 /* Mac Framework */;
+			target = 53DF68FC067E5B5A0090B5B0 /* Framework */;
 			targetProxy = 4A0BCD081120F23C004AD1C2 /* PBXContainerItemProxy */;
 		};
 		4A0BCD0B1120F23C004AD1C2 /* PBXTargetDependency */ = {
@@ -1031,7 +1046,7 @@
 		};
 		546DEAF0067F62F70098DCC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53DF68FC067E5B5A0090B5B0 /* Mac Framework */;
+			target = 53DF68FC067E5B5A0090B5B0 /* Framework */;
 			targetProxy = 546DEAEF067F62F70098DCC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1220,7 +1235,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "Mac Framework" */ = {
+		C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C056398008A954F8003078D8 /* Debug */,

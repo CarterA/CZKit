@@ -1,14 +1,76 @@
-##Coding Style  
+# CZKit #
+
+## Usage ##
+
+### Installing CZKit in Your Xcode Project ###
+
+#### Retrieval ####
+
+First things first, you need to get a copy of CZKit. Currently I would recommend cloning the repository from GitHub (or your own fork, if you'd like):
+
+	git clone git://github.com/CarterA/CZKit.git
+
+You could also use submodules, if your project is currently tracked by git:
+
+	mkdir Modules
+	git submodule add git://github.com/CarterA/CZKit.git Modules/CZKit
+	git submodule init
+	git submodule update
+		
+You can run `git submodule update` at any time again to pull any revisions I make to your computer.
+
+### Adding to a Mac Application ###
+
+As a lucky Mac developer, you actually have a choice as to how you integrate CZKit (as opposed to iOS developers, see the next section). You can choose to either add the CZKit project itself to your own project and then set it as a dependency of your app (easiest for updating the framework), or to copy the compiled framework directly into your project (easiest to set up now).
+
+#### Adding as a Dependency ####
+
+1. Start by dragging `CZKit.xcodeproj` (from your copy of this repository) into your own project's Xcode organizer. It doesn't matter what group you put it in, do whatever makes the most sense to you. In the sheet that opens up, make sure to *uncheck* "Copy items into destination group's folder (if needed)". The rest of the settings can remain default.  
+
+2. Click the disclosure triangle next to `CZKit.xcodeproj` in the organizer, as well as the triangle next to `Targets` and then your own application's target. Drag `CZKit.framework` from inside `CZKit.xcodeproj` into the "Link Binary with Libraries" group inside your application's target.  
+
+3. Right click your application's target and select Add > New Build Phase > New Copy Files Build Phase. In the window that comes up, set the "Destination" to "Frameworks" and then close the window. Right click the build phase you just added and rename it to "Copy Frameworks". Drag `CZKit.framework` from `CZKit.xcodeproj` into the new "Copy Frameworks" build phase.  
+
+4. Select your application's target and hit Command-I. Make sure you're in the "General" tab and hit the "+" button under the "Direct Dependencies" table. From the sheet that slides in, select `Framework` under `CZKit.xcodeproj`, then press "Add Target".  
+
+You're done! You can now add `#import <CZKit/CZKit.h>` in any of your files and start using the framework.
+
+#### Adding the Compiled Framework ####
+
+1. Open `CZKit.xcodeproj` (from your copy of this repository) and build the "Framework" target in Release mode.  
+
+2. Close the Xcode project and navigate in Finder to the `Products/Release` directory inside of the CZKit folder. Select `CZKit.framework` and drag it into your application's Xcode project.   Drop it anywhere you'd like. In the sheet that opens up, make sure to *uncheck* "Copy items into destination group's folder (if needed)". The rest of the settings can remain default.  
+
+3. Click the disclosure triangle next to `Targets` and then your own application's target. Drag `CZKit.framework` into the "Link Binary with Libraries" group inside your application's target.
+
+4. Right click your application's target and select Add > New Build Phase > New Copy Files Build Phase. In the window that comes up, set the "Destination" to "Frameworks" and then close the window. Right click the build phase you just added and rename it to "Copy Frameworks". Drag `CZKit.framework` into the new "Copy Frameworks" build phase.  
+
+That's all! You can now add `#import <CZKit/CZKit.h>` in any of your files and start using the framework.
+
+### Adding to an iOS Application ###
+
+I'm afraid I have no good news for you if you want to use CZKit with an iOS app. First of all, a large portion of the code isn't iOS compatible (though that is dynamically removed from the iOS version). Second, the system Apple has set up for shared code is really annoying. Frameworks are not allowed because they are wrappers around dynamic libraries, which are banned on the App Store. What that means is that we have to use a static library, which does not include a way to package headers, resources, and code all together. Thus, this is way more complicated than it should have to be.
+
+1. Follow steps 1-4 in the "Adding as a Dependency" section (inside the "Adding to a Mac Application").  
+
+2. Before you leave the Target Inspector, switch to the "Build" tab and search for the "Other Linker Flags" property. Double click it and add two flags:  `-ObjC` and `-all_load`.  
+
+3. Confirm the previous sheet's changes and then search for the "Header Search Paths" property. Double click it. You need to add the relative path to a folder that doesn't actually exist yet, but that isn't as bad as it sounds, I promise. Get the relative path to the CZKit folder, then append "Products/$(CONFIGURATION)/Headers". This tells Xcode where to look for the CZKit headers.
+
+Done! That was painful, right? So sorry. You can now add `#import "CZKit.h"` in any of your files and start using the framework.
+
+## Coding Style ##
+
 One of the nice things about CZKit is the uniformity of all of its source code. I strongly recommend the adoption of this style across other projects as well, though I have a feeling that it won't be, simply due to developers being stuck in their ways. **Here are the rules:**  
 
-###General Rules  
+### General Rules ##
 
 * There is **never** more then one empty line between any given pair of lines.  
 * If it can go on one line, then it **does**.
 * Any characters which are used to **close** a piece of code that is **multiple lines long**, should be **on their own line.** Examples of this include closing braces '}', closing parenthesis ')', and the end of a multi-line comment '*/'.
 * Whenever pointers '\*' are used, they should be 'attached' to the variable *name*, not the variable type. For example, `NSString *theString;` is fine, but both `NSString* theString;` and `NSString * theString;` are not.  
 
-###Comments  
+### Comments ###
 
 * Comments that describe code should have a space after the '//' or '/*', but lines of code that are commented out for debugging purposes should not.  
 	Example:  
@@ -25,7 +87,7 @@ One of the nice things about CZKit is the uniformity of all of its source code. 
 		*/  
 		- (NSString *)runMethod:(TheParam *)paramName;  
 		
-###Methods  
+### Methods ###
 
 * Individual methods are never separated by a blank line. The only separator allowed for methods is a #pragma mark, and only when that is helpful.  
 * There is no space before the initial hyphen '-' or plus sign '+' at the beginning of the method name, but there is a space after it.  
