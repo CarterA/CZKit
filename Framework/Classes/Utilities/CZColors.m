@@ -40,18 +40,18 @@ CZHSBColor CZHSBColorCreateFromRGBColor(CZRGBColor rgbColor) {
 	brightness = fmaxf(brightness, rgbColor.blueComponent);	
 #endif
 	
-	if (brightness == x) return CZColorsHSBColorMake(0.0f, 0.0f, brightness);
+	if (brightness == x) return CZHSBColorCreate(0.0f, 0.0f, brightness);
 	
 	f = (rgbColor.redComponent == x) ? rgbColor.greenComponent - rgbColor.blueComponent : ((rgbColor.greenComponent == x) ? rgbColor.blueComponent - rgbColor.redComponent : rgbColor.redComponent - rgbColor.greenComponent);
 	i = (rgbColor.redComponent == x) ? 3 : ((rgbColor.greenComponent == x) ? 5 : 1);
-	return CZColorsHSBColorMake(((i - f/(brightness - x))/6), (brightness - x)/brightness, brightness);
+	return CZHSBColorCreate(((i - f/(brightness - x))/6), (brightness - x)/brightness, brightness);
 }
 CZRGBColor CZRGBColorCreateFromHSBColor(CZHSBColor hsbColor) {
 	CGFloat h = hsbColor.hueComponent * 6;
 	CGFloat m, n, f;
 	NSInteger i;
 	if (h == 0.0f) h = 0.01f;
-	if (h == 0) return CZColorsRGBColorMake(hsbColor.brightnessComponent, hsbColor.brightnessComponent, hsbColor.brightnessComponent);
+	if (h == 0) return CZRGBColorCreate(hsbColor.brightnessComponent, hsbColor.brightnessComponent, hsbColor.brightnessComponent);
 #if defined(__LP64__) && __LP64__
 	i = floor(h);
 #else
@@ -63,12 +63,12 @@ CZRGBColor CZRGBColorCreateFromHSBColor(CZHSBColor hsbColor) {
 	n = hsbColor.brightnessComponent * (1.0f - hsbColor.saturationComponent * f);
 	switch (i) {
 		case 6:
-		case 0: return CZColorsRGBColorMake(hsbColor.brightnessComponent, n, m);
-		case 1: return CZColorsRGBColorMake(n, hsbColor.brightnessComponent, m);
-		case 2: return CZColorsRGBColorMake(m, hsbColor.brightnessComponent, n);
-		case 3: return CZColorsRGBColorMake(m, n, hsbColor.brightnessComponent);
-		case 4: return CZColorsRGBColorMake(n, m, hsbColor.brightnessComponent);
-		case 5: return CZColorsRGBColorMake(hsbColor.brightnessComponent, m, n);
+		case 0: return CZRGBColorCreate(hsbColor.brightnessComponent, n, m);
+		case 1: return CZRGBColorCreate(n, hsbColor.brightnessComponent, m);
+		case 2: return CZRGBColorCreate(m, hsbColor.brightnessComponent, n);
+		case 3: return CZRGBColorCreate(m, n, hsbColor.brightnessComponent);
+		case 4: return CZRGBColorCreate(n, m, hsbColor.brightnessComponent);
+		case 5: return CZRGBColorCreate(hsbColor.brightnessComponent, m, n);
 	}
-	return CZColorsRGBColorMake(0.0f, 0.0f, 0.0f);
+	return CZRGBColorCreate(0.0f, 0.0f, 0.0f);
 }
