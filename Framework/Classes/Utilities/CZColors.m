@@ -27,20 +27,17 @@ CZHSBColor CZColorsHSBColorFromRGBColor(CZRGBColor rgbColor) {
 	NSInteger i;
 	
 #if defined(__LP64__) && __LP64__
-	
 	x = fmin(rgbColor.redComponent, rgbColor.greenComponent);
 	x = fmin(x, rgbColor.blueComponent);
 	
 	brightness = fmax(rgbColor.redComponent, rgbColor.greenComponent);
-	brightness = fmax(brightness, rgbColor.blueComponent);
-	
+	brightness = fmax(brightness, rgbColor.blueComponent);	
 #else
 	x = fminf(rgbColor.redComponent, rgbColor.greenComponent);
 	x = fminf(x, rgbColor.blueComponent);
 	
 	brightness = fmaxf(rgbColor.redComponent, rgbColor.greenComponent);
-	brightness = fmaxf(brightness, rgbColor.blueComponent);
-	
+	brightness = fmaxf(brightness, rgbColor.blueComponent);	
 #endif
 	
 	if (brightness == x) return CZColorsHSBColorMake(0.0f, 0.0f, brightness);

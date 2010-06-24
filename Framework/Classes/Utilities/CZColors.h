@@ -18,7 +18,7 @@ typedef struct {
 	CGFloat blueComponent;
 } CZRGBColor;
 
-CZHSBColor CZColorsHSBColorMake(CGFloat hueComponent, CGFloat saturationComponent, CGFloat brightnessComponent);
-CZRGBColor CZColorsRGBColorMake(CGFloat redComponent, CGFloat greenComponent, CGFloat blueComponent);
-CZHSBColor CZColorsHSBColorFromRGBColor(CZRGBColor rgbColor);
-CZRGBColor CZColorsRGBColorFromHSBColor(CZHSBColor hsbColor);
+CZHSBColor CZHSBColorCreate(CGFloat hueComponent, CGFloat saturationComponent, CGFloat brightnessComponent);
+CZRGBColor CZRGBColorCreate(CGFloat redComponent, CGFloat greenComponent, CGFloat blueComponent);
+CZHSBColor CZHSBColorCreateFromRGBColor(CZRGBColor rgbColor);
+CZRGBColor CZRGBColorCreateFromHSBColor(CZHSBColor hsbColor);
