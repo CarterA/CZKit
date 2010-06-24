@@ -8,21 +8,21 @@
 
 #import "CZColors.h"
 
-CZHSBColor CZColorsHSBColorMake(CGFloat hueComponent, CGFloat saturationComponent, CGFloat brightnessComponent) {
+CZHSBColor CZHSBColorCreate(CGFloat hueComponent, CGFloat saturationComponent, CGFloat brightnessComponent) {
 	CZHSBColor hsbColor;
 	hsbColor.hueComponent = hueComponent;
 	hsbColor.saturationComponent = saturationComponent;
 	hsbColor.brightnessComponent = brightnessComponent;
 	return hsbColor;
 }
-CZRGBColor CZColorsRGBColorMake(CGFloat redComponent, CGFloat greenComponent, CGFloat blueComponent) {
+CZRGBColor CZRGBColorCreate(CGFloat redComponent, CGFloat greenComponent, CGFloat blueComponent) {
 	CZRGBColor rgbColor;
 	rgbColor.redComponent = redComponent;
 	rgbColor.greenComponent = greenComponent;
 	rgbColor.blueComponent = blueComponent;
 	return rgbColor;
 }
-CZHSBColor CZColorsHSBColorFromRGBColor(CZRGBColor rgbColor) {
+CZHSBColor CZHSBColorCreateFromRGBColor(CZRGBColor rgbColor) {
 	CGFloat brightness, x, f;
 	NSInteger i;
 	
@@ -46,7 +46,7 @@ CZHSBColor CZColorsHSBColorFromRGBColor(CZRGBColor rgbColor) {
 	i = (rgbColor.redComponent == x) ? 3 : ((rgbColor.greenComponent == x) ? 5 : 1);
 	return CZColorsHSBColorMake(((i - f/(brightness - x))/6), (brightness - x)/brightness, brightness);
 }
-CZRGBColor CZColorsRGBColorFromHSBColor(CZHSBColor hsbColor) {
+CZRGBColor CZRGBColorCreateFromHSBColor(CZHSBColor hsbColor) {
 	CGFloat h = hsbColor.hueComponent * 6;
 	CGFloat m, n, f;
 	NSInteger i;
