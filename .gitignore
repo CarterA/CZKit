@@ -1,22 +1,17 @@
-# xcode noise
+# Xcode files
 Products/*
 build/*
 *.pbxuser
 *.mode1v3
 *.mode2v3
 *.perspectivev3
+xcuserdata
 
-# old skool
-.svn
-
-# osx noise
+# OS X files
 .DS_Store
 profile
 
-#temp doc files
+# Temporary doc files
 Documentation/xml*
 Documentation/cxml*
 Documentation/cxhtml*
-
-#temp template files
-Templates/build

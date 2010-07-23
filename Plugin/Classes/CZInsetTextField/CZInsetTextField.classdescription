@@ -1,6 +1,0 @@
-{
-	Actions = {};
-	Outlets = {};
-	ClassName = CZInsetTextField;
-	SuperClass = NSTextField;
-}

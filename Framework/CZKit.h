@@ -3,24 +3,23 @@
 //  CZKit
 //
 //  Created by Carter Allen on 12/9/09.
-//  Copyright 2009 Opt-6 Products, LLC. All rights reserved.
+//  Copyright 2009 Carter Allen. All rights reserved.
 //
 
 // Categories
-#import "NSArray+CZExtensions.h"
+#import "NSArray+CZCategories.h"
 #if !TARGET_OS_IPHONE
-	#import "NSColor+CZExtensions.h"
+	#import "NSColor+CZCategories.h"
 #endif
-#import "NSData+CZExtensions.h"
+#import "NSData+CZCategories.h"
 #if !TARGET_OS_IPHONE
-	#import "NSFileManager+CZExtensions.h"
-	#import "NSImage+CZExtensions.h"
+	#import "NSFileManager+CZCategories.h"
+	#import "NSImage+CZCategories.h"
 #endif
-#import "NSString+CZExtensions.h"
+#import "NSString+CZCategories.h"
 // Controls
 #if !TARGET_OS_IPHONE
 	#import "CZInsetTextField.h"
-	#import "CZObnoxiousToggle.h"
 #endif
 // Utilities
 #if !TARGET_OS_IPHONE
