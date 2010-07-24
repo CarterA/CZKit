@@ -8,15 +8,12 @@
 
 // Categories
 #import "NSArray+CZCategories.h"
+#import "NSData+CZCategories.h"
+#import "NSString+CZCategories.h"
 #if !TARGET_OS_IPHONE
 	#import "NSColor+CZCategories.h"
-#endif
-#import "NSData+CZCategories.h"
-#if !TARGET_OS_IPHONE
-	#import "NSFileManager+CZCategories.h"
 	#import "NSImage+CZCategories.h"
 #endif
-#import "NSString+CZCategories.h"
 // Controls
 #if !TARGET_OS_IPHONE
 	#import "CZInsetTextField.h"
