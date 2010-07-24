@@ -11,8 +11,7 @@
 @implementation CZGraphics
 @end
 
-void cz_CGContextAddRoundedRect(CGContextRef context, CGRect rect, CGFloat radius) { cz_CGContextAddRectWithRoundedCorners(context, rect, radius, radius, radius, radius); }
-void cz_CGContextAddRectWithRoundedCorners(CGContextRef context, CGRect rect, CGFloat tlr, CGFloat trr, CGFloat brr, CGFloat blr) {
+void cz_CGContextAddRectWithRoundedCorners(CGContextRef context, CGRect rect, CGFloat tlr, CGFloat trr, CGFloat blr, CGFloat brr) {
 	CGFloat minx = CGRectGetMinX(rect);
 	CGFloat midx = CGRectGetMidX(rect);
 	CGFloat maxx = CGRectGetMaxX(rect);
@@ -29,7 +28,7 @@ void cz_CGContextAddRectWithRoundedCorners(CGContextRef context, CGRect rect, CG
 	CGContextAddArcToPoint(context, minx, maxy, minx, midy, blr);
 	CGContextClosePath(context);
 }
-CGPathRef cz_CGPathCreateRectangularPathWithRoundedCorners(CGRect rect, CGFloat tlr, CGFloat trr, CGFloat brr, CGFloat blr) {
+CGPathRef cz_CGPathCreateRectangularPathWithRoundedCorners(CGRect rect, CGFloat tlr, CGFloat trr, CGFloat blr, CGFloat brr) {
 	CGFloat minx = CGRectGetMinX(rect);
 	CGFloat midx = CGRectGetMidX(rect);
 	CGFloat maxx = CGRectGetMaxX(rect);
@@ -51,7 +50,6 @@ CGPathRef cz_CGPathCreateRectangularPathWithRoundedCorners(CGRect rect, CGFloat 
 	return returnPath;
 }
 #ifndef CZ_NAMESPACE_PARANOIA
-void CGContextAddRoundedRect(CGContextRef context, CGRect rect, CGFloat radius) { return cz_CGContextAddRoundedRect(context, rect, radius); }
-void CGContextAddRectWithRoundedCorners(CGContextRef context, CGRect rect, CGFloat tlr, CGFloat trr, CGFloat brr, CGFloat blr) { return cz_CGContextAddRectWithRoundedCorners(context, rect, tlr, trr, brr, blr); }
-CGPathRef CGPathCreateRectangularPathWithRoundedCorners(CGRect rect, CGFloat tlr, CGFloat trr, CGFloat brr, CGFloat blr) { return cz_CGPathCreateRectangularPathWithRoundedCorners(rect, tlr, trr, brr, blr); }
+void CGContextAddRectWithRoundedCorners(CGContextRef context, CGRect rect, CGFloat tlr, CGFloat trr, CGFloat blr, CGFloat brr) { return cz_CGContextAddRectWithRoundedCorners(context, rect, tlr, trr, brr, blr); }
+CGPathRef CGPathCreateRectangularPathWithRoundedCorners(CGRect rect, CGFloat tlr, CGFloat trr, CGFloat blr, CGFloat brr) { return cz_CGPathCreateRectangularPathWithRoundedCorners(rect, tlr, trr, brr, blr); }
 #endif
