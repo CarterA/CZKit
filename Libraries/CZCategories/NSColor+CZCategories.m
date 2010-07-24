@@ -11,7 +11,7 @@
 #import "NSColor+CZCategories.h"
 
 @implementation NSColor (CZCategories)
-- (CGColorRef)CGColor {
+- (CGColorRef)cz_CGColor {
 	CGColorRef color;
 	@try {
 		NSInteger componentCount = [self numberOfComponents];    
@@ -28,5 +28,8 @@
 	@catch (NSException *e) { return CGColorGetConstantColor(kCGColorClear); }
 	return (CGColorRef)[(id)color autorelease];
 }
+#ifndef CZ_NAMESPACE_PARANOIA
+- (CGColorRef)CGColor { return [self cz_CGColor]; }
+#endif
 @end
 #endif

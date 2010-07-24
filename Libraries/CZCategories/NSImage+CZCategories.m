@@ -11,7 +11,7 @@
 #if !TARGET_OS_IPHONE
 @implementation NSImage (CZCategories)
 #pragma mark View Conversion
-- (NSImage *)initWithContentsOfView:(NSView *)view {
+- (NSImage *)cz_initWithContentsOfView:(NSView *)view {
 	if (self == [super init]) {
 		NSPDFImageRep *imageRep = [NSPDFImageRep imageRepWithData:[view dataWithPDFInsideRect:[view bounds]]];
 		self = [[NSImage alloc] initWithSize:[imageRep size]];
@@ -19,5 +19,8 @@
 	}
 	return self;
 }
+#ifndef CZ_NAMESPACE_PARANOIA
+- (NSImage *)initWithContentsOfView:(NSView *)view { return [self cz_initWithContentsOfView:view]; }
+#endif
 @end
 #endif

@@ -14,3 +14,5 @@
         #import <AppKit/AppKit.h>
     #endif
 #endif
+
+#define CZ_NAMESPACE_PARANOIA

@@ -9,9 +9,6 @@
 /** Adds a method for initializing an NSImage object based on the contents of an NSView.￼*/
 
 #if !TARGET_OS_IPHONE
-
-#import <AppKit/AppKit.h>
-
 @interface NSImage (CZCategories)
 #pragma mark View Conversion
 /** Initializes an NSImage object based on the contents of the provided NSView.￼
@@ -22,6 +19,9 @@ This method takes the contents of the NSView provided and makes an NSImage that 
 @param view The NSView instance to be mirrored by the resulting NSImage.
 @result An initialized NSImage object that mirrors the provided NSView.
 */
+- (NSImage *)cz_initWithContentsOfView:(NSView *)view;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (NSImage *)initWithContentsOfView:(NSView *)view;
+#endif
 @end
 #endif

@@ -13,8 +13,6 @@ The two hashing methods utilize the CommandCrypto library, which is already load
 
 */
 
-#import <Foundation/Foundation.h>
-
 @interface NSData (CZCategories)
 #pragma mark Hash Support
 /** Calculates and returns an MD5 hash ￼for the NSData object.
@@ -25,7 +23,10 @@ This method uses the CommonCrypto MD5() function to generate a hash based on the
 
 @return An NSString containing a hash representing the NSData object's bytes. 
 */
+- (NSString *)cz_MD5Hash;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (NSString *)MD5Hash;
+#endif
 /** Calculates and returns an SHA1 hash ￼for the NSData object.
  
  This method uses the CommonCrypto SHA1() function to generate a hash based on the bytes of the NSData
@@ -34,5 +35,8 @@ This method uses the CommonCrypto MD5() function to generate a hash based on the
  
  @return An NSString containing a hash representing the NSData object's bytes. 
  */
+- (NSString *)cz_SHA1Hash;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (NSString *)SHA1Hash;
+#endif
 @end

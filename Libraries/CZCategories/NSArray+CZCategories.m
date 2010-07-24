@@ -9,8 +9,11 @@
 #import "NSArray+CZCategories.h"
 
 @implementation NSArray (CZCategories)
-- (BOOL)containsOnlyStrings {
+- (BOOL)cz_containsOnlyStrings {
 	for (id i in self) { if ([i class] != [NSString class]) return NO; }
 	return YES;
 }
+#ifndef CZ_NAMESPACE_PARANOIA
+- (BOOL)containsOnlyStrings { return [self cz_containsOnlyStrings]; }
+#endif
 @end

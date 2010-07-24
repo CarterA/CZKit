@@ -13,16 +13,16 @@
  */
 
 #if !TARGET_OS_IPHONE
-
-#import <AppKit/AppKit.h>
-
 @interface NSColor (CZCategories)
 /** Obtain a CGColorRef based on the receiver.
  
- This method calculates and returns a CGColorRef with the same colorspace and components as the receiver. It also contains exception handling to that returns a clear color if the receiver is a pattern, as CGColorRefs cannot contain patterns.
+ This method calculates and returns a CGColorRef with the same colorspace and components as the receiver. It also contains exception handling that returns a clear color if the receiver is a pattern, as CGColorRefs cannot contain patterns.
  
  @return A CGColorRef with the same colorspace and components as the receiver.
  */
+- (CGColorRef)cz_CGColor;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (CGColorRef)CGColor;
+#endif
 @end
 #endif

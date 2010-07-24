@@ -10,20 +10,32 @@
 
 @implementation NSString (CZCategories)
 #pragma mark Emptiness Checking
-- (BOOL)isEmpty {
-	return [self isEmptyIgnoringWhitespace:YES];
+- (BOOL)cz_isEmpty {
+	return [self cz_isEmptyIgnoringWhitespace:YES];
 }
-- (BOOL)isEmptyIgnoringWhitespace:(BOOL)ignoresWhitespace {
-	NSString *stringToCheck = (ignoresWhitespace) ? [self stringByTrimmingWhitespace] : self;
+#ifndef CZ_NAMESPACE_PARANOIA
+- (BOOL)isEmpty { return [self cz_isEmpty]; }
+#endif
+- (BOOL)cz_isEmptyIgnoringWhitespace:(BOOL)ignoresWhitespace {
+	NSString *stringToCheck = (ignoresWhitespace) ? [self cz_stringByTrimmingWhitespace] : self;
 	return [stringToCheck isEqualToString:@""];
 }
+#ifndef CZ_NAMESPACE_PARANOIA
+- (BOOL)isEmptyIgnoringWhitespace:(BOOL)ignoresWhitespace { return [self cz_isEmptyIgnoringWhitespace:ignoresWhitespace]; }
+#endif
 #pragma mark Whitespace Removal
-- (NSString *)stringByTrimmingWhitespace {
+- (NSString *)cz_stringByTrimmingWhitespace {
 	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
+#ifndef CZ_NAMESPACE_PARANOIA
+- (NSString *)stringByTrimmingWhitespace { return [self cz_stringByTrimmingWhitespace]; }
+#endif
 #pragma mark RegEx Support
-- (BOOL)matchesRegularExpression:(NSString *)expression {
+- (BOOL)cz_matchesRegularExpression:(NSString *)expression {
 	NSPredicate *regexSearch = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", expression];
 	return [regexSearch evaluateWithObject:self];
 }
+#ifndef CZ_NAMESPACE_PARANOIA
+- (BOOL)matchesRegularExpression:(NSString *)expression { return [self cz_matchesRegularExpression:expression]; }
+#endif
 @end

@@ -12,8 +12,6 @@ Currently this category only adds one method.
 
 */
 
-#import <Foundation/Foundation.h>
-
 @interface NSArray (CZCategories)
 /** Check if the array contains only NSString objects.
 
@@ -22,5 +20,8 @@ This method iterates through members of the array until it finds an object that 
 
 @return YES if the array contains only strings, NO if contains has any non-string objects.
 */
+- (BOOL)cz_containsOnlyStrings;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (BOOL)containsOnlyStrings;
+#endif
 @end

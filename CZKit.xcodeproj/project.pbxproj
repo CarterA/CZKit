@@ -45,6 +45,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4A4FC50D11FB68A400F61BC2 /* CZFileObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FC50C11FB68A400F61BC2 /* CZFileObserver.m */; };
+		4A4FC50E11FB68A400F61BC2 /* CZFileObserver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A4FC50B11FB68A400F61BC2 /* CZFileObserver.h */; };
+		4A4FC51011FB68A400F61BC2 /* CZFileObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4FC50B11FB68A400F61BC2 /* CZFileObserver.h */; };
 		4AB4476811F91AB70063FC70 /* libCZCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABCBFCD11F9130800851859 /* libCZCategories.a */; };
 		4AB4477B11F91FD30063FC70 /* NSArray+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4476F11F91FD30063FC70 /* NSArray+CZCategories.m */; };
 		4AB4477D11F91FD30063FC70 /* NSColor+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4477111F91FD30063FC70 /* NSColor+CZCategories.m */; };
@@ -72,11 +75,9 @@
 		4AE50DD711F927A900E27282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE50D0911F924FA00E27282 /* Foundation.framework */; };
 		4AE50DDD11F927DA00E27282 /* CZAppPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE50DCB11F9279A00E27282 /* CZAppPrefs.m */; };
 		4AE50DDE11F927DA00E27282 /* CZColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE50DCD11F9279A00E27282 /* CZColors.m */; };
-		4AE50DDF11F927DA00E27282 /* CZFileObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE50DCF11F9279A00E27282 /* CZFileObserver.m */; };
 		4AE50DE011F927DA00E27282 /* CZGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE50DD111F9279A00E27282 /* CZGraphics.m */; };
 		4AE50DE111F927E500E27282 /* CZAppPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE50DCA11F9279A00E27282 /* CZAppPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE50DE211F927E500E27282 /* CZColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE50DCC11F9279A00E27282 /* CZColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AE50DE311F927E500E27282 /* CZFileObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE50DCE11F9279A00E27282 /* CZFileObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE50DE411F927E500E27282 /* CZGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE50DD011F9279A00E27282 /* CZGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE50DE711F927F100E27282 /* libCZUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE50DDB11F927A900E27282 /* libCZUtilities.a */; };
 		4AE50E0411F928DD00E27282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE50C4F11F924D900E27282 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -94,7 +95,6 @@
 		4AE50E9911F93C0E00E27282 /* CZInsetTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE50D9811F925BB00E27282 /* CZInsetTextField.h */; };
 		4AE50E9A11F93C0E00E27282 /* CZAppPrefs.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE50DCA11F9279A00E27282 /* CZAppPrefs.h */; };
 		4AE50E9B11F93C0E00E27282 /* CZColors.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE50DCC11F9279A00E27282 /* CZColors.h */; };
-		4AE50E9C11F93C0E00E27282 /* CZFileObserver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE50DCE11F9279A00E27282 /* CZFileObserver.h */; };
 		4AE50E9D11F93C0E00E27282 /* CZGraphics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE50DD011F9279A00E27282 /* CZGraphics.h */; };
 		4AE50E9E11F93C0E00E27282 /* CZIconImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE50DFB11F928D500E27282 /* CZIconImageView.h */; };
 		4AE50EC611F9424A00E27282 /* CZAppPrefsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE50EBF11F9424A00E27282 /* CZAppPrefsTest.m */; };
@@ -221,9 +221,9 @@
 				4AE50E9911F93C0E00E27282 /* CZInsetTextField.h in CopyFiles */,
 				4AE50E9A11F93C0E00E27282 /* CZAppPrefs.h in CopyFiles */,
 				4AE50E9B11F93C0E00E27282 /* CZColors.h in CopyFiles */,
-				4AE50E9C11F93C0E00E27282 /* CZFileObserver.h in CopyFiles */,
 				4AE50E9D11F93C0E00E27282 /* CZGraphics.h in CopyFiles */,
 				4AE50E9E11F93C0E00E27282 /* CZIconImageView.h in CopyFiles */,
+				4A4FC50E11FB68A400F61BC2 /* CZFileObserver.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +254,8 @@
 
 /* Begin PBXFileReference section */
 		4A0A272F11F90F5D00223866 /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4FC50B11FB68A400F61BC2 /* CZFileObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFileObserver.h; sourceTree = "<group>"; };
+		4A4FC50C11FB68A400F61BC2 /* CZFileObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFileObserver.m; sourceTree = "<group>"; };
 		4AB4476E11F91FD30063FC70 /* NSArray+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CZCategories.h"; sourceTree = "<group>"; };
 		4AB4476F11F91FD30063FC70 /* NSArray+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CZCategories.m"; sourceTree = "<group>"; };
 		4AB4477011F91FD30063FC70 /* NSColor+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CZCategories.h"; sourceTree = "<group>"; };
@@ -281,8 +283,6 @@
 		4AE50DCB11F9279A00E27282 /* CZAppPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAppPrefs.m; sourceTree = "<group>"; };
 		4AE50DCC11F9279A00E27282 /* CZColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZColors.h; sourceTree = "<group>"; };
 		4AE50DCD11F9279A00E27282 /* CZColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZColors.m; sourceTree = "<group>"; };
-		4AE50DCE11F9279A00E27282 /* CZFileObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFileObserver.h; sourceTree = "<group>"; };
-		4AE50DCF11F9279A00E27282 /* CZFileObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFileObserver.m; sourceTree = "<group>"; };
 		4AE50DD011F9279A00E27282 /* CZGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGraphics.h; sourceTree = "<group>"; };
 		4AE50DD111F9279A00E27282 /* CZGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGraphics.m; sourceTree = "<group>"; };
 		4AE50DDB11F927A900E27282 /* libCZUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -466,10 +466,10 @@
 			children = (
 				4AE50DCA11F9279A00E27282 /* CZAppPrefs.h */,
 				4AE50DCB11F9279A00E27282 /* CZAppPrefs.m */,
+				4A4FC50B11FB68A400F61BC2 /* CZFileObserver.h */,
+				4A4FC50C11FB68A400F61BC2 /* CZFileObserver.m */,
 				4AE50DCC11F9279A00E27282 /* CZColors.h */,
 				4AE50DCD11F9279A00E27282 /* CZColors.m */,
-				4AE50DCE11F9279A00E27282 /* CZFileObserver.h */,
-				4AE50DCF11F9279A00E27282 /* CZFileObserver.m */,
 				4AE50DD011F9279A00E27282 /* CZGraphics.h */,
 				4AE50DD111F9279A00E27282 /* CZGraphics.m */,
 			);
@@ -535,7 +535,6 @@
 				4AE50E0B11F9290800E27282 /* CZIconImageView.h in Headers */,
 				4AE50DE111F927E500E27282 /* CZAppPrefs.h in Headers */,
 				4AE50DE211F927E500E27282 /* CZColors.h in Headers */,
-				4AE50DE311F927E500E27282 /* CZFileObserver.h in Headers */,
 				4AE50DE411F927E500E27282 /* CZGraphics.h in Headers */,
 				4AE50DB911F9264400E27282 /* CZInsetTextField.h in Headers */,
 				4AE50DAC11F9263800E27282 /* NSArray+CZCategories.h in Headers */,
@@ -545,6 +544,7 @@
 				4AE50DB411F9263800E27282 /* NSImage+CZCategories.h in Headers */,
 				4AE50DB611F9263800E27282 /* NSString+CZCategories.h in Headers */,
 				4AE50DC211F9266D00E27282 /* CZKit.h in Headers */,
+				4A4FC51011FB68A400F61BC2 /* CZFileObserver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,8 +810,8 @@
 			files = (
 				4AE50DDD11F927DA00E27282 /* CZAppPrefs.m in Sources */,
 				4AE50DDE11F927DA00E27282 /* CZColors.m in Sources */,
-				4AE50DDF11F927DA00E27282 /* CZFileObserver.m in Sources */,
 				4AE50DE011F927DA00E27282 /* CZGraphics.m in Sources */,
+				4A4FC50D11FB68A400F61BC2 /* CZFileObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,6 +1137,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Shared/Prefix.pch;
 				INFOPLIST_FILE = Tests/Info.plist;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -1152,6 +1154,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Shared/Prefix.pch;
 				INFOPLIST_FILE = Tests/Info.plist;
 				OTHER_LDFLAGS = (
 					"-framework",

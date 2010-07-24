@@ -18,14 +18,20 @@ This is a convenience method which runs isEmptyIgnoringWhitespace:YES.
 @return The result of isEmptyIgnoringWhitespace:YES.
 @see isEmptyIgnoringWhitespace:
 */
+- (BOOL)cz_isEmpty;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (BOOL)isEmpty;
+#endif
 /** Checks whether the NSString￼ object is empty, optionally ignoring whitespace.
 
 @param ignoresWhitespace Whether or not to count whitespace as empty or not. YES will count whitespace as empty,
  NO will not.
 @return YES if the string is empty, NO if the string contains characters.
 */
+- (BOOL)cz_isEmptyIgnoringWhitespace:(BOOL)ignoresWhitespace;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (BOOL)isEmptyIgnoringWhitespace:(BOOL)ignoresWhitespace;
+#endif
 #pragma mark Whitespace Removal
 /** Create a new NSString object by removing whitespace from the beginning and end of the original NSString.￼
 
@@ -33,7 +39,10 @@ This will remove characters in the whitespaceCharacterSet, as defined by NSChara
 
 @return An initialized string based on the original with whitespace trimmed off.
 */
+- (NSString *)cz_stringByTrimmingWhitespace;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (NSString *)stringByTrimmingWhitespace;
+#endif
 #pragma mark RegEx Support
 /** Uses NSPredicate to check if the NSString matches the provided regular expression.￼
 
@@ -42,5 +51,8 @@ This is only for very simple RegEx needs, as it simply wraps NSPredicate.
 @param expression A regular expression.
 @return YES if the NSString matches the expression, and NO if it does not.
 */
+- (BOOL)cz_matchesRegularExpression:(NSString *)expression;
+#ifndef CZ_NAMESPACE_PARANOIA
 - (BOOL)matchesRegularExpression:(NSString *)expression;
+#endif
 @end
