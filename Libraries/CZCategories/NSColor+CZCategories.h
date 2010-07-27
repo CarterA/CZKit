@@ -24,5 +24,15 @@
 #ifndef CZ_NAMESPACE_PARANOIA
 - (CGColorRef)CGColor;
 #endif
+/** Calculate the hexidecimal value of the receiver.
+ 
+ This method calculates and returns the hexidecimal representation of the receiving NSColor.
+ 
+ @return A string containing a hexidecimal value (without a #).
+ */
+- (NSString *)cz_hexidecimalValue;
+#ifndef CZ_NAMESPACE_PARANOIA
+- (NSString *)hexidecimalValue;
+#endif
 @end
 #endif

@@ -31,5 +31,13 @@
 #ifndef CZ_NAMESPACE_PARANOIA
 - (CGColorRef)CGColor { return [self cz_CGColor]; }
 #endif
+- (NSString *)cz_hexidecimalValue {
+	NSColor *convertedColor=[self colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
+	if(convertedColor) return [NSString stringWithFormat:@"%@%@%@", [NSString stringWithFormat:@"%02x", (NSInteger)(convertedColor.redComponent * 255.99999f)], [NSString stringWithFormat:@"%02x", (NSInteger)(convertedColor.greenComponent * 255.99999f)], [NSString stringWithFormat:@"%02x", (NSInteger)(convertedColor.blueComponent * 255.99999f)]];
+	return nil;
+}
+#ifndef CZ_NAMESPACE_PARANOIA
+- (NSString *)hexidecimalValue { return [self cz_hexidecimalValue]; }
+#endif
 @end
 #endif

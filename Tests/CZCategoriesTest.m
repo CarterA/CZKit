@@ -39,4 +39,18 @@
 	NSString *hash = [testFileData cz_SHA1Hash];
 	STAssertTrue([hash isEqualToString:@"5072e0c9fdcea43eb2d3d4ed0c1747ca24f89c3e"], @"NSData's SHA1 Hashing method returned the wrong hash.");
 }
+- (void)testColorHexConversion {
+	// Red
+	NSColor *redColor = [NSColor redColor];
+	NSString *hexValue = [redColor cz_hexidecimalValue];
+	STAssertTrue([hexValue isEqualToString:@"ff0000"], @"NSColor's hex conversion method returned the wrong hex value for red.");
+	// Green
+	NSColor *greenColor = [NSColor greenColor];
+	hexValue = [greenColor cz_hexidecimalValue];
+	STAssertTrue([hexValue isEqualToString:@"00ff00"], @"NSColor's hex conversion method returned the wrong hex value for green.");
+	// Blue
+	NSColor *blueColor = [NSColor blueColor];
+	hexValue = [blueColor cz_hexidecimalValue];
+	STAssertTrue([hexValue isEqualToString:@"0000ff"], @"NSColor's hex conversion method returned the wrong hex value for blue.");
+}
 @end
