@@ -6,6 +6,8 @@
 //  Copyright 2009 Carter Allen. All rights reserved.
 //
 
+// Core
+#import "CZDebugger.h"
 // Categories
 #import "NSArray+CZCategories.h"
 #import "NSData+CZCategories.h"
