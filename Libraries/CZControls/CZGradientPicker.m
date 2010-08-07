@@ -9,5 +9,5 @@
 #import "CZGradientPicker.h"
 
 @implementation CZGradientPicker
-+ (Class)cellClass return [CZGradientPickerCell class];
++ (Class)cellClass { return [CZGradientPickerCell class]; }
 @end
