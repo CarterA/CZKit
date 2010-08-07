@@ -45,6 +45,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4A9F9420120B8D41004CBE02 /* CZControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F941F120B8D41004CBE02 /* CZControl.m */; };
+		4A9F9421120B8D41004CBE02 /* CZControl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F941E120B8D41004CBE02 /* CZControl.h */; };
+		4A9F9422120B8D41004CBE02 /* CZControl.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F941F120B8D41004CBE02 /* CZControl.m */; };
+		4A9F9423120B8D8B004CBE02 /* CZControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9F941E120B8D41004CBE02 /* CZControl.h */; };
+		4A9F9447120CDC3A004CBE02 /* CZGradientPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */; };
+		4A9F9448120CDC3A004CBE02 /* CZGradientPicker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */; };
+		4A9F9449120CDC3A004CBE02 /* CZGradientPicker.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */; };
+		4A9F944E120CDC44004CBE02 /* CZGradientPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F944D120CDC44004CBE02 /* CZGradientPickerCell.m */; };
+		4A9F944F120CDC44004CBE02 /* CZGradientPickerCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */; };
+		4A9F9450120CDC44004CBE02 /* CZGradientPickerCell.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F944D120CDC44004CBE02 /* CZGradientPickerCell.m */; };
+		4A9F9451120CDC4D004CBE02 /* CZGradientPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */; };
+		4A9F9452120CDC4D004CBE02 /* CZGradientPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */; };
 		4AB4476811F91AB70063FC70 /* libCZCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABCBFCD11F9130800851859 /* libCZCategories.a */; };
 		4AB4477B11F91FD30063FC70 /* NSArray+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4476F11F91FD30063FC70 /* NSArray+CZCategories.m */; };
 		4AB4477D11F91FD30063FC70 /* NSColor+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4477111F91FD30063FC70 /* NSColor+CZCategories.m */; };
@@ -220,6 +232,12 @@
 				4AE50E9B11F93C0E00E27282 /* CZColors.h in CopyFiles */,
 				4AE50E9D11F93C0E00E27282 /* CZGraphics.h in CopyFiles */,
 				4AE50E9E11F93C0E00E27282 /* CZIconImageView.h in CopyFiles */,
+				4A9F9421120B8D41004CBE02 /* CZControl.h in CopyFiles */,
+				4A9F9422120B8D41004CBE02 /* CZControl.m in CopyFiles */,
+				4A9F9448120CDC3A004CBE02 /* CZGradientPicker.h in CopyFiles */,
+				4A9F9449120CDC3A004CBE02 /* CZGradientPicker.m in CopyFiles */,
+				4A9F944F120CDC44004CBE02 /* CZGradientPickerCell.h in CopyFiles */,
+				4A9F9450120CDC44004CBE02 /* CZGradientPickerCell.m in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +268,12 @@
 
 /* Begin PBXFileReference section */
 		4A0A272F11F90F5D00223866 /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9F941E120B8D41004CBE02 /* CZControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZControl.h; sourceTree = "<group>"; };
+		4A9F941F120B8D41004CBE02 /* CZControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZControl.m; sourceTree = "<group>"; };
+		4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPicker.h; sourceTree = "<group>"; };
+		4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGradientPicker.m; sourceTree = "<group>"; };
+		4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPickerCell.h; sourceTree = "<group>"; };
+		4A9F944D120CDC44004CBE02 /* CZGradientPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGradientPickerCell.m; sourceTree = "<group>"; };
 		4AB4476E11F91FD30063FC70 /* NSArray+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CZCategories.h"; sourceTree = "<group>"; };
 		4AB4476F11F91FD30063FC70 /* NSArray+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CZCategories.m"; sourceTree = "<group>"; };
 		4AB4477011F91FD30063FC70 /* NSColor+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CZCategories.h"; sourceTree = "<group>"; };
@@ -451,6 +475,12 @@
 			children = (
 				4AE50D9811F925BB00E27282 /* CZInsetTextField.h */,
 				4AE50D9911F925BB00E27282 /* CZInsetTextField.m */,
+				4A9F941E120B8D41004CBE02 /* CZControl.h */,
+				4A9F941F120B8D41004CBE02 /* CZControl.m */,
+				4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */,
+				4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */,
+				4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */,
+				4A9F944D120CDC44004CBE02 /* CZGradientPickerCell.m */,
 			);
 			path = CZControls;
 			sourceTree = "<group>";
@@ -524,6 +554,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9F9451120CDC4D004CBE02 /* CZGradientPicker.h in Headers */,
+				4A9F9452120CDC4D004CBE02 /* CZGradientPickerCell.h in Headers */,
+				4A9F9423120B8D8B004CBE02 /* CZControl.h in Headers */,
 				4AE50E0B11F9290800E27282 /* CZIconImageView.h in Headers */,
 				4AE50DE111F927E500E27282 /* CZAppPrefs.h in Headers */,
 				4AE50DE211F927E500E27282 /* CZColors.h in Headers */,
@@ -792,6 +825,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE50D9A11F925BB00E27282 /* CZInsetTextField.m in Sources */,
+				4A9F9420120B8D41004CBE02 /* CZControl.m in Sources */,
+				4A9F9447120CDC3A004CBE02 /* CZGradientPicker.m in Sources */,
+				4A9F944E120CDC44004CBE02 /* CZGradientPickerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
