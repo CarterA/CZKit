@@ -15,6 +15,7 @@
 #include <sys/sysctl.h>
 
 @implementation CZDebugger
+#if !TARGET_OS_IPHONE
 + (BOOL)debuggerIsAttached {
 	int junk;
 	int mib[4];
@@ -30,4 +31,5 @@
     assert(junk == 0);
 	return ((info.kp_proc.p_flag & P_TRACED) != 0);
 }
+#endif
 @end

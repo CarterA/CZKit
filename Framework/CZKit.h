@@ -16,17 +16,16 @@
 	#import "NSColor+CZCategories.h"
 	#import "NSImage+CZCategories.h"
 #endif
-// Controls
-#if !TARGET_OS_IPHONE
-	#import "CZInsetTextField.h"
-#endif
 // Utilities
 #if !TARGET_OS_IPHONE
 	#import "CZAppPrefs.h"
 #endif
 #import "CZColors.h"
 #import "CZGraphics.h"
-// Views
+// UI
 #if !TARGET_OS_IPHONE
 	#import "CZIconImageView.h"
+	#import "CZInsetTextField.h"
+	#import "CZGradientPicker.h"
+	#import "CZGradientPickerCell.h"
 #endif

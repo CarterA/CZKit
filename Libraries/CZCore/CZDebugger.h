@@ -11,5 +11,7 @@
 #define CZAssert(statement) if (!(statement)) NSLog(@"CZAssert failed on line %d in method %s.", __LINE__, __PRETTY_FUNCTION__)
 
 @interface CZDebugger : NSObject
+#if !TARGET_OS_IPHONE
 + (BOOL)debuggerIsAttached;
+#endif
 @end
