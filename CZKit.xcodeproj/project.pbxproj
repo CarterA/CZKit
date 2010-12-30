@@ -45,6 +45,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4A7A5B4B12CC3ACF00603CDD /* NSObject+CZCategories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A7A5B4912CC3ACF00603CDD /* NSObject+CZCategories.h */; };
+		4A7A5B4C12CC3ACF00603CDD /* NSObject+CZCategories.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */; };
+		4A7A5B4D12CC3ACF00603CDD /* NSObject+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */; };
 		4A9F9448120CDC3A004CBE02 /* CZGradientPicker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */; };
 		4A9F9449120CDC3A004CBE02 /* CZGradientPicker.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */; };
 		4A9F944F120CDC44004CBE02 /* CZGradientPickerCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */; };
@@ -140,7 +143,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A9F9461120DF52B004CBE02 /* CZCore */;
+			remoteGlobalIDString = 4A9F9461120DF52B004CBE02;
 			remoteInfo = CZCore;
 		};
 		4AB4478611F9201A0063FC70 /* PBXContainerItemProxy */ = {
@@ -251,6 +254,8 @@
 				4A9F95B5120E36FB004CBE02 /* CZCategories.h in CopyFiles */,
 				4A9F95B8120E3765004CBE02 /* CZUtilities.h in CopyFiles */,
 				4A9F95BB120E37B2004CBE02 /* CZUI.h in CopyFiles */,
+				4A7A5B4B12CC3ACF00603CDD /* NSObject+CZCategories.h in CopyFiles */,
+				4A7A5B4C12CC3ACF00603CDD /* NSObject+CZCategories.m in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +286,8 @@
 
 /* Begin PBXFileReference section */
 		4A0A272F11F90F5D00223866 /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7A5B4912CC3ACF00603CDD /* NSObject+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZCategories.h"; sourceTree = "<group>"; };
+		4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZCategories.m"; sourceTree = "<group>"; };
 		4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPicker.h; sourceTree = "<group>"; };
 		4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGradientPicker.m; sourceTree = "<group>"; };
 		4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPickerCell.h; sourceTree = "<group>"; };
@@ -475,6 +482,8 @@
 				4AB4477511F91FD30063FC70 /* NSFileManager+CZCategories.m */,
 				4AB4477611F91FD30063FC70 /* NSImage+CZCategories.h */,
 				4AB4477711F91FD30063FC70 /* NSImage+CZCategories.m */,
+				4A7A5B4912CC3ACF00603CDD /* NSObject+CZCategories.h */,
+				4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */,
 				4AB4477811F91FD30063FC70 /* NSString+CZCategories.h */,
 				4AB4477911F91FD30063FC70 /* NSString+CZCategories.m */,
 			);
@@ -854,6 +863,7 @@
 				4AB4478111F91FD30063FC70 /* NSFileManager+CZCategories.m in Sources */,
 				4AB4478311F91FD30063FC70 /* NSImage+CZCategories.m in Sources */,
 				4AB4478511F91FD30063FC70 /* NSString+CZCategories.m in Sources */,
+				4A7A5B4D12CC3ACF00603CDD /* NSObject+CZCategories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
