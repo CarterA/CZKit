@@ -11,8 +11,8 @@
 #import "CZView.h"
 
 @interface CZActionRecognizer ()
-@property (nonatomic, retain, readwrite) NSMutableArray *targetActionPairs;
-@property (nonatomic, retain, readwrite) NSMutableArray *handlers;
+@property (nonatomic, retain, readwrite) NSArray *targetActionPairs;
+@property (nonatomic, retain, readwrite) NSArray *handlers;
 @end
 
 @implementation CZActionRecognizer
@@ -83,6 +83,14 @@
 #pragma mark Subclass Methods
 - (void)receivedEvent:(NSEvent *)event {
 	
+}
+
+#pragma mark -
+#pragma mark Memory Management
+- (void)dealloc {
+	[self.targetActionPairs release];
+	[self.handlers release];
+	[super dealloc];
 }
 
 @end
