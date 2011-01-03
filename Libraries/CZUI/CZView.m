@@ -10,6 +10,11 @@
 #import "CZActionRecognizer.h"
 #import "CZActionRecognizerSubclass.h"
 
+#define CZ_INTERCEPT_EVENT(eventName) \
+		- (void)eventName:(NSEvent *)event {\
+			[self.actionRecognizers makeObjectsPerformSelector:@selector(receivedEvent:) withObject:event];\
+		}
+
 #pragma mark Publicly Readonly Properties
 @interface CZView ()
 @property (nonatomic, retain) NSArray *actionRecognizers;
@@ -38,9 +43,9 @@
 
 #pragma mark -
 #pragma mark Event Handling for Action Recognizers
-- (void)mouseDown:(NSEvent *)event { [self.actionRecognizers makeObjectsPerformSelector:@selector(receivedEvent:) withObject:event]; }
-- (void)mouseUp:(NSEvent *)event { [self.actionRecognizers makeObjectsPerformSelector:@selector(receivedEvent:) withObject:event]; }
-- (void)mouseEntered:(NSEvent *)event { [self.actionRecognizers makeObjectsPerformSelector:@selector(receivedEvent:) withObject:event]; }
-- (void)mouseExited:(NSEvent *)event { [self.actionRecognizers makeObjectsPerformSelector:@selector(receivedEvent:) withObject:event]; }
+CZ_INTERCEPT_EVENT(mouseDown);
+CZ_INTERCEPT_EVENT(mouseUp);
+CZ_INTERCEPT_EVENT(mouseEntered);
+CZ_INTERCEPT_EVENT(mouseExited);
 
 @end
