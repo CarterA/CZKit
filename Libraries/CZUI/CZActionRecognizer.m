@@ -39,6 +39,7 @@
 	if (state == CZActionRecognizerStateRecognized || state == CZActionRecognizerStateChanged) {
 		for (CZActionHandler handler in self.handlers) handler(self);
 		for (NSDictionary *pair in self.targetActionPairs) [[pair objectForKey:@"target"] performSelector:NSSelectorFromString([pair objectForKey:@"action"])];
+		[self reset];
 	}
 }
 - (void)setEnabled:(BOOL)value {
@@ -84,6 +85,7 @@
 - (void)receivedEvent:(NSEvent *)event {
 	
 }
+- (void)reset { self.state = CZActionRecognizerStatePossible; }
 
 #pragma mark -
 #pragma mark Memory Management

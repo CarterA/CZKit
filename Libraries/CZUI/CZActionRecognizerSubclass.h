@@ -9,4 +9,5 @@
 @interface CZActionRecognizer ()
 @property (nonatomic, readwrite) CZActionRecognizerState state;
 - (void)receivedEvent:(NSEvent *)event;
+- (void)reset;
 @end

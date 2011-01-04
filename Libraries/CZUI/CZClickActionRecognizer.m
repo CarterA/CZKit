@@ -20,12 +20,6 @@
 	}
 	return self;
 }
-- (void)setState:(CZActionRecognizerState)value {
-	if (value == CZActionRecognizerStateRecognized) {
-		self.events = nil;
-	}
-	[super setState:value];
-}
 - (void)receivedEvent:(NSEvent *)event {
 	if (!self.events) self.events = [NSMutableArray array];
 	[self.events addObject:event];
@@ -40,5 +34,9 @@
 			self.state = CZActionRecognizerStateRecognized;
 		}
 	}
+}
+- (void)reset {
+	[super reset];
+	self.events = nil;
 }
 @end
