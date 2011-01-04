@@ -10,6 +10,7 @@
 
 @interface CZView : NSView {}
 @property (nonatomic, readonly) NSArray *gestureRecognizers;
++ (id)viewWithFrame:(NSRect)frame;
 - (void)addActionRecognizer:(CZActionRecognizer *)actionRecognizer;
 - (void)removeActionRecognizer:(CZActionRecognizer *)actionRecognizer;
 @end

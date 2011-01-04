@@ -23,6 +23,10 @@
 @implementation CZView
 
 #pragma mark -
+#pragma mark Initializer
++ (id)viewWithFrame:(NSRect)frame { return [[[self alloc] initWithFrame:frame] autorelease]; }
+
+#pragma mark -
 #pragma mark Action Recognizer Manipulation
 - (void)addActionRecognizer:(CZActionRecognizer *)actionRecognizer {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];

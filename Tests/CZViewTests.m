@@ -10,16 +10,15 @@
 
 @implementation CZViewTests
 - (void)testActionRecognizerManipulation {
-	CZView *view = [[CZView alloc] initWithFrame:NSZeroRect];
+	CZView *view = [CZView viewWithFrame:NSZeroRect];
 	CZActionRecognizer *actionRecognizer = [CZActionRecognizer actionRecognizer];
 	[view addActionRecognizer:actionRecognizer];
 	[view removeActionRecognizer:actionRecognizer];
-	[view release];
 }
 - (void)testActionRecognizerHandlers {
 	
 	// Set up a view and action recognizer
-	CZView *view = [[CZView alloc] initWithFrame:NSZeroRect];
+	CZView *view = [CZView viewWithFrame:NSZeroRect];
 	CZClickActionRecognizer *clickActionRecognizer = [CZClickActionRecognizer actionRecognizerWithHandler:^(CZActionRecognizer *recognizer) {
 		NSLog(@"Clicked!");
 	}];
@@ -30,9 +29,6 @@
 	[view mouseDown:downClick];
 	NSEvent *upClick = [NSEvent mouseEventWithType:NSLeftMouseUp location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:0 clickCount:0 pressure:0];
 	[view mouseUp:upClick];
-	
-	// Clean up
-	[view release];
 	
 }
 @end
