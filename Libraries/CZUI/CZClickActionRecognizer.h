@@ -9,4 +9,5 @@
 #import "CZActionRecognizer.h"
 
 @interface CZClickActionRecognizer : CZActionRecognizer {}
+@property (nonatomic, assign) NSUInteger numberOfClicksRequired;
 @end

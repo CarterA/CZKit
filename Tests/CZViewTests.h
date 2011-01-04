@@ -10,4 +10,5 @@
 #import <CZKit/CZKit.h>
 
 @interface CZViewTests : SenTestCase {}
+@property (nonatomic, retain) CZView *view;
 @end
