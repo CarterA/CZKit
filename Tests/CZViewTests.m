@@ -29,7 +29,7 @@
 	// Send a fake mouse click to the view
 	NSEvent *downClick = [NSEvent mouseEventWithType:NSLeftMouseDown location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:0 clickCount:0 pressure:0];
 	[self.view mouseDown:downClick];
-	NSEvent *upClick = [NSEvent mouseEventWithType:NSLeftMouseUp location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:0 clickCount:0 pressure:0];
+	NSEvent *upClick = [NSEvent mouseEventWithType:NSLeftMouseUp location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:1 clickCount:1 pressure:0];
 	[self.view mouseUp:upClick];
 	
 	// Make sure the handler was called
@@ -54,7 +54,7 @@
 	while (i < 2) {
 		NSEvent *downClick = [NSEvent mouseEventWithType:NSLeftMouseDown location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:0 clickCount:0 pressure:0];
 		[self.view mouseDown:downClick];
-		NSEvent *upClick = [NSEvent mouseEventWithType:NSLeftMouseUp location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:0 clickCount:0 pressure:0];
+		NSEvent *upClick = [NSEvent mouseEventWithType:NSLeftMouseUp location:NSZeroPoint modifierFlags:0 timestamp:0 windowNumber:0 context:0 eventNumber:0 clickCount:i+1 pressure:0];
 		[self.view mouseUp:upClick];
 		i++;
 	}
