@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OptionsLabel</key>
+	<string>Type:</string>
+	<key>PopupMenu</key>
+	<array>
+		<dict>
+			<key>Key</key>
+			<string>Object</string>
+			<key>Title</key>
+			<string>NSObject Subclass</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>Singleton</string>
+			<key>Title</key>
+			<string>Singleton</string>
+		</dict>
+	</array>
+	<key>TemplateSelection</key>
+	<dict>
+		<key></key>
+		<string>Objective-C Class</string>
+		<key>Object</key>
+		<string>Objective-C Class</string>
+		<key>Singleton</key>
+		<string>Objective-C Singleton Class</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.m";
+	"CounterpartTemplateFile" = "class.h";
+	Description = "A blank subclass of NSObject, with an optional header file.";
+}
