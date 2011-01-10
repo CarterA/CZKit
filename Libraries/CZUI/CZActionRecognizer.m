@@ -65,7 +65,6 @@
 #pragma mark -
 #pragma mark Memory Management
 - (void)dealloc {
-	[self.targetActionPairs release];
 	[self.handlers release];
 	[super dealloc];
 }
