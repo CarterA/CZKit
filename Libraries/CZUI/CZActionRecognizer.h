@@ -20,6 +20,20 @@ typedef enum {
     CZActionRecognizerStateRecognized = CZActionRecognizerStateEnded
 } CZActionRecognizerState;
 
+/**
+ CZActionRecognizer is an abstract base class for concrete action recognizer classes.
+ An action recognizer abstracts the process of handling raw events, replacing it with
+ a simple system based on states and handlers. The following classes are concrete
+ subclasses of CZActionRecognizer:
+ 
+ CZClickActionRecognizer
+ 
+ An action recognizer works by being attached to a CZView via the addActionRecognizer:
+ method. Events that are sent to the view are passed to each action recognizer, which
+ process the events internally. If any of the events constitute a change in state, then
+ the state property will be updated and any handlers that are registered for the new
+ state will be executed.
+*/
 @interface CZActionRecognizer : NSObject {}
 @property (nonatomic, retain, readonly) NSArray *handlers;
 @property (nonatomic, readonly) CZActionRecognizerState state;
