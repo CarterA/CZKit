@@ -11,7 +11,6 @@
 #import "CZView.h"
 
 @interface CZActionRecognizer ()
-@property (nonatomic, retain, readwrite) NSArray *targetActionPairs;
 @property (nonatomic, retain, readwrite) NSArray *handlers;
 @end
 
