@@ -21,7 +21,6 @@ typedef enum {
 } CZActionRecognizerState;
 
 @interface CZActionRecognizer : NSObject {}
-@property (nonatomic, retain, readonly) NSArray *targetActionPairs;
 @property (nonatomic, retain, readonly) NSArray *handlers;
 @property (nonatomic, readonly) CZActionRecognizerState state;
 @property (nonatomic, getter=isEnabled) BOOL enabled;
@@ -30,6 +29,4 @@ typedef enum {
 + (id)actionRecognizerWithHandler:(CZActionHandler)handler;
 - (id)initWithHandler:(CZActionHandler)handler;
 - (void)addHandler:(CZActionHandler)handler;
-- (void)addTarget:(id)target action:(SEL)action;
-- (void)removeTarget:(id)target action:(SEL)action;
 @end

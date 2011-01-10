@@ -38,7 +38,6 @@
 	state = value;
 	if (state == CZActionRecognizerStateRecognized || state == CZActionRecognizerStateChanged) {
 		for (CZActionHandler handler in self.handlers) handler(self);
-		for (NSDictionary *pair in self.targetActionPairs) [[pair objectForKey:@"target"] performSelector:NSSelectorFromString([pair objectForKey:@"action"])];
 		[self reset];
 	}
 }
@@ -54,29 +53,6 @@
 	NSMutableArray *mutableHandlers = [NSMutableArray arrayWithArray:self.handlers];
 	[mutableHandlers addObject:[[handler copy] autorelease]];
 	self.handlers = [NSArray arrayWithArray:mutableHandlers];
-	[pool release];
-}
-
-#pragma mark -
-#pragma mark Target/Action System
-- (void)addTarget:(id)target action:(SEL)action {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSMutableArray *mutablePairs = [NSMutableArray arrayWithArray:self.targetActionPairs];
-	[mutablePairs addObject:[NSDictionary dictionaryWithObjectsAndKeys:target, @"target", NSStringFromSelector(action), @"action", nil]];
-	self.targetActionPairs = [NSArray arrayWithArray:mutablePairs];
-	[pool release];
-}
-- (void)removeTarget:(id)target action:(SEL)action {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSMutableArray *mutablePairs = [NSMutableArray arrayWithArray:self.targetActionPairs];
-	for (NSDictionary *pair in mutablePairs) {
-		BOOL targetMatches = NO;
-		BOOL actionMatches = NO;
-		if ([pair objectForKey:@"target"] == target || target == nil) targetMatches = YES;
-		if ([[pair objectForKey:@"action"] isEqualToString:NSStringFromSelector(action)] || action == nil) actionMatches = YES;
-		if (targetMatches && actionMatches) [mutablePairs removeObject:pair];
-	}
-	self.targetActionPairs = [NSArray arrayWithArray:mutablePairs];
 	[pool release];
 }
 
