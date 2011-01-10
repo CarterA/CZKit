@@ -159,21 +159,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A1EF15812DA6788002767C4 /* Objective-C Class Template */;
+			remoteGlobalIDString = 4A1EF15812DA6788002767C4;
 			remoteInfo = "Objective-C Class Template";
 		};
 		4A1EF17B12DA681B002767C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AE5112711F9559700E27282 /* Objective-C Singleton Class Template */;
+			remoteGlobalIDString = 4AE5112711F9559700E27282;
 			remoteInfo = "Objective-C Singleton Class Template";
 		};
 		4A1EF1D612DA6C1D002767C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A1EF1C812DA6BBB002767C4 /* Objective-C Class Template */;
+			remoteGlobalIDString = 4A1EF1C812DA6BBB002767C4;
 			remoteInfo = "Objective-C Class Template";
 		};
 		4A9F9463120DF52B004CBE02 /* PBXContainerItemProxy */ = {

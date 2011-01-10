@@ -6,10 +6,6 @@
 //  Copyright «YEAR» «ORGANIZATIONNAME». All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
-@interface «FILEBASENAMEASIDENTIFIER» : NSObject {
-
-}
+@interface «FILEBASENAMEASIDENTIFIER» : NSObject {}
 + (id)shared«FILEBASENAMEASIDENTIFIER»;
 @end
