@@ -11,6 +11,7 @@
 typedef void (^CZActionHandler)(CZActionRecognizer *recognizer);
 
 typedef enum {
+	CZActionRecognizerStateNull,
 	CZActionRecognizerStatePossible,
     CZActionRecognizerStateBegan,
     CZActionRecognizerStateChanged,
@@ -35,12 +36,13 @@ typedef enum {
  state will be executed.
 */
 @interface CZActionRecognizer : NSObject {}
-@property (nonatomic, retain, readonly) NSArray *handlers;
+@property (nonatomic, retain, readonly) NSDictionary *handlers;
 @property (nonatomic, readonly) CZActionRecognizerState state;
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 @property (nonatomic, readonly) CZView *view;
 + (id)actionRecognizer;
 + (id)actionRecognizerWithHandler:(CZActionHandler)handler;
-- (id)initWithHandler:(CZActionHandler)handler;
-- (void)addHandler:(CZActionHandler)handler;
++ (id)actionRecognizerWithHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState;
+- (id)initWithHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState;
+- (void)addHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState;
 @end

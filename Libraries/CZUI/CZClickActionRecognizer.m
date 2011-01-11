@@ -14,8 +14,8 @@
 @end
 
 @implementation CZClickActionRecognizer
-- (id)initWithHandler:(CZActionHandler)handler {
-	if ((self = [super initWithHandler:handler])) {
+- (id)initWithHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState {
+	if ((self = [super initWithHandler:handler forState:theState])) {
 		self.numberOfClicksRequired = 1;
 	}
 	return self;

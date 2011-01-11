@@ -11,22 +11,23 @@
 #import "CZView.h"
 
 @interface CZActionRecognizer ()
-@property (nonatomic, retain, readwrite) NSArray *handlers;
+@property (nonatomic, retain, readwrite) NSDictionary *handlers;
 @end
 
 @implementation CZActionRecognizer
 
 #pragma mark -
 #pragma mark Initializers
-+ (id)actionRecognizer { return [self actionRecognizerWithHandler:nil]; }
-+ (id)actionRecognizerWithHandler:(CZActionHandler)handler { return [[[self alloc] initWithHandler:handler] autorelease]; }
++ (id)actionRecognizer { return [self actionRecognizerWithHandler:nil forState:CZActionRecognizerStateNull]; }
++ (id)actionRecognizerWithHandler:(CZActionHandler)handler { return [[[self alloc] initWithHandler:handler forState:CZActionRecognizerStateRecognized] autorelease]; }
++ (id)actionRecognizerWithHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState { return [[[self alloc] initWithHandler:handler forState:theState] autorelease]; }
 - (id)init {
-	self = [self initWithHandler:nil];
+	self = [self initWithHandler:nil forState:CZActionRecognizerStateCancelled];
 	return self;
 }
-- (id)initWithHandler:(CZActionHandler)handler {
+- (id)initWithHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState {
 	if ((self = [super init])) {
-		if (handler) [self addHandler:handler];
+		if (handler && (theState != CZActionRecognizerStateNull)) [self addHandler:handler forState:theState];
 	}
 	return self;
 }
@@ -36,7 +37,7 @@
 - (void)setState:(CZActionRecognizerState)value {
 	state = value;
 	if (state == CZActionRecognizerStateRecognized || state == CZActionRecognizerStateChanged) {
-		for (CZActionHandler handler in self.handlers) handler(self);
+		for (CZActionHandler handler in [self.handlers objectForKey:[NSNumber numberWithInteger:state]]) handler(self);
 		[self reset];
 	}
 }
@@ -47,11 +48,13 @@
 
 #pragma mark -
 #pragma mark Handler System
-- (void)addHandler:(CZActionHandler)handler {
+- (void)addHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSMutableArray *mutableHandlers = [NSMutableArray arrayWithArray:self.handlers];
-	[mutableHandlers addObject:[[handler copy] autorelease]];
-	self.handlers = [NSArray arrayWithArray:mutableHandlers];
+	NSMutableDictionary *mutableHandlers = [NSMutableDictionary dictionaryWithDictionary:self.handlers];
+	NSMutableArray *handlersForState = [NSMutableArray arrayWithArray:[mutableHandlers objectForKey:[NSNumber numberWithInteger:theState]]];
+	[handlersForState addObject:[[handler copy] autorelease]];
+	[mutableHandlers setObject:[NSArray arrayWithArray:handlersForState] forKey:[NSNumber numberWithInteger:theState]];
+	self.handlers = [NSDictionary dictionaryWithDictionary:mutableHandlers];
 	[pool release];
 }
 
