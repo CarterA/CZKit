@@ -24,7 +24,7 @@
 	if (!self.events) self.events = [NSMutableArray array];
 	[self.events addObject:event];
 	if (event.type == NSLeftMouseUp) {
-		// Come, sit a spell and I'll tell you story of why I use the clickCount
+		// Come, sit a spell and I'll tell you the story of why I use the clickCount
 		// method here, instead of "rolling-my-own", as you might expect, considering
 		// this system is trying to be fairly independent of the event system.
 		// See, what I didn't realize at first was that the speed required for a
