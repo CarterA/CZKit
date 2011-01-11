@@ -18,17 +18,6 @@
 			name = "CZKit Documentation";
 			productName = Documentation;
 		};
-		4AE5114411F9569500E27282 /* CZKit Templates */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 4AE5114C11F956AE00E27282 /* Build configuration list for PBXAggregateTarget "CZKit Templates" */;
-			buildPhases = (
-			);
-			dependencies = (
-				4A1EF17A12DA6818002767C4 /* PBXTargetDependency */,
-			);
-			name = "CZKit Templates";
-			productName = Templates;
-		};
 		4AE511FE11FA4DDA00E27282 /* Build All */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 4AE5121411FA4E2A00E27282 /* Build configuration list for PBXAggregateTarget "Build All" */;
@@ -37,7 +26,6 @@
 			dependencies = (
 				4AE5120811FA4DF600E27282 /* PBXTargetDependency */,
 				4AE5120411FA4DF600E27282 /* PBXTargetDependency */,
-				4AE5120211FA4DF600E27282 /* PBXTargetDependency */,
 			);
 			name = "Build All";
 			productName = "Build All";
@@ -45,10 +33,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4A1EF17812DA6809002767C4 /* TemplateChooser.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A1EF17712DA6809002767C4 /* TemplateChooser.plist */; };
-		4A1EF1FA12DA6E64002767C4 /* class.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A1EF1F712DA6E64002767C4 /* class.h */; };
-		4A1EF1FB12DA6E64002767C4 /* class.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A1EF1F812DA6E64002767C4 /* class.m */; };
-		4A1EF1FC12DA6E64002767C4 /* TemplateInfo.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A1EF1F912DA6E64002767C4 /* TemplateInfo.plist */; };
 		4A7A5B4B12CC3ACF00603CDD /* NSObject+CZCategories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A7A5B4912CC3ACF00603CDD /* NSObject+CZCategories.h */; };
 		4A7A5B4C12CC3ACF00603CDD /* NSObject+CZCategories.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */; };
 		4A7A5B4D12CC3ACF00603CDD /* NSObject+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */; };
@@ -149,33 +133,9 @@
 		4AE5100511F9426900E27282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE50D0911F924FA00E27282 /* Foundation.framework */; };
 		4AE5102911F942FB00E27282 /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
 		4AE5103011F9432100E27282 /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
-		4AE5116711F9570600E27282 /* class.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE5116411F956F800E27282 /* class.h */; };
-		4AE5116811F9570600E27282 /* class.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE5116511F956F800E27282 /* class.m */; };
-		4AE5116911F9570600E27282 /* TemplateInfo.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AE5116611F956F800E27282 /* TemplateInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A1EF17912DA6818002767C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A1EF15812DA6788002767C4;
-			remoteInfo = "Objective-C Class Template";
-		};
-		4A1EF17B12DA681B002767C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AE5112711F9559700E27282;
-			remoteInfo = "Objective-C Singleton Class Template";
-		};
-		4A1EF1D612DA6C1D002767C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A1EF1C812DA6BBB002767C4;
-			remoteInfo = "Objective-C Class Template";
-		};
 		4A9F9463120DF52B004CBE02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
@@ -239,13 +199,6 @@
 			remoteGlobalIDString = 4A0A272E11F90F5D00223866;
 			remoteInfo = CZKit;
 		};
-		4AE5120111FA4DF600E27282 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AE5114411F9569500E27282;
-			remoteInfo = Templates;
-		};
 		4AE5120311FA4DF600E27282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
@@ -263,28 +216,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4A1EF15912DA6788002767C4 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 1;
-			files = (
-				4A1EF17812DA6809002767C4 /* TemplateChooser.plist in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A1EF1C912DA6BBB002767C4 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 1;
-			files = (
-				4A1EF1FA12DA6E64002767C4 /* class.h in CopyFiles */,
-				4A1EF1FB12DA6E64002767C4 /* class.m in CopyFiles */,
-				4A1EF1FC12DA6E64002767C4 /* TemplateInfo.plist in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4AE50E9211F93BF100E27282 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,28 +269,10 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AE5112811F9559700E27282 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 1;
-			files = (
-				4AE5116711F9570600E27282 /* class.h in CopyFiles */,
-				4AE5116811F9570600E27282 /* class.m in CopyFiles */,
-				4AE5116911F9570600E27282 /* TemplateInfo.plist in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A0A272F11F90F5D00223866 /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1EF16012DA6788002767C4 /* Objective-C Class.metatemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C Class.metatemplate"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1EF17712DA6809002767C4 /* TemplateChooser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateChooser.plist; sourceTree = "<group>"; };
-		4A1EF1D012DA6BBB002767C4 /* Objective-C Class.pbfiletemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C Class.pbfiletemplate"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1EF1F712DA6E64002767C4 /* class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = class.h; sourceTree = "<group>"; };
-		4A1EF1F812DA6E64002767C4 /* class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = class.m; sourceTree = "<group>"; };
-		4A1EF1F912DA6E64002767C4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		4A7A5B4912CC3ACF00603CDD /* NSObject+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZCategories.h"; sourceTree = "<group>"; };
 		4A7A5B4A12CC3ACF00603CDD /* NSObject+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZCategories.m"; sourceTree = "<group>"; };
 		4A7A5B9412D059BA00603CDD /* CZControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZControl.h; sourceTree = "<group>"; };
@@ -427,10 +340,6 @@
 		4AE50EC211F9424A00E27282 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE50EC411F9424A00E27282 /* Hashable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hashable.txt; sourceTree = "<group>"; };
 		4AE50EC511F9424A00E27282 /* ViewConversionTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewConversionTestView.xib; sourceTree = "<group>"; };
-		4AE5113911F9559700E27282 /* Objective-C Singleton Class.pbfiletemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C Singleton Class.pbfiletemplate"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AE5116411F956F800E27282 /* class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = class.h; sourceTree = "<group>"; };
-		4AE5116511F956F800E27282 /* class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = class.m; sourceTree = "<group>"; };
-		4AE5116611F956F800E27282 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = TemplateInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,7 +410,6 @@
 				4AB4475F11F919ED0063FC70 /* Framework */,
 				4AB4476A11F91F620063FC70 /* Libraries */,
 				4AE50C4811F923FF00E27282 /* Shared */,
-				4AE5115E11F956F800E27282 /* Templates */,
 				4AE50EBD11F9424A00E27282 /* Tests */,
 				4A0A273011F90F5D00223866 /* Products */,
 			);
@@ -517,39 +425,8 @@
 				4AE50E0911F928DD00E27282 /* libCZUI.a */,
 				4AE50E6011F93B2C00E27282 /* CZKit Headers.bundle */,
 				4AE50EA811F941D900E27282 /* CZKit Unit Tests.octest */,
-				4AE5113911F9559700E27282 /* Objective-C Singleton Class.pbfiletemplate */,
-				4A1EF16012DA6788002767C4 /* Objective-C Class.metatemplate */,
-				4A1EF1D012DA6BBB002767C4 /* Objective-C Class.pbfiletemplate */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4A1EF15312DA66B5002767C4 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A1EF1F612DA6E64002767C4 /* Objective-C Class */,
-				4A1EF16812DA67AD002767C4 /* Objective-C Class (Meta) */,
-				4AE5116311F956F800E27282 /* Objective-C Shared Instance */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
-		4A1EF16812DA67AD002767C4 /* Objective-C Class (Meta) */ = {
-			isa = PBXGroup;
-			children = (
-				4A1EF17712DA6809002767C4 /* TemplateChooser.plist */,
-			);
-			path = "Objective-C Class (Meta)";
-			sourceTree = "<group>";
-		};
-		4A1EF1F612DA6E64002767C4 /* Objective-C Class */ = {
-			isa = PBXGroup;
-			children = (
-				4A1EF1F712DA6E64002767C4 /* class.h */,
-				4A1EF1F812DA6E64002767C4 /* class.m */,
-				4A1EF1F912DA6E64002767C4 /* TemplateInfo.plist */,
-			);
-			path = "Objective-C Class";
 			sourceTree = "<group>";
 		};
 		4A9F9455120DF4F3004CBE02 /* CZCore */ = {
@@ -689,24 +566,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4AE5115E11F956F800E27282 /* Templates */ = {
-			isa = PBXGroup;
-			children = (
-				4A1EF15312DA66B5002767C4 /* Files */,
-			);
-			path = Templates;
-			sourceTree = "<group>";
-		};
-		4AE5116311F956F800E27282 /* Objective-C Shared Instance */ = {
-			isa = PBXGroup;
-			children = (
-				4AE5116411F956F800E27282 /* class.h */,
-				4AE5116511F956F800E27282 /* class.m */,
-				4AE5116611F956F800E27282 /* TemplateInfo.plist */,
-			);
-			path = "Objective-C Shared Instance";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -765,38 +624,6 @@
 			productName = CZKit;
 			productReference = 4A0A272F11F90F5D00223866 /* CZKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		4A1EF15812DA6788002767C4 /* Objective-C Class Meta-template */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A1EF15D12DA6788002767C4 /* Build configuration list for PBXNativeTarget "Objective-C Class Meta-template" */;
-			buildPhases = (
-				4A1EF15912DA6788002767C4 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A1EF1D712DA6C1D002767C4 /* PBXTargetDependency */,
-				4A1EF17C12DA681B002767C4 /* PBXTargetDependency */,
-			);
-			name = "Objective-C Class Meta-template";
-			productName = "CZKit Headers";
-			productReference = 4A1EF16012DA6788002767C4 /* Objective-C Class.metatemplate */;
-			productType = "com.apple.product-type.bundle";
-		};
-		4A1EF1C812DA6BBB002767C4 /* Objective-C Class Template */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A1EF1CD12DA6BBB002767C4 /* Build configuration list for PBXNativeTarget "Objective-C Class Template" */;
-			buildPhases = (
-				4A1EF1C912DA6BBB002767C4 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Objective-C Class Template";
-			productName = "CZKit Headers";
-			productReference = 4A1EF1D012DA6BBB002767C4 /* Objective-C Class.pbfiletemplate */;
-			productType = "com.apple.product-type.bundle";
 		};
 		4A9F9461120DF52B004CBE02 /* CZCore */ = {
 			isa = PBXNativeTarget;
@@ -901,21 +728,6 @@
 			productReference = 4AE50EA811F941D900E27282 /* CZKit Unit Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		4AE5112711F9559700E27282 /* Objective-C Singleton Class Template */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AE5113611F9559700E27282 /* Build configuration list for PBXNativeTarget "Objective-C Singleton Class Template" */;
-			buildPhases = (
-				4AE5112811F9559700E27282 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Objective-C Singleton Class Template";
-			productName = "CZKit Headers";
-			productReference = 4AE5113911F9559700E27282 /* Objective-C Singleton Class.pbfiletemplate */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -945,10 +757,6 @@
 				4AE50E1E11F92A0800E27282 /* CZKit Documentation */,
 				4AE50E5F11F93B2C00E27282 /* CZKit Headers */,
 				4AE50EA711F941D900E27282 /* CZKit Unit Tests */,
-				4AE5114411F9569500E27282 /* CZKit Templates */,
-				4AE5112711F9559700E27282 /* Objective-C Singleton Class Template */,
-				4A1EF15812DA6788002767C4 /* Objective-C Class Meta-template */,
-				4A1EF1C812DA6BBB002767C4 /* Objective-C Class Template */,
 			);
 		};
 /* End PBXProject section */
@@ -1071,21 +879,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4A1EF17A12DA6818002767C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A1EF15812DA6788002767C4 /* Objective-C Class Meta-template */;
-			targetProxy = 4A1EF17912DA6818002767C4 /* PBXContainerItemProxy */;
-		};
-		4A1EF17C12DA681B002767C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AE5112711F9559700E27282 /* Objective-C Singleton Class Template */;
-			targetProxy = 4A1EF17B12DA681B002767C4 /* PBXContainerItemProxy */;
-		};
-		4A1EF1D712DA6C1D002767C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A1EF1C812DA6BBB002767C4 /* Objective-C Class Template */;
-			targetProxy = 4A1EF1D612DA6C1D002767C4 /* PBXContainerItemProxy */;
-		};
 		4A9F9462120DF52B004CBE02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AE50E5F11F93B2C00E27282 /* CZKit Headers */;
@@ -1130,11 +923,6 @@
 			isa = PBXTargetDependency;
 			target = 4A0A272E11F90F5D00223866 /* CZKit */;
 			targetProxy = 4AE5103411F9433300E27282 /* PBXContainerItemProxy */;
-		};
-		4AE5120211FA4DF600E27282 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AE5114411F9569500E27282 /* CZKit Templates */;
-			targetProxy = 4AE5120111FA4DF600E27282 /* PBXContainerItemProxy */;
 		};
 		4AE5120411FA4DF600E27282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1249,46 +1037,6 @@
 				);
 				PRODUCT_NAME = CZKit;
 				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
-		4A1EF15E12DA6788002767C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/Templates$(EFFECTIVE_PLATFORM_NAME)/Files";
-				PRODUCT_NAME = "Objective-C Class";
-				WRAPPER_EXTENSION = metatemplate;
-			};
-			name = Debug;
-		};
-		4A1EF15F12DA6788002767C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/Templates$(EFFECTIVE_PLATFORM_NAME)/Files";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = "Objective-C Class";
-				SYMROOT = Products;
-				WRAPPER_EXTENSION = metatemplate;
-			};
-			name = Release;
-		};
-		4A1EF1CE12DA6BBB002767C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/Templates$(EFFECTIVE_PLATFORM_NAME)/Files/Objective-C Class.metatemplate";
-				PRODUCT_NAME = "Objective-C Class";
-				WRAPPER_EXTENSION = pbfiletemplate;
-			};
-			name = Debug;
-		};
-		4A1EF1CF12DA6BBB002767C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/Templates$(EFFECTIVE_PLATFORM_NAME)/Files/Objective-C Class.metatemplate";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = "Objective-C Class";
-				SYMROOT = Products;
-				WRAPPER_EXTENSION = pbfiletemplate;
 			};
 			name = Release;
 		};
@@ -1461,40 +1209,6 @@
 			};
 			name = Release;
 		};
-		4AE5113711F9559700E27282 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/Templates$(EFFECTIVE_PLATFORM_NAME)/Files/Objective-C Class.metatemplate";
-				PRODUCT_NAME = "Objective-C Singleton Class";
-				WRAPPER_EXTENSION = pbfiletemplate;
-			};
-			name = Debug;
-		};
-		4AE5113811F9559700E27282 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/Templates$(EFFECTIVE_PLATFORM_NAME)/Files/Objective-C Class.metatemplate";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = "Objective-C Singleton Class";
-				SYMROOT = Products;
-				WRAPPER_EXTENSION = pbfiletemplate;
-			};
-			name = Release;
-		};
-		4AE5114511F9569500E27282 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = Templates;
-			};
-			name = Debug;
-		};
-		4AE5114611F9569500E27282 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = Templates;
-			};
-			name = Release;
-		};
 		4AE511FF11FA4DDA00E27282 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1526,24 +1240,6 @@
 			buildConfigurations = (
 				4A0A273B11F90F5D00223866 /* Debug */,
 				4A0A273C11F90F5D00223866 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A1EF15D12DA6788002767C4 /* Build configuration list for PBXNativeTarget "Objective-C Class Meta-template" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A1EF15E12DA6788002767C4 /* Debug */,
-				4A1EF15F12DA6788002767C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A1EF1CD12DA6BBB002767C4 /* Build configuration list for PBXNativeTarget "Objective-C Class Template" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A1EF1CE12DA6BBB002767C4 /* Debug */,
-				4A1EF1CF12DA6BBB002767C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1607,24 +1303,6 @@
 			buildConfigurations = (
 				4AE50EAA11F941DA00E27282 /* Debug */,
 				4AE50EAB11F941DA00E27282 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AE5113611F9559700E27282 /* Build configuration list for PBXNativeTarget "Objective-C Singleton Class Template" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AE5113711F9559700E27282 /* Debug */,
-				4AE5113811F9559700E27282 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AE5114C11F956AE00E27282 /* Build configuration list for PBXAggregateTarget "CZKit Templates" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AE5114511F9569500E27282 /* Debug */,
-				4AE5114611F9569500E27282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

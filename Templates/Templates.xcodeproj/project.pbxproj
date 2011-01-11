@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4ADBFCBF12DC18C700CD50AD /* Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4ADBFCC212DC18C700CD50AD /* Build configuration list for PBXAggregateTarget "Templates" */;
+			buildPhases = (
+			);
+			dependencies = (
+				4ADBFCC412DC18D000CD50AD /* PBXTargetDependency */,
+				4ADBFCC612DC18D000CD50AD /* PBXTargetDependency */,
+				4ADBFCC812DC18D000CD50AD /* PBXTargetDependency */,
+			);
+			name = Templates;
+			productName = Templates;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4ADBFC9112DC145000CD50AD /* TemplateInfo.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC9012DC145000CD50AD /* TemplateInfo.plist */; };
+		4ADBFC9212DC149E00CD50AD /* class.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC8E12DC145000CD50AD /* class.h */; };
+		4ADBFC9312DC149E00CD50AD /* class.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC8F12DC145000CD50AD /* class.m */; };
+		4ADBFC9D12DC14FC00CD50AD /* class.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC7612DC12BF00CD50AD /* class.h */; };
+		4ADBFC9E12DC14FC00CD50AD /* class.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC7712DC12BF00CD50AD /* class.m */; };
+		4ADBFC9F12DC14FC00CD50AD /* TemplateInfo.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC7812DC12BF00CD50AD /* TemplateInfo.plist */; };
+		4ADBFCAD12DC157A00CD50AD /* TemplateChooser.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ADBFC7A12DC12BF00CD50AD /* TemplateChooser.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ADBFCAE12DC169100CD50AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADBFC5212DC113500CD50AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADBFC6412DC124C00CD50AD;
+			remoteInfo = "Objective-C Singleton Template";
+		};
+		4ADBFCB012DC169100CD50AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADBFC5212DC113500CD50AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADBFC9412DC14B300CD50AD;
+			remoteInfo = "Objective-C Class";
+		};
+		4ADBFCC312DC18D000CD50AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADBFC5212DC113500CD50AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADBFCA012DC151D00CD50AD;
+			remoteInfo = "Objective-C Class (Meta)";
+		};
+		4ADBFCC512DC18D000CD50AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADBFC5212DC113500CD50AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADBFC6412DC124C00CD50AD;
+			remoteInfo = "Objective-C Singleton Template";
+		};
+		4ADBFCC712DC18D000CD50AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADBFC5212DC113500CD50AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADBFC9412DC14B300CD50AD;
+			remoteInfo = "Objective-C Class";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4ADBFCB512DC17A400CD50AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				4ADBFCAD12DC157A00CD50AD /* TemplateChooser.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADBFCB712DC17C100CD50AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				4ADBFC9112DC145000CD50AD /* TemplateInfo.plist in CopyFiles */,
+				4ADBFC9212DC149E00CD50AD /* class.h in CopyFiles */,
+				4ADBFC9312DC149E00CD50AD /* class.m in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADBFCB812DC17D700CD50AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				4ADBFC9D12DC14FC00CD50AD /* class.h in CopyFiles */,
+				4ADBFC9E12DC14FC00CD50AD /* class.m in CopyFiles */,
+				4ADBFC9F12DC14FC00CD50AD /* TemplateInfo.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4ADBFC7612DC12BF00CD50AD /* class.h */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = class.h; sourceTree = "<group>"; };
+		4ADBFC7712DC12BF00CD50AD /* class.m */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = class.m; sourceTree = "<group>"; };
+		4ADBFC7812DC12BF00CD50AD /* TemplateInfo.plist */ = {isa = PBXFileReference; explicitFileType = text; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		4ADBFC7A12DC12BF00CD50AD /* TemplateChooser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateChooser.plist; sourceTree = "<group>"; };
+		4ADBFC8812DC12F900CD50AD /* Objective-C Singleton Template.pbfiletemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C Singleton Template.pbfiletemplate"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADBFC8E12DC145000CD50AD /* class.h */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = class.h; sourceTree = "<group>"; };
+		4ADBFC8F12DC145000CD50AD /* class.m */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = class.m; sourceTree = "<group>"; };
+		4ADBFC9012DC145000CD50AD /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		4ADBFC9C12DC14B300CD50AD /* Objective-C Class.pbfiletemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C Class.pbfiletemplate"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADBFCA812DC151D00CD50AD /* Objective-C Class.metatemplate */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C Class.metatemplate"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4ACE287F12DC177100337138 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ADBFC8812DC12F900CD50AD /* Objective-C Singleton Template.pbfiletemplate */,
+				4ADBFC9C12DC14B300CD50AD /* Objective-C Class.pbfiletemplate */,
+				4ADBFCA812DC151D00CD50AD /* Objective-C Class.metatemplate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ADBFC5012DC113500CD50AD = {
+			isa = PBXGroup;
+			children = (
+				4ADBFC7412DC12BF00CD50AD /* Files */,
+				4ACE287F12DC177100337138 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ADBFC7412DC12BF00CD50AD /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ADBFC8D12DC145000CD50AD /* Objective-C Singleton */,
+				4ADBFC7512DC12BF00CD50AD /* Objective-C Class */,
+				4ADBFC7912DC12BF00CD50AD /* Objective-C Class (Meta) */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		4ADBFC7512DC12BF00CD50AD /* Objective-C Class */ = {
+			isa = PBXGroup;
+			children = (
+				4ADBFC7612DC12BF00CD50AD /* class.h */,
+				4ADBFC7712DC12BF00CD50AD /* class.m */,
+				4ADBFC7812DC12BF00CD50AD /* TemplateInfo.plist */,
+			);
+			path = "Objective-C Class";
+			sourceTree = "<group>";
+		};
+		4ADBFC7912DC12BF00CD50AD /* Objective-C Class (Meta) */ = {
+			isa = PBXGroup;
+			children = (
+				4ADBFC7A12DC12BF00CD50AD /* TemplateChooser.plist */,
+			);
+			path = "Objective-C Class (Meta)";
+			sourceTree = "<group>";
+		};
+		4ADBFC8D12DC145000CD50AD /* Objective-C Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				4ADBFC8E12DC145000CD50AD /* class.h */,
+				4ADBFC8F12DC145000CD50AD /* class.m */,
+				4ADBFC9012DC145000CD50AD /* TemplateInfo.plist */,
+			);
+			path = "Objective-C Singleton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ADBFC6412DC124C00CD50AD /* Objective-C Singleton Template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADBFC7112DC124C00CD50AD /* Build configuration list for PBXNativeTarget "Objective-C Singleton Template" */;
+			buildPhases = (
+				4ADBFCB712DC17C100CD50AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Objective-C Singleton Template";
+			productName = "Objective-C Singleton Template";
+			productReference = 4ADBFC8812DC12F900CD50AD /* Objective-C Singleton Template.pbfiletemplate */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4ADBFC9412DC14B300CD50AD /* Objective-C Class */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADBFC9912DC14B300CD50AD /* Build configuration list for PBXNativeTarget "Objective-C Class" */;
+			buildPhases = (
+				4ADBFCB812DC17D700CD50AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Objective-C Class";
+			productName = "Objective-C Singleton Template";
+			productReference = 4ADBFC9C12DC14B300CD50AD /* Objective-C Class.pbfiletemplate */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4ADBFCA012DC151D00CD50AD /* Objective-C Class (Meta) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADBFCA512DC151D00CD50AD /* Build configuration list for PBXNativeTarget "Objective-C Class (Meta)" */;
+			buildPhases = (
+				4ADBFCB512DC17A400CD50AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ADBFCAF12DC169100CD50AD /* PBXTargetDependency */,
+				4ADBFCB112DC169100CD50AD /* PBXTargetDependency */,
+			);
+			name = "Objective-C Class (Meta)";
+			productName = "Objective-C Singleton Template";
+			productReference = 4ADBFCA812DC151D00CD50AD /* Objective-C Class.metatemplate */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ADBFC5212DC113500CD50AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Opt-6 Products, LLC";
+			};
+			buildConfigurationList = 4ADBFC5512DC113500CD50AD /* Build configuration list for PBXProject "Templates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4ADBFC5012DC113500CD50AD;
+			productRefGroup = 4ADBFC5012DC113500CD50AD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ADBFCBF12DC18C700CD50AD /* Templates */,
+				4ADBFCA012DC151D00CD50AD /* Objective-C Class (Meta) */,
+				4ADBFC6412DC124C00CD50AD /* Objective-C Singleton Template */,
+				4ADBFC9412DC14B300CD50AD /* Objective-C Class */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXTargetDependency section */
+		4ADBFCAF12DC169100CD50AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADBFC6412DC124C00CD50AD /* Objective-C Singleton Template */;
+			targetProxy = 4ADBFCAE12DC169100CD50AD /* PBXContainerItemProxy */;
+		};
+		4ADBFCB112DC169100CD50AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADBFC9412DC14B300CD50AD /* Objective-C Class */;
+			targetProxy = 4ADBFCB012DC169100CD50AD /* PBXContainerItemProxy */;
+		};
+		4ADBFCC412DC18D000CD50AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADBFCA012DC151D00CD50AD /* Objective-C Class (Meta) */;
+			targetProxy = 4ADBFCC312DC18D000CD50AD /* PBXContainerItemProxy */;
+		};
+		4ADBFCC612DC18D000CD50AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADBFC6412DC124C00CD50AD /* Objective-C Singleton Template */;
+			targetProxy = 4ADBFCC512DC18D000CD50AD /* PBXContainerItemProxy */;
+		};
+		4ADBFCC812DC18D000CD50AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADBFC9412DC14B300CD50AD /* Objective-C Class */;
+			targetProxy = 4ADBFCC712DC18D000CD50AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4ADBFC5712DC113500CD50AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+			};
+			name = Debug;
+		};
+		4ADBFC5812DC113500CD50AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+			};
+			name = Release;
+		};
+		4ADBFC7212DC124C00CD50AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Templates/Files/Objective-C Class.metatemplate";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+				WRAPPER_EXTENSION = pbfiletemplate;
+			};
+			name = Debug;
+		};
+		4ADBFC7312DC124C00CD50AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Templates/Files/Objective-C Class.metatemplate";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+				WRAPPER_EXTENSION = pbfiletemplate;
+			};
+			name = Release;
+		};
+		4ADBFC9A12DC14B300CD50AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Templates/Files/Objective-C Class.metatemplate";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Objective-C Class";
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+				WRAPPER_EXTENSION = pbfiletemplate;
+			};
+			name = Debug;
+		};
+		4ADBFC9B12DC14B300CD50AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Templates/Files/Objective-C Class.metatemplate";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "Objective-C Class";
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+				WRAPPER_EXTENSION = pbfiletemplate;
+			};
+			name = Release;
+		};
+		4ADBFCA612DC151D00CD50AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Templates/Files";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Objective-C Class";
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+				WRAPPER_EXTENSION = metatemplate;
+			};
+			name = Debug;
+		};
+		4ADBFCA712DC151D00CD50AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Templates/Files";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "Objective-C Class";
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+				WRAPPER_EXTENSION = metatemplate;
+			};
+			name = Release;
+		};
+		4ADBFCC012DC18C700CD50AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Templates;
+				SYMROOT = ../Products;
+			};
+			name = Debug;
+		};
+		4ADBFCC112DC18C700CD50AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Templates;
+				SYMROOT = ../Products;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ADBFC5512DC113500CD50AD /* Build configuration list for PBXProject "Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADBFC5712DC113500CD50AD /* Debug */,
+				4ADBFC5812DC113500CD50AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADBFC7112DC124C00CD50AD /* Build configuration list for PBXNativeTarget "Objective-C Singleton Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADBFC7212DC124C00CD50AD /* Debug */,
+				4ADBFC7312DC124C00CD50AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADBFC9912DC14B300CD50AD /* Build configuration list for PBXNativeTarget "Objective-C Class" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADBFC9A12DC14B300CD50AD /* Debug */,
+				4ADBFC9B12DC14B300CD50AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADBFCA512DC151D00CD50AD /* Build configuration list for PBXNativeTarget "Objective-C Class (Meta)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADBFCA612DC151D00CD50AD /* Debug */,
+				4ADBFCA712DC151D00CD50AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADBFCC212DC18C700CD50AD /* Build configuration list for PBXAggregateTarget "Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADBFCC012DC18C700CD50AD /* Debug */,
+				4ADBFCC112DC18C700CD50AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ADBFC5212DC113500CD50AD /* Project object */;
+}
