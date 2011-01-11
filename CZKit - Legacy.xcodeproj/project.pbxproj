@@ -924,7 +924,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Opt-6 Products, LLC";
 			};
-			buildConfigurationList = 4A0A272411F90F5C00223866 /* Build configuration list for PBXProject "CZKit" */;
+			buildConfigurationList = 4A0A272411F90F5C00223866 /* Build configuration list for PBXProject "CZKit - Legacy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1160,7 +1160,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-Xclang",
-					"-fobjc-default-synthesize-properties",
+					"-fobjc-nonfragile-abi2",
 				);
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1188,7 +1188,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = (
 					"-Xclang",
-					"-fobjc-default-synthesize-properties",
+					"-fobjc-nonfragile-abi2",
 				);
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1512,7 +1512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A0A272411F90F5C00223866 /* Build configuration list for PBXProject "CZKit" */ = {
+		4A0A272411F90F5C00223866 /* Build configuration list for PBXProject "CZKit - Legacy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A0A273811F90F5D00223866 /* Debug */,
