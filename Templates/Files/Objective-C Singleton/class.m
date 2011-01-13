@@ -7,17 +7,11 @@
 //
 
 «OPTIONALHEADERIMPORTLINE»
-static «FILEBASENAMEASIDENTIFIER» *global«FILEBASENAMEASIDENTIFIER»;
 @implementation «FILEBASENAMEASIDENTIFIER»
 + («FILEBASENAMEASIDENTIFIER» *)shared«FILEBASENAMEASIDENTIFIER» {
-	@synchronized(self) {
-		if (!global«FILEBASENAMEASIDENTIFIER») global«FILEBASENAMEASIDENTIFIER» = [[self alloc] init];
-		return global«FILEBASENAMEASIDENTIFIER»;
-	}
+	static «FILEBASENAMEASIDENTIFIER» *global«FILEBASENAMEASIDENTIFIER»;
+	static dispatch_once_t predicate;
+	dispatch_once(&predicate, ^{ global«FILEBASENAMEASIDENTIFIER» = [[self alloc] init]; });
+	return global«FILEBASENAMEASIDENTIFIER»;
 }
-+ (id)copyWithZone:(NSZone *)zone { return self; }
-- (id)retain { return self; }
-- (NSUInteger)retainCount { return NSUIntegerMax; }
-- (void)release {}
-- (id)autorelease { return self; }
 @end
