@@ -17,6 +17,12 @@
 @implementation CZActionRecognizer
 
 #pragma mark -
+@synthesize handlers;
+@synthesize state;
+@synthesize enabled;
+@synthesize view;
+
+#pragma mark -
 #pragma mark Initializers
 + (id)actionRecognizer { return [self actionRecognizerWithHandler:nil forState:CZActionRecognizerStateNull]; }
 + (id)actionRecognizerWithHandler:(CZActionHandler)handler { return [[[self alloc] initWithHandler:handler forState:CZActionRecognizerStateRecognized] autorelease]; }
@@ -34,15 +40,15 @@
 
 #pragma mark -
 #pragma mark Custom Setters
-- (void)setState:(CZActionRecognizerState)value {
-	state = value;
+- (void)setState:(CZActionRecognizerState)aState {
+	state = aState;
 	if (state == CZActionRecognizerStateRecognized || state == CZActionRecognizerStateChanged) {
 		for (CZActionHandler handler in [self.handlers objectForKey:[NSNumber numberWithInteger:state]]) handler(self);
 		[self reset];
 	}
 }
-- (void)setEnabled:(BOOL)value {
-	enabled = value;
+- (void)setEnabled:(BOOL)isEnabled {
+	enabled = isEnabled;
 	if (!enabled) self.state = CZActionRecognizerStateCancelled;
 }
 

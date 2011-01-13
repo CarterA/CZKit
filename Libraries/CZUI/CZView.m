@@ -23,6 +23,9 @@
 @implementation CZView
 
 #pragma mark -
+@synthesize actionRecognizers=_actionRecognizers;
+
+#pragma mark -
 #pragma mark Initializer
 + (id)viewWithFrame:(NSRect)frame { return [[[self alloc] initWithFrame:frame] autorelease]; }
 

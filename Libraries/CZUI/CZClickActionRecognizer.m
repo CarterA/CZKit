@@ -14,6 +14,8 @@
 @end
 
 @implementation CZClickActionRecognizer
+@synthesize numberOfClicksRequired=_numberOfClicksRequired;
+@synthesize events=_events;
 - (id)initWithHandler:(CZActionHandler)handler forState:(CZActionRecognizerState)theState {
 	if ((self = [super initWithHandler:handler forState:theState])) {
 		self.numberOfClicksRequired = 1;

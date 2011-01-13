@@ -9,6 +9,7 @@
 #import "CZViewTests.h"
 
 @implementation CZViewTests
+@synthesize view=_view;
 - (void)setUp {
 	self.view = [CZView viewWithFrame:NSZeroRect];
 }
