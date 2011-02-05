@@ -8,8 +8,9 @@
 
 @class CZActionRecognizer;
 
-@interface CZView : NSView {}
+@interface CZView : NSView <NSCoding> {}
 @property (nonatomic, retain, readonly) NSArray *actionRecognizers;
+@property (nonatomic, assign) NSRect frame;
 + (id)viewWithFrame:(NSRect)frame;
 - (void)addActionRecognizer:(CZActionRecognizer *)actionRecognizer;
 - (void)removeActionRecognizer:(CZActionRecognizer *)actionRecognizer;

@@ -1,0 +1,11 @@
+//
+//  Prefix.pch
+//  CZKit
+//
+//  Created by Carter Allen on 1/31/11.
+//  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif

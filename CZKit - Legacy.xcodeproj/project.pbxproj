@@ -26,6 +26,8 @@
 			dependencies = (
 				4AE5120811FA4DF600E27282 /* PBXTargetDependency */,
 				4AE5120411FA4DF600E27282 /* PBXTargetDependency */,
+				4A97A21212F7D32D002BCB67 /* PBXTargetDependency */,
+				4A979FE312F7C525002BCB67 /* PBXTargetDependency */,
 			);
 			name = "Build All";
 			productName = "Build All";
@@ -55,6 +57,35 @@
 		4A7A5C6F12D06D2100603CDD /* CZClickActionRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7A5C6812D06D1200603CDD /* CZClickActionRecognizer.h */; };
 		4A7A5C7012D06D2100603CDD /* CZControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7A5B9412D059BA00603CDD /* CZControl.h */; };
 		4A7A5C7112D06D2100603CDD /* CZView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7A5BDA12D05C8300603CDD /* CZView.h */; };
+		4A979FB812F7C460002BCB67 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A979FB712F7C460002BCB67 /* Core.m */; };
+		4A97A00A12F7C540002BCB67 /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
+		4A97A05612F7C56D002BCB67 /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
+		4A97A06A12F7C5B5002BCB67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A97A06912F7C5B5002BCB67 /* MainMenu.xib */; };
+		4A97A08612F7C6BC002BCB67 /* CZWindow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A97A08412F7C6BC002BCB67 /* CZWindow.h */; };
+		4A97A08712F7C6BC002BCB67 /* CZWindow.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A97A08512F7C6BC002BCB67 /* CZWindow.m */; };
+		4A97A08812F7C6BC002BCB67 /* CZWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A08512F7C6BC002BCB67 /* CZWindow.m */; };
+		4A97A08912F7C6C9002BCB67 /* CZWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A97A08412F7C6BC002BCB67 /* CZWindow.h */; };
+		4A97A09612F7C9D9002BCB67 /* CZWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A09512F7C9D9002BCB67 /* CZWindowController.m */; };
+		4A97A09712F7C9D9002BCB67 /* CZWindowController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A97A09412F7C9D9002BCB67 /* CZWindowController.h */; };
+		4A97A09812F7C9D9002BCB67 /* CZWindowController.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A97A09512F7C9D9002BCB67 /* CZWindowController.m */; };
+		4A97A09912F7C9D9002BCB67 /* CZWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A97A09412F7C9D9002BCB67 /* CZWindowController.h */; };
+		4A97A0AF12F7CAAC002BCB67 /* CZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A0AE12F7CAAC002BCB67 /* CZViewController.m */; };
+		4A97A0B012F7CAAC002BCB67 /* CZViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A97A0AD12F7CAAC002BCB67 /* CZViewController.h */; };
+		4A97A0B212F7CAAC002BCB67 /* CZViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A97A0AD12F7CAAC002BCB67 /* CZViewController.h */; };
+		4A97A0B312F7CAAC002BCB67 /* CZViewController.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A97A0AE12F7CAAC002BCB67 /* CZViewController.m */; };
+		4A97A1FA12F7D18A002BCB67 /* CZView.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 4A97A1F912F7D18A002BCB67 /* CZView.classdescription */; };
+		4A97A1FD12F7D1BA002BCB67 /* CZViewInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A1FC12F7D1BA002BCB67 /* CZViewInspector.m */; };
+		4A97A20112F7D1EF002BCB67 /* CZViewInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A97A20012F7D1EF002BCB67 /* CZViewInspector.xib */; };
+		4A97A20512F7D261002BCB67 /* CZKitPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A20412F7D261002BCB67 /* CZKitPlugin.m */; };
+		4A97A21012F7D2C6002BCB67 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A97A20F12F7D2C6002BCB67 /* InterfaceBuilderKit.framework */; };
+		4A97A21412F7D362002BCB67 /* CZKitLibrary.nib in Resources */ = {isa = PBXBuildFile; fileRef = 4A97A21312F7D362002BCB67 /* CZKitLibrary.nib */; };
+		4A97A26112F7D64A002BCB67 /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
+		4A97A27812F7D665002BCB67 /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
+		4A97A31A12F7D728002BCB67 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE50C4B11F9249600E27282 /* AppKit.framework */; };
+		4A97A44E12F7E271002BCB67 /* CZViewController.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 4A97A44D12F7E271002BCB67 /* CZViewController.classdescription */; };
+		4A97A45112F7E296002BCB67 /* CZViewControllerInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A45012F7E296002BCB67 /* CZViewControllerInspector.m */; };
+		4A97A45312F7E2D2002BCB67 /* CZViewControllerInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A97A45212F7E2D2002BCB67 /* CZViewControllerInspector.xib */; };
+		4A97A45512F7E309002BCB67 /* CZViewControllerIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A97A45412F7E309002BCB67 /* CZViewControllerIntegration.m */; };
 		4A9F9448120CDC3A004CBE02 /* CZGradientPicker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */; };
 		4A9F9449120CDC3A004CBE02 /* CZGradientPicker.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */; };
 		4A9F944F120CDC44004CBE02 /* CZGradientPickerCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */; };
@@ -133,9 +164,38 @@
 		4AE5100511F9426900E27282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE50D0911F924FA00E27282 /* Foundation.framework */; };
 		4AE5102911F942FB00E27282 /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
 		4AE5103011F9432100E27282 /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A272F11F90F5D00223866 /* CZKit.framework */; };
+		4AE9428C12F8D6510074DE2A /* CZIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9428B12F8D6510074DE2A /* CZIBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4A979FE212F7C525002BCB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A979F8512F7C3A2002BCB67;
+			remoteInfo = "CZKit Demo";
+		};
+		4A979FE412F7C535002BCB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A0A272E11F90F5D00223866;
+			remoteInfo = CZKit;
+		};
+		4A97A21112F7D32D002BCB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A97A10D12F7CF43002BCB67;
+			remoteInfo = Plugin;
+		};
+		4A97A29112F7D6C7002BCB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A0A272E11F90F5D00223866;
+			remoteInfo = CZKit;
+		};
 		4A9F9463120DF52B004CBE02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
@@ -216,6 +276,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4A97A06812F7C58B002BCB67 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A97A00A12F7C540002BCB67 /* CZKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A97A28E12F7D696002BCB67 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A97A27812F7D665002BCB67 /* CZKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE50E9211F93BF100E27282 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +337,12 @@
 				4A7A5C5412D06B0B00603CDD /* CZActionRecognizerSubclass.h in CopyFiles */,
 				4A7A5C6B12D06D1200603CDD /* CZClickActionRecognizer.h in CopyFiles */,
 				4A7A5C6C12D06D1200603CDD /* CZClickActionRecognizer.m in CopyFiles */,
+				4A97A08612F7C6BC002BCB67 /* CZWindow.h in CopyFiles */,
+				4A97A08712F7C6BC002BCB67 /* CZWindow.m in CopyFiles */,
+				4A97A09712F7C9D9002BCB67 /* CZWindowController.h in CopyFiles */,
+				4A97A09812F7C9D9002BCB67 /* CZWindowController.m in CopyFiles */,
+				4A97A0B212F7CAAC002BCB67 /* CZViewController.h in CopyFiles */,
+				4A97A0B312F7CAAC002BCB67 /* CZViewController.m in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +374,32 @@
 		4A7A5C5112D06B0B00603CDD /* CZActionRecognizerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZActionRecognizerSubclass.h; sourceTree = "<group>"; };
 		4A7A5C6812D06D1200603CDD /* CZClickActionRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZClickActionRecognizer.h; sourceTree = "<group>"; };
 		4A7A5C6912D06D1200603CDD /* CZClickActionRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZClickActionRecognizer.m; sourceTree = "<group>"; };
+		4A979F8612F7C3A2002BCB67 /* CZKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CZKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A979FB312F7C3D5002BCB67 /* CZKit Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CZKit Demo-Info.plist"; sourceTree = "<group>"; };
+		4A979FB712F7C460002BCB67 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		4A979FCE12F7C4C0002BCB67 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4A97A06912F7C5B5002BCB67 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		4A97A08412F7C6BC002BCB67 /* CZWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZWindow.h; sourceTree = "<group>"; };
+		4A97A08512F7C6BC002BCB67 /* CZWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZWindow.m; sourceTree = "<group>"; };
+		4A97A09412F7C9D9002BCB67 /* CZWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZWindowController.h; sourceTree = "<group>"; };
+		4A97A09512F7C9D9002BCB67 /* CZWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZWindowController.m; sourceTree = "<group>"; };
+		4A97A0AD12F7CAAC002BCB67 /* CZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZViewController.h; sourceTree = "<group>"; };
+		4A97A0AE12F7CAAC002BCB67 /* CZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZViewController.m; sourceTree = "<group>"; };
+		4A97A10E12F7CF43002BCB67 /* CZKit.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZKit.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A97A10F12F7CF43002BCB67 /* Plugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plugin-Info.plist"; sourceTree = "<group>"; };
+		4A97A1F912F7D18A002BCB67 /* CZView.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = CZView.classdescription; sourceTree = "<group>"; };
+		4A97A1FB12F7D1BA002BCB67 /* CZViewInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZViewInspector.h; sourceTree = "<group>"; };
+		4A97A1FC12F7D1BA002BCB67 /* CZViewInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZViewInspector.m; sourceTree = "<group>"; };
+		4A97A20012F7D1EF002BCB67 /* CZViewInspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CZViewInspector.xib; sourceTree = "<group>"; };
+		4A97A20312F7D261002BCB67 /* CZKitPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZKitPlugin.h; sourceTree = "<group>"; };
+		4A97A20412F7D261002BCB67 /* CZKitPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZKitPlugin.m; sourceTree = "<group>"; };
+		4A97A20F12F7D2C6002BCB67 /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A97A21312F7D362002BCB67 /* CZKitLibrary.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = CZKitLibrary.nib; sourceTree = "<group>"; };
+		4A97A44D12F7E271002BCB67 /* CZViewController.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = CZViewController.classdescription; sourceTree = "<group>"; };
+		4A97A44F12F7E296002BCB67 /* CZViewControllerInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZViewControllerInspector.h; sourceTree = "<group>"; };
+		4A97A45012F7E296002BCB67 /* CZViewControllerInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZViewControllerInspector.m; sourceTree = "<group>"; };
+		4A97A45212F7E2D2002BCB67 /* CZViewControllerInspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CZViewControllerInspector.xib; sourceTree = "<group>"; };
+		4A97A45412F7E309002BCB67 /* CZViewControllerIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZViewControllerIntegration.m; sourceTree = "<group>"; };
 		4A9F9445120CDC3A004CBE02 /* CZGradientPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPicker.h; sourceTree = "<group>"; };
 		4A9F9446120CDC3A004CBE02 /* CZGradientPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGradientPicker.m; sourceTree = "<group>"; };
 		4A9F944C120CDC44004CBE02 /* CZGradientPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPickerCell.h; sourceTree = "<group>"; };
@@ -340,6 +454,9 @@
 		4AE50EC211F9424A00E27282 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE50EC411F9424A00E27282 /* Hashable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hashable.txt; sourceTree = "<group>"; };
 		4AE50EC511F9424A00E27282 /* ViewConversionTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewConversionTestView.xib; sourceTree = "<group>"; };
+		4AE9428A12F8D6510074DE2A /* CZIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZIBViewController.h; sourceTree = "<group>"; };
+		4AE9428B12F8D6510074DE2A /* CZIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZIBViewController.m; sourceTree = "<group>"; };
+		4AE942A512F8D7AC0074DE2A /* CZIBUndocumentedGoodness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZIBUndocumentedGoodness.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +469,24 @@
 				4AB4476811F91AB70063FC70 /* libCZCategories.a in Frameworks */,
 				4AE50DE711F927F100E27282 /* libCZUtilities.a in Frameworks */,
 				4AE50E0E11F9291200E27282 /* libCZUI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A979F8412F7C3A2002BCB67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97A05612F7C56D002BCB67 /* CZKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A97A10C12F7CF43002BCB67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97A31A12F7D728002BCB67 /* AppKit.framework in Frameworks */,
+				4A97A26112F7D64A002BCB67 /* CZKit.framework in Frameworks */,
+				4A97A21012F7D2C6002BCB67 /* InterfaceBuilderKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +547,8 @@
 				4AE50C4811F923FF00E27282 /* Shared */,
 				4AE50EBD11F9424A00E27282 /* Tests */,
 				4A0A273011F90F5D00223866 /* Products */,
+				4A97A1F112F7D0D5002BCB67 /* Plugin */,
+				4A979FB212F7C3D5002BCB67 /* Demo */,
 			);
 			sourceTree = "<group>";
 		};
@@ -425,8 +562,61 @@
 				4AE50E0911F928DD00E27282 /* libCZUI.a */,
 				4AE50E6011F93B2C00E27282 /* CZKit Headers.bundle */,
 				4AE50EA811F941D900E27282 /* CZKit Unit Tests.octest */,
+				4A979F8612F7C3A2002BCB67 /* CZKit Demo.app */,
+				4A97A10E12F7CF43002BCB67 /* CZKit.ibplugin */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4A979FB212F7C3D5002BCB67 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4A979FB312F7C3D5002BCB67 /* CZKit Demo-Info.plist */,
+				4A979FB712F7C460002BCB67 /* Core.m */,
+				4A979FCE12F7C4C0002BCB67 /* Prefix.pch */,
+				4A97A06912F7C5B5002BCB67 /* MainMenu.xib */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		4A97A1F112F7D0D5002BCB67 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				4A97A1F812F7D16F002BCB67 /* CZView */,
+				4A97A44A12F7E264002BCB67 /* CZViewController */,
+				4A97A10F12F7CF43002BCB67 /* Plugin-Info.plist */,
+				4A97A20312F7D261002BCB67 /* CZKitPlugin.h */,
+				4A97A20412F7D261002BCB67 /* CZKitPlugin.m */,
+				4A97A21312F7D362002BCB67 /* CZKitLibrary.nib */,
+				4A97A20F12F7D2C6002BCB67 /* InterfaceBuilderKit.framework */,
+				4AE942A512F8D7AC0074DE2A /* CZIBUndocumentedGoodness.h */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		4A97A1F812F7D16F002BCB67 /* CZView */ = {
+			isa = PBXGroup;
+			children = (
+				4A97A1F912F7D18A002BCB67 /* CZView.classdescription */,
+				4A97A1FB12F7D1BA002BCB67 /* CZViewInspector.h */,
+				4A97A1FC12F7D1BA002BCB67 /* CZViewInspector.m */,
+				4A97A20012F7D1EF002BCB67 /* CZViewInspector.xib */,
+			);
+			path = CZView;
+			sourceTree = "<group>";
+		};
+		4A97A44A12F7E264002BCB67 /* CZViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A97A44D12F7E271002BCB67 /* CZViewController.classdescription */,
+				4A97A44F12F7E296002BCB67 /* CZViewControllerInspector.h */,
+				4A97A45012F7E296002BCB67 /* CZViewControllerInspector.m */,
+				4A97A45212F7E2D2002BCB67 /* CZViewControllerInspector.xib */,
+				4A97A45412F7E309002BCB67 /* CZViewControllerIntegration.m */,
+				4AE9428A12F8D6510074DE2A /* CZIBViewController.h */,
+				4AE9428B12F8D6510074DE2A /* CZIBViewController.m */,
+			);
+			path = CZViewController;
 			sourceTree = "<group>";
 		};
 		4A9F9455120DF4F3004CBE02 /* CZCore */ = {
@@ -528,6 +718,12 @@
 				4A7A5B9512D059BA00603CDD /* CZControl.m */,
 				4A7A5BDA12D05C8300603CDD /* CZView.h */,
 				4A7A5BDB12D05C8300603CDD /* CZView.m */,
+				4A97A0AD12F7CAAC002BCB67 /* CZViewController.h */,
+				4A97A0AE12F7CAAC002BCB67 /* CZViewController.m */,
+				4A97A08412F7C6BC002BCB67 /* CZWindow.h */,
+				4A97A08512F7C6BC002BCB67 /* CZWindow.m */,
+				4A97A09412F7C9D9002BCB67 /* CZWindowController.h */,
+				4A97A09512F7C9D9002BCB67 /* CZWindowController.m */,
 				4AE50DFB11F928D500E27282 /* CZIconImageView.h */,
 				4AE50DFC11F928D500E27282 /* CZIconImageView.m */,
 				4AE50D9811F925BB00E27282 /* CZInsetTextField.h */,
@@ -597,6 +793,9 @@
 				4A7A5C6F12D06D2100603CDD /* CZClickActionRecognizer.h in Headers */,
 				4A7A5C7012D06D2100603CDD /* CZControl.h in Headers */,
 				4A7A5C7112D06D2100603CDD /* CZView.h in Headers */,
+				4A97A08912F7C6C9002BCB67 /* CZWindow.h in Headers */,
+				4A97A09912F7C9D9002BCB67 /* CZWindowController.h in Headers */,
+				4A97A0B012F7CAAC002BCB67 /* CZViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +823,44 @@
 			productName = CZKit;
 			productReference = 4A0A272F11F90F5D00223866 /* CZKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		4A979F8512F7C3A2002BCB67 /* CZKit Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A979F8B12F7C3A2002BCB67 /* Build configuration list for PBXNativeTarget "CZKit Demo" */;
+			buildPhases = (
+				4A979F8212F7C3A2002BCB67 /* Resources */,
+				4A979F8312F7C3A2002BCB67 /* Sources */,
+				4A979F8412F7C3A2002BCB67 /* Frameworks */,
+				4A97A06812F7C58B002BCB67 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A979FE512F7C535002BCB67 /* PBXTargetDependency */,
+			);
+			name = "CZKit Demo";
+			productName = "CZKit Demo";
+			productReference = 4A979F8612F7C3A2002BCB67 /* CZKit Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A97A10D12F7CF43002BCB67 /* CZKit IBPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A97A11212F7CF43002BCB67 /* Build configuration list for PBXNativeTarget "CZKit IBPlugin" */;
+			buildPhases = (
+				4A97A10A12F7CF43002BCB67 /* Resources */,
+				4A97A10B12F7CF43002BCB67 /* Sources */,
+				4A97A10C12F7CF43002BCB67 /* Frameworks */,
+				4A97A28E12F7D696002BCB67 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A97A29212F7D6C7002BCB67 /* PBXTargetDependency */,
+			);
+			name = "CZKit IBPlugin";
+			productName = Plugin;
+			productReference = 4A97A10E12F7CF43002BCB67 /* CZKit.ibplugin */;
+			productType = "com.apple.product-type.bundle";
 		};
 		4A9F9461120DF52B004CBE02 /* CZCore */ = {
 			isa = PBXNativeTarget;
@@ -757,6 +994,8 @@
 				4AE50E1E11F92A0800E27282 /* CZKit Documentation */,
 				4AE50E5F11F93B2C00E27282 /* CZKit Headers */,
 				4AE50EA711F941D900E27282 /* CZKit Unit Tests */,
+				4A979F8512F7C3A2002BCB67 /* CZKit Demo */,
+				4A97A10D12F7CF43002BCB67 /* CZKit IBPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -766,6 +1005,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A979F8212F7C3A2002BCB67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97A06A12F7C5B5002BCB67 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A97A10A12F7CF43002BCB67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97A1FA12F7D18A002BCB67 /* CZView.classdescription in Resources */,
+				4A97A20112F7D1EF002BCB67 /* CZViewInspector.xib in Resources */,
+				4A97A21412F7D362002BCB67 /* CZKitLibrary.nib in Resources */,
+				4A97A44E12F7E271002BCB67 /* CZViewController.classdescription in Resources */,
+				4A97A45312F7E2D2002BCB67 /* CZViewControllerInspector.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +1077,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A979F8312F7C3A2002BCB67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A979FB812F7C460002BCB67 /* Core.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A97A10B12F7CF43002BCB67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97A1FD12F7D1BA002BCB67 /* CZViewInspector.m in Sources */,
+				4A97A20512F7D261002BCB67 /* CZKitPlugin.m in Sources */,
+				4A97A45112F7E296002BCB67 /* CZViewControllerInspector.m in Sources */,
+				4A97A45512F7E309002BCB67 /* CZViewControllerIntegration.m in Sources */,
+				4AE9428C12F8D6510074DE2A /* CZIBViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A9F9464120DF52B004CBE02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -862,6 +1141,9 @@
 				4A7A5BA012D05A0300603CDD /* CZActionRecognizer.m in Sources */,
 				4A7A5BDC12D05C8300603CDD /* CZView.m in Sources */,
 				4A7A5C6A12D06D1200603CDD /* CZClickActionRecognizer.m in Sources */,
+				4A97A08812F7C6BC002BCB67 /* CZWindow.m in Sources */,
+				4A97A09612F7C9D9002BCB67 /* CZWindowController.m in Sources */,
+				4A97A0AF12F7CAAC002BCB67 /* CZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +1161,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4A979FE312F7C525002BCB67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A979F8512F7C3A2002BCB67 /* CZKit Demo */;
+			targetProxy = 4A979FE212F7C525002BCB67 /* PBXContainerItemProxy */;
+		};
+		4A979FE512F7C535002BCB67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A0A272E11F90F5D00223866 /* CZKit */;
+			targetProxy = 4A979FE412F7C535002BCB67 /* PBXContainerItemProxy */;
+		};
+		4A97A21212F7D32D002BCB67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A97A10D12F7CF43002BCB67 /* CZKit IBPlugin */;
+			targetProxy = 4A97A21112F7D32D002BCB67 /* PBXContainerItemProxy */;
+		};
+		4A97A29212F7D6C7002BCB67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A0A272E11F90F5D00223866 /* CZKit */;
+			targetProxy = 4A97A29112F7D6C7002BCB67 /* PBXContainerItemProxy */;
+		};
 		4A9F9462120DF52B004CBE02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AE50E5F11F93B2C00E27282 /* CZKit Headers */;
@@ -1036,6 +1338,106 @@
 				);
 				PRODUCT_NAME = CZKit;
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		4A979F8912F7C3A2002BCB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Demo/CZKit Demo-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "CZKit Demo";
+			};
+			name = Debug;
+		};
+		4A979F8A12F7C3A2002BCB67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "CZKit Demo-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "CZKit Demo";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4A97A11012F7CF43002BCB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					$inherited,
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/Library/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "Plugin/Plugin-Info.plist";
+				PREBINDING = NO;
+				PRODUCT_NAME = CZKit;
+				WRAPPER_EXTENSION = ibplugin;
+			};
+			name = Debug;
+		};
+		4A97A11112F7CF43002BCB67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Plugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Plugin;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1239,6 +1641,24 @@
 			buildConfigurations = (
 				4A0A273B11F90F5D00223866 /* Debug */,
 				4A0A273C11F90F5D00223866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A979F8B12F7C3A2002BCB67 /* Build configuration list for PBXNativeTarget "CZKit Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A979F8912F7C3A2002BCB67 /* Debug */,
+				4A979F8A12F7C3A2002BCB67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A97A11212F7CF43002BCB67 /* Build configuration list for PBXNativeTarget "CZKit IBPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A97A11012F7CF43002BCB67 /* Debug */,
+				4A97A11112F7CF43002BCB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -27,7 +27,7 @@
 
 #pragma mark -
 #pragma mark Initializer
-+ (id)viewWithFrame:(NSRect)frame { return [[[self alloc] initWithFrame:frame] autorelease]; }
++ (id)viewWithFrame:(NSRect)theFrame { return [[[self alloc] initWithFrame:theFrame] autorelease]; }
 
 #pragma mark -
 #pragma mark Action Recognizer Manipulation
