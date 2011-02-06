@@ -5,6 +5,9 @@
       location = "group:CZKit.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Demo/Demo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Templates/Templates.xcodeproj">
    </FileRef>
 </Workspace>

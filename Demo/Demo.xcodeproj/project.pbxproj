@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A42676412FCFA4800B0CDDD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A42676312FCFA4800B0CDDD /* Cocoa.framework */; };
+		4A42677112FCFA4800B0CDDD /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42677012FCFA4800B0CDDD /* Core.m */; };
+		4A42677712FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */; };
+		4A4267A612FCFDA100B0CDDD /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A512FCFDA100B0CDDD /* CZKit.framework */; };
+		4A4267A812FCFDBF00B0CDDD /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A512FCFDA100B0CDDD /* CZKit.framework */; };
+		4A4267AA12FD012800B0CDDD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A912FD012800B0CDDD /* QuartzCore.framework */; };
+		4AEAA82312FCFBAB003674BB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEAA82212FCFBAB003674BB /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A4267A712FCFDAD00B0CDDD /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A4267A812FCFDBF00B0CDDD /* CZKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A42675F12FCFA4800B0CDDD /* CZKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CZKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A42676312FCFA4800B0CDDD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A42676612FCFA4800B0CDDD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4A42676712FCFA4800B0CDDD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4A42676812FCFA4800B0CDDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A42676B12FCFA4800B0CDDD /* CZKit_Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZKit_Demo-Info.plist"; sourceTree = "<group>"; };
+		4A42676F12FCFA4800B0CDDD /* CZKit_Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZKit_Demo-Prefix.pch"; sourceTree = "<group>"; };
+		4A42677012FCFA4800B0CDDD /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		4A42677512FCFA4800B0CDDD /* CZKit_DemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZKit_DemoAppDelegate.h; sourceTree = "<group>"; };
+		4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZKit_DemoAppDelegate.m; sourceTree = "<group>"; };
+		4A4267A512FCFDA100B0CDDD /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4267A912FD012800B0CDDD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4AEAA82212FCFBAB003674BB /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A42675C12FCFA4800B0CDDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4267AA12FD012800B0CDDD /* QuartzCore.framework in Frameworks */,
+				4A42676412FCFA4800B0CDDD /* Cocoa.framework in Frameworks */,
+				4A4267A612FCFDA100B0CDDD /* CZKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A42675412FCFA4800B0CDDD = {
+			isa = PBXGroup;
+			children = (
+				4A42677512FCFA4800B0CDDD /* CZKit_DemoAppDelegate.h */,
+				4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */,
+				4A42676B12FCFA4800B0CDDD /* CZKit_Demo-Info.plist */,
+				4A42676F12FCFA4800B0CDDD /* CZKit_Demo-Prefix.pch */,
+				4AEAA82212FCFBAB003674BB /* MainMenu.xib */,
+				4A42677012FCFA4800B0CDDD /* Core.m */,
+				4A42676212FCFA4800B0CDDD /* Frameworks */,
+				4A42676012FCFA4800B0CDDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A42676012FCFA4800B0CDDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A42675F12FCFA4800B0CDDD /* CZKit Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A42676212FCFA4800B0CDDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A42676312FCFA4800B0CDDD /* Cocoa.framework */,
+				4A4267A512FCFDA100B0CDDD /* CZKit.framework */,
+				4A42676512FCFA4800B0CDDD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A42676512FCFA4800B0CDDD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A42676612FCFA4800B0CDDD /* AppKit.framework */,
+				4A4267A912FD012800B0CDDD /* QuartzCore.framework */,
+				4A42676712FCFA4800B0CDDD /* CoreData.framework */,
+				4A42676812FCFA4800B0CDDD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A42675E12FCFA4800B0CDDD /* CZKit Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A42677D12FCFA4800B0CDDD /* Build configuration list for PBXNativeTarget "CZKit Demo" */;
+			buildPhases = (
+				4A42675B12FCFA4800B0CDDD /* Sources */,
+				4A42675C12FCFA4800B0CDDD /* Frameworks */,
+				4A42675D12FCFA4800B0CDDD /* Resources */,
+				4A4267A712FCFDAD00B0CDDD /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CZKit Demo";
+			productName = "CZKit Demo";
+			productReference = 4A42675F12FCFA4800B0CDDD /* CZKit Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A42675612FCFA4800B0CDDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Opt-6 Products, LLC";
+			};
+			buildConfigurationList = 4A42675912FCFA4800B0CDDD /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A42675412FCFA4800B0CDDD;
+			productRefGroup = 4A42676012FCFA4800B0CDDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A42675E12FCFA4800B0CDDD /* CZKit Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A42675D12FCFA4800B0CDDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEAA82312FCFBAB003674BB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A42675B12FCFA4800B0CDDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A42677112FCFA4800B0CDDD /* Core.m in Sources */,
+				4A42677712FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A42677B12FCFA4800B0CDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+			};
+			name = Debug;
+		};
+		4A42677C12FCFA4800B0CDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+				SYMROOT = ../Products;
+			};
+			name = Release;
+		};
+		4A42677E12FCFA4800B0CDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CZKit_Demo-Prefix.pch";
+				INFOPLIST_FILE = "CZKit_Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A42677F12FCFA4800B0CDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CZKit_Demo-Prefix.pch";
+				INFOPLIST_FILE = "CZKit_Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A42675912FCFA4800B0CDDD /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A42677B12FCFA4800B0CDDD /* Debug */,
+				4A42677C12FCFA4800B0CDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A42677D12FCFA4800B0CDDD /* Build configuration list for PBXNativeTarget "CZKit Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A42677E12FCFA4800B0CDDD /* Debug */,
+				4A42677F12FCFA4800B0CDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A42675612FCFA4800B0CDDD /* Project object */;
+}
