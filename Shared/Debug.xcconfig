@@ -1,0 +1,29 @@
+//
+//  Debug.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 3/5/11.
+//  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "Shared.xcconfig"
+
+// -- Architectures -- //
+
+// Build Active Architecture Only: No
+ONLY_ACTIVE_ARCH = YES
+
+// -- Code Generation -- //
+
+// Optimization Level: Fastest, Smallest [-Os]
+GCC_OPTIMIZATION_LEVEL = 0
+
+// -- Deployment -- //
+
+// Strip Debug Symbols During Copy
+COPY_PHASE_STRIP = NO
+
+// -- Preprocessing -- //
+
+// Preprocessor Macros
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG

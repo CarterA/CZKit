@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A975DC81323657D00B9683F /* NSArray+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DBA1323657D00B9683F /* NSArray+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DC91323657D00B9683F /* NSArray+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DBB1323657D00B9683F /* NSArray+CZCategories.m */; };
+		4A975DCA1323657D00B9683F /* NSColor+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DBC1323657D00B9683F /* NSColor+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DCB1323657D00B9683F /* NSColor+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DBD1323657D00B9683F /* NSColor+CZCategories.m */; };
+		4A975DCC1323657D00B9683F /* NSData+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DBE1323657D00B9683F /* NSData+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DCD1323657D00B9683F /* NSData+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DBF1323657D00B9683F /* NSData+CZCategories.m */; };
+		4A975DCE1323657D00B9683F /* NSFileManager+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DC01323657D00B9683F /* NSFileManager+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DCF1323657D00B9683F /* NSFileManager+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DC11323657D00B9683F /* NSFileManager+CZCategories.m */; };
+		4A975DD01323657D00B9683F /* NSImage+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DC21323657D00B9683F /* NSImage+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DD11323657D00B9683F /* NSImage+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DC31323657D00B9683F /* NSImage+CZCategories.m */; };
+		4A975DD21323657D00B9683F /* NSObject+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DC41323657D00B9683F /* NSObject+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DD31323657D00B9683F /* NSObject+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DC51323657D00B9683F /* NSObject+CZCategories.m */; };
+		4A975DD41323657D00B9683F /* NSString+CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DC61323657D00B9683F /* NSString+CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DD51323657D00B9683F /* NSString+CZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DC71323657D00B9683F /* NSString+CZCategories.m */; };
+		4A975DD71323658A00B9683F /* CZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DD61323658A00B9683F /* CZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A975D8B13235EDD00B9683F /* libCZCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZCategories.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A975D9313235EDD00B9683F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A975D9E1323609300B9683F /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4A975D9F1323609300B9683F /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		4A975DA01323609300B9683F /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		4A975DA11323609300B9683F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		4A975DBA1323657D00B9683F /* NSArray+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DBB1323657D00B9683F /* NSArray+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DBC1323657D00B9683F /* NSColor+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DBD1323657D00B9683F /* NSColor+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DBE1323657D00B9683F /* NSData+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DBF1323657D00B9683F /* NSData+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DC01323657D00B9683F /* NSFileManager+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DC11323657D00B9683F /* NSFileManager+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DC21323657D00B9683F /* NSImage+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DC31323657D00B9683F /* NSImage+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DC41323657D00B9683F /* NSObject+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DC51323657D00B9683F /* NSObject+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DC61323657D00B9683F /* NSString+CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZCategories.h"; sourceTree = "<group>"; };
+		4A975DC71323657D00B9683F /* NSString+CZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZCategories.m"; sourceTree = "<group>"; };
+		4A975DD61323658A00B9683F /* CZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCategories.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A975D8813235EDD00B9683F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A975D8013235EDD00B9683F = {
+			isa = PBXGroup;
+			children = (
+				4A975DD61323658A00B9683F /* CZCategories.h */,
+				4A975DB91323657D00B9683F /* Categories */,
+				4A975D8D13235EDD00B9683F /* Frameworks */,
+				4A975D8C13235EDD00B9683F /* Products */,
+				4A975D9D1323609300B9683F /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		4A975D8C13235EDD00B9683F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D8B13235EDD00B9683F /* libCZCategories.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A975D8D13235EDD00B9683F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D9313235EDD00B9683F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A975D9D1323609300B9683F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D9E1323609300B9683F /* Prefix.pch */,
+				4A975D9F1323609300B9683F /* Shared.xcconfig */,
+				4A975DA01323609300B9683F /* Debug.xcconfig */,
+				4A975DA11323609300B9683F /* Release.xcconfig */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		4A975DB91323657D00B9683F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4A975DBA1323657D00B9683F /* NSArray+CZCategories.h */,
+				4A975DBB1323657D00B9683F /* NSArray+CZCategories.m */,
+				4A975DBC1323657D00B9683F /* NSColor+CZCategories.h */,
+				4A975DBD1323657D00B9683F /* NSColor+CZCategories.m */,
+				4A975DBE1323657D00B9683F /* NSData+CZCategories.h */,
+				4A975DBF1323657D00B9683F /* NSData+CZCategories.m */,
+				4A975DC01323657D00B9683F /* NSFileManager+CZCategories.h */,
+				4A975DC11323657D00B9683F /* NSFileManager+CZCategories.m */,
+				4A975DC21323657D00B9683F /* NSImage+CZCategories.h */,
+				4A975DC31323657D00B9683F /* NSImage+CZCategories.m */,
+				4A975DC41323657D00B9683F /* NSObject+CZCategories.h */,
+				4A975DC51323657D00B9683F /* NSObject+CZCategories.m */,
+				4A975DC61323657D00B9683F /* NSString+CZCategories.h */,
+				4A975DC71323657D00B9683F /* NSString+CZCategories.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A975D8913235EDD00B9683F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A975DC81323657D00B9683F /* NSArray+CZCategories.h in Headers */,
+				4A975DCA1323657D00B9683F /* NSColor+CZCategories.h in Headers */,
+				4A975DCC1323657D00B9683F /* NSData+CZCategories.h in Headers */,
+				4A975DCE1323657D00B9683F /* NSFileManager+CZCategories.h in Headers */,
+				4A975DD01323657D00B9683F /* NSImage+CZCategories.h in Headers */,
+				4A975DD21323657D00B9683F /* NSObject+CZCategories.h in Headers */,
+				4A975DD41323657D00B9683F /* NSString+CZCategories.h in Headers */,
+				4A975DD71323658A00B9683F /* CZCategories.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A975D8A13235EDD00B9683F /* CZCategories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A975D9913235EDD00B9683F /* Build configuration list for PBXNativeTarget "CZCategories" */;
+			buildPhases = (
+				4A975D8713235EDD00B9683F /* Sources */,
+				4A975D8813235EDD00B9683F /* Frameworks */,
+				4A975D8913235EDD00B9683F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZCategories;
+			productName = CZCore;
+			productReference = 4A975D8B13235EDD00B9683F /* libCZCategories.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A975D8213235EDD00B9683F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Opt-6 Products, LLC";
+			};
+			buildConfigurationList = 4A975D8513235EDD00B9683F /* Build configuration list for PBXProject "CZCategories" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A975D8013235EDD00B9683F;
+			productRefGroup = 4A975D8C13235EDD00B9683F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A975D8A13235EDD00B9683F /* CZCategories */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A975D8713235EDD00B9683F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A975DC91323657D00B9683F /* NSArray+CZCategories.m in Sources */,
+				4A975DCB1323657D00B9683F /* NSColor+CZCategories.m in Sources */,
+				4A975DCD1323657D00B9683F /* NSData+CZCategories.m in Sources */,
+				4A975DCF1323657D00B9683F /* NSFileManager+CZCategories.m in Sources */,
+				4A975DD11323657D00B9683F /* NSImage+CZCategories.m in Sources */,
+				4A975DD31323657D00B9683F /* NSObject+CZCategories.m in Sources */,
+				4A975DD51323657D00B9683F /* NSString+CZCategories.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A975D9713235EDD00B9683F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975DA01323609300B9683F /* Debug.xcconfig */;
+			buildSettings = {
+				CZKIT_ROOT = ../../;
+			};
+			name = Debug;
+		};
+		4A975D9813235EDD00B9683F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975DA11323609300B9683F /* Release.xcconfig */;
+			buildSettings = {
+				CZKIT_ROOT = ../../;
+			};
+			name = Release;
+		};
+		4A975D9A13235EDD00B9683F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A975D9B13235EDD00B9683F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A975D8513235EDD00B9683F /* Build configuration list for PBXProject "CZCategories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A975D9713235EDD00B9683F /* Debug */,
+				4A975D9813235EDD00B9683F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A975D9913235EDD00B9683F /* Build configuration list for PBXNativeTarget "CZCategories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A975D9A13235EDD00B9683F /* Debug */,
+				4A975D9B13235EDD00B9683F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A975D8213235EDD00B9683F /* Project object */;
+}

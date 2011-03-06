@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A975DF0132366EF00B9683F /* CZActionRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DDF132366EF00B9683F /* CZActionRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DF1132366EF00B9683F /* CZActionRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DE0132366EF00B9683F /* CZActionRecognizer.m */; };
+		4A975DF2132366EF00B9683F /* CZActionRecognizerSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DE1132366EF00B9683F /* CZActionRecognizerSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DF3132366EF00B9683F /* CZClickActionRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DE2132366EF00B9683F /* CZClickActionRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DF4132366EF00B9683F /* CZClickActionRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DE3132366EF00B9683F /* CZClickActionRecognizer.m */; };
+		4A975DF5132366EF00B9683F /* CZControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DE4132366EF00B9683F /* CZControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DF6132366EF00B9683F /* CZControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DE5132366EF00B9683F /* CZControl.m */; };
+		4A975DF7132366EF00B9683F /* CZGradientPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DE6132366EF00B9683F /* CZGradientPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DF8132366EF00B9683F /* CZGradientPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DE7132366EF00B9683F /* CZGradientPicker.m */; };
+		4A975DF9132366EF00B9683F /* CZGradientPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DE8132366EF00B9683F /* CZGradientPickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DFA132366EF00B9683F /* CZGradientPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DE9132366EF00B9683F /* CZGradientPickerCell.m */; };
+		4A975DFB132366EF00B9683F /* CZIconImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DEA132366EF00B9683F /* CZIconImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DFC132366EF00B9683F /* CZIconImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DEB132366EF00B9683F /* CZIconImageView.m */; };
+		4A975DFD132366EF00B9683F /* CZInsetTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DEC132366EF00B9683F /* CZInsetTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975DFE132366EF00B9683F /* CZInsetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DED132366EF00B9683F /* CZInsetTextField.m */; };
+		4A975DFF132366EF00B9683F /* CZView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975DEE132366EF00B9683F /* CZView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975E00132366EF00B9683F /* CZView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975DEF132366EF00B9683F /* CZView.m */; };
+		4A975E021323671700B9683F /* CZUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975E011323671700B9683F /* CZUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A975D8B13235EDD00B9683F /* libCZUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A975D9313235EDD00B9683F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A975D9E1323609300B9683F /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4A975D9F1323609300B9683F /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		4A975DA01323609300B9683F /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		4A975DA11323609300B9683F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		4A975DDF132366EF00B9683F /* CZActionRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZActionRecognizer.h; sourceTree = "<group>"; };
+		4A975DE0132366EF00B9683F /* CZActionRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZActionRecognizer.m; sourceTree = "<group>"; };
+		4A975DE1132366EF00B9683F /* CZActionRecognizerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZActionRecognizerSubclass.h; sourceTree = "<group>"; };
+		4A975DE2132366EF00B9683F /* CZClickActionRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZClickActionRecognizer.h; sourceTree = "<group>"; };
+		4A975DE3132366EF00B9683F /* CZClickActionRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZClickActionRecognizer.m; sourceTree = "<group>"; };
+		4A975DE4132366EF00B9683F /* CZControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZControl.h; sourceTree = "<group>"; };
+		4A975DE5132366EF00B9683F /* CZControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZControl.m; sourceTree = "<group>"; };
+		4A975DE6132366EF00B9683F /* CZGradientPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPicker.h; sourceTree = "<group>"; };
+		4A975DE7132366EF00B9683F /* CZGradientPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGradientPicker.m; sourceTree = "<group>"; };
+		4A975DE8132366EF00B9683F /* CZGradientPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGradientPickerCell.h; sourceTree = "<group>"; };
+		4A975DE9132366EF00B9683F /* CZGradientPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGradientPickerCell.m; sourceTree = "<group>"; };
+		4A975DEA132366EF00B9683F /* CZIconImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZIconImageView.h; sourceTree = "<group>"; };
+		4A975DEB132366EF00B9683F /* CZIconImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZIconImageView.m; sourceTree = "<group>"; };
+		4A975DEC132366EF00B9683F /* CZInsetTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZInsetTextField.h; sourceTree = "<group>"; };
+		4A975DED132366EF00B9683F /* CZInsetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZInsetTextField.m; sourceTree = "<group>"; };
+		4A975DEE132366EF00B9683F /* CZView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZView.h; sourceTree = "<group>"; };
+		4A975DEF132366EF00B9683F /* CZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZView.m; sourceTree = "<group>"; };
+		4A975E011323671700B9683F /* CZUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZUI.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A975D8813235EDD00B9683F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A975D8013235EDD00B9683F = {
+			isa = PBXGroup;
+			children = (
+				4A975E011323671700B9683F /* CZUI.h */,
+				4A975DA31323625000B9683F /* Classes */,
+				4A975D8D13235EDD00B9683F /* Frameworks */,
+				4A975D8C13235EDD00B9683F /* Products */,
+				4A975D9D1323609300B9683F /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		4A975D8C13235EDD00B9683F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D8B13235EDD00B9683F /* libCZUI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A975D8D13235EDD00B9683F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D9313235EDD00B9683F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A975D9D1323609300B9683F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D9E1323609300B9683F /* Prefix.pch */,
+				4A975D9F1323609300B9683F /* Shared.xcconfig */,
+				4A975DA01323609300B9683F /* Debug.xcconfig */,
+				4A975DA11323609300B9683F /* Release.xcconfig */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		4A975DA31323625000B9683F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A975DDF132366EF00B9683F /* CZActionRecognizer.h */,
+				4A975DE0132366EF00B9683F /* CZActionRecognizer.m */,
+				4A975DE1132366EF00B9683F /* CZActionRecognizerSubclass.h */,
+				4A975DE2132366EF00B9683F /* CZClickActionRecognizer.h */,
+				4A975DE3132366EF00B9683F /* CZClickActionRecognizer.m */,
+				4A975DE4132366EF00B9683F /* CZControl.h */,
+				4A975DE5132366EF00B9683F /* CZControl.m */,
+				4A975DE6132366EF00B9683F /* CZGradientPicker.h */,
+				4A975DE7132366EF00B9683F /* CZGradientPicker.m */,
+				4A975DE8132366EF00B9683F /* CZGradientPickerCell.h */,
+				4A975DE9132366EF00B9683F /* CZGradientPickerCell.m */,
+				4A975DEA132366EF00B9683F /* CZIconImageView.h */,
+				4A975DEB132366EF00B9683F /* CZIconImageView.m */,
+				4A975DEC132366EF00B9683F /* CZInsetTextField.h */,
+				4A975DED132366EF00B9683F /* CZInsetTextField.m */,
+				4A975DEE132366EF00B9683F /* CZView.h */,
+				4A975DEF132366EF00B9683F /* CZView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A975D8913235EDD00B9683F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A975DF0132366EF00B9683F /* CZActionRecognizer.h in Headers */,
+				4A975DF2132366EF00B9683F /* CZActionRecognizerSubclass.h in Headers */,
+				4A975DF3132366EF00B9683F /* CZClickActionRecognizer.h in Headers */,
+				4A975DF5132366EF00B9683F /* CZControl.h in Headers */,
+				4A975DF7132366EF00B9683F /* CZGradientPicker.h in Headers */,
+				4A975DF9132366EF00B9683F /* CZGradientPickerCell.h in Headers */,
+				4A975DFB132366EF00B9683F /* CZIconImageView.h in Headers */,
+				4A975DFD132366EF00B9683F /* CZInsetTextField.h in Headers */,
+				4A975DFF132366EF00B9683F /* CZView.h in Headers */,
+				4A975E021323671700B9683F /* CZUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A975D8A13235EDD00B9683F /* CZUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A975D9913235EDD00B9683F /* Build configuration list for PBXNativeTarget "CZUI" */;
+			buildPhases = (
+				4A975D8713235EDD00B9683F /* Sources */,
+				4A975D8813235EDD00B9683F /* Frameworks */,
+				4A975D8913235EDD00B9683F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZUI;
+			productName = CZCore;
+			productReference = 4A975D8B13235EDD00B9683F /* libCZUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A975D8213235EDD00B9683F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Opt-6 Products, LLC";
+			};
+			buildConfigurationList = 4A975D8513235EDD00B9683F /* Build configuration list for PBXProject "CZUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A975D8013235EDD00B9683F;
+			productRefGroup = 4A975D8C13235EDD00B9683F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A975D8A13235EDD00B9683F /* CZUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A975D8713235EDD00B9683F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A975DF1132366EF00B9683F /* CZActionRecognizer.m in Sources */,
+				4A975DF4132366EF00B9683F /* CZClickActionRecognizer.m in Sources */,
+				4A975DF6132366EF00B9683F /* CZControl.m in Sources */,
+				4A975DF8132366EF00B9683F /* CZGradientPicker.m in Sources */,
+				4A975DFA132366EF00B9683F /* CZGradientPickerCell.m in Sources */,
+				4A975DFC132366EF00B9683F /* CZIconImageView.m in Sources */,
+				4A975DFE132366EF00B9683F /* CZInsetTextField.m in Sources */,
+				4A975E00132366EF00B9683F /* CZView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A975D9713235EDD00B9683F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975DA01323609300B9683F /* Debug.xcconfig */;
+			buildSettings = {
+				CZKIT_ROOT = ../../;
+			};
+			name = Debug;
+		};
+		4A975D9813235EDD00B9683F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975DA11323609300B9683F /* Release.xcconfig */;
+			buildSettings = {
+				CZKIT_ROOT = ../../;
+			};
+			name = Release;
+		};
+		4A975D9A13235EDD00B9683F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A975D9B13235EDD00B9683F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A975D8513235EDD00B9683F /* Build configuration list for PBXProject "CZUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A975D9713235EDD00B9683F /* Debug */,
+				4A975D9813235EDD00B9683F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A975D9913235EDD00B9683F /* Build configuration list for PBXNativeTarget "CZUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A975D9A13235EDD00B9683F /* Debug */,
+				4A975D9B13235EDD00B9683F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A975D8213235EDD00B9683F /* Project object */;
+}

@@ -1,0 +1,14 @@
+//
+//  Release.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 3/5/11.
+//  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
+//
+
+#include "Shared.xcconfig"
+
+// -- Build Options -- //
+
+// Debug Information Format: DWARF with dSYM File
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym

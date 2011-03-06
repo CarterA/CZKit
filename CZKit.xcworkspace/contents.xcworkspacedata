@@ -5,6 +5,18 @@
       location = "group:Framework/CZKit.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Libraries/CZCore/CZCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Libraries/CZCore/../CZCategories/CZCategories.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Libraries/CZUI/CZUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Libraries/CZUtilities/CZUtilities.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Demo/Demo.xcodeproj">
    </FileRef>
    <FileRef

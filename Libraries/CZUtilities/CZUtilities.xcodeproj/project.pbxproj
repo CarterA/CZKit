@@ -1,0 +1,225 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A975E0D1323693B00B9683F /* CZAppPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975E071323693B00B9683F /* CZAppPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975E0E1323693B00B9683F /* CZAppPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975E081323693B00B9683F /* CZAppPrefs.m */; };
+		4A975E0F1323693B00B9683F /* CZColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975E091323693B00B9683F /* CZColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975E101323693B00B9683F /* CZColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975E0A1323693B00B9683F /* CZColors.m */; };
+		4A975E111323693B00B9683F /* CZGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975E0B1323693B00B9683F /* CZGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A975E121323693B00B9683F /* CZGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A975E0C1323693B00B9683F /* CZGraphics.m */; };
+		4A975E141323695300B9683F /* CZUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A975E131323695300B9683F /* CZUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A3D4B3413236E4600F2A075 /* libCZUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A975D9313235EDD00B9683F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A975D9E1323609300B9683F /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4A975D9F1323609300B9683F /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		4A975DA01323609300B9683F /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		4A975DA11323609300B9683F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		4A975E071323693B00B9683F /* CZAppPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAppPrefs.h; sourceTree = "<group>"; };
+		4A975E081323693B00B9683F /* CZAppPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAppPrefs.m; sourceTree = "<group>"; };
+		4A975E091323693B00B9683F /* CZColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZColors.h; sourceTree = "<group>"; };
+		4A975E0A1323693B00B9683F /* CZColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZColors.m; sourceTree = "<group>"; };
+		4A975E0B1323693B00B9683F /* CZGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGraphics.h; sourceTree = "<group>"; };
+		4A975E0C1323693B00B9683F /* CZGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGraphics.m; sourceTree = "<group>"; };
+		4A975E131323695300B9683F /* CZUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZUtilities.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A975D8813235EDD00B9683F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A975D8013235EDD00B9683F = {
+			isa = PBXGroup;
+			children = (
+				4A975E131323695300B9683F /* CZUtilities.h */,
+				4A975DA31323625000B9683F /* Classes */,
+				4A975D8D13235EDD00B9683F /* Frameworks */,
+				4A975D8C13235EDD00B9683F /* Products */,
+				4A975D9D1323609300B9683F /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		4A975D8C13235EDD00B9683F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A3D4B3413236E4600F2A075 /* libCZUtilities.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A975D8D13235EDD00B9683F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D9313235EDD00B9683F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A975D9D1323609300B9683F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A975D9E1323609300B9683F /* Prefix.pch */,
+				4A975D9F1323609300B9683F /* Shared.xcconfig */,
+				4A975DA01323609300B9683F /* Debug.xcconfig */,
+				4A975DA11323609300B9683F /* Release.xcconfig */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		4A975DA31323625000B9683F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A975E071323693B00B9683F /* CZAppPrefs.h */,
+				4A975E081323693B00B9683F /* CZAppPrefs.m */,
+				4A975E091323693B00B9683F /* CZColors.h */,
+				4A975E0A1323693B00B9683F /* CZColors.m */,
+				4A975E0B1323693B00B9683F /* CZGraphics.h */,
+				4A975E0C1323693B00B9683F /* CZGraphics.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A975D8913235EDD00B9683F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A975E0D1323693B00B9683F /* CZAppPrefs.h in Headers */,
+				4A975E0F1323693B00B9683F /* CZColors.h in Headers */,
+				4A975E111323693B00B9683F /* CZGraphics.h in Headers */,
+				4A975E141323695300B9683F /* CZUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A975D8A13235EDD00B9683F /* CZUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A975D9913235EDD00B9683F /* Build configuration list for PBXNativeTarget "CZUtilities" */;
+			buildPhases = (
+				4A975D8713235EDD00B9683F /* Sources */,
+				4A975D8813235EDD00B9683F /* Frameworks */,
+				4A975D8913235EDD00B9683F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZUtilities;
+			productName = CZCore;
+			productReference = 4A3D4B3413236E4600F2A075 /* libCZUtilities.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A975D8213235EDD00B9683F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Opt-6 Products, LLC";
+			};
+			buildConfigurationList = 4A975D8513235EDD00B9683F /* Build configuration list for PBXProject "CZUtilities" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A975D8013235EDD00B9683F;
+			productRefGroup = 4A975D8C13235EDD00B9683F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A975D8A13235EDD00B9683F /* CZUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A975D8713235EDD00B9683F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A975E0E1323693B00B9683F /* CZAppPrefs.m in Sources */,
+				4A975E101323693B00B9683F /* CZColors.m in Sources */,
+				4A975E121323693B00B9683F /* CZGraphics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A975D9713235EDD00B9683F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975DA01323609300B9683F /* Debug.xcconfig */;
+			buildSettings = {
+				CZKIT_ROOT = ../../;
+			};
+			name = Debug;
+		};
+		4A975D9813235EDD00B9683F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975DA11323609300B9683F /* Release.xcconfig */;
+			buildSettings = {
+				CZKIT_ROOT = ../../;
+			};
+			name = Release;
+		};
+		4A975D9A13235EDD00B9683F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A975D9B13235EDD00B9683F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A975D8513235EDD00B9683F /* Build configuration list for PBXProject "CZUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A975D9713235EDD00B9683F /* Debug */,
+				4A975D9813235EDD00B9683F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A975D9913235EDD00B9683F /* Build configuration list for PBXNativeTarget "CZUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A975D9A13235EDD00B9683F /* Debug */,
+				4A975D9B13235EDD00B9683F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A975D8213235EDD00B9683F /* Project object */;
+}

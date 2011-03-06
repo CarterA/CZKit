@@ -1,0 +1,64 @@
+//
+//  Shared.xcconfig
+//  CZKit
+//
+//  Created by Carter Allen on 3/5/11.
+//  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
+//
+
+// -- Architectures -- //
+
+// Architectures: Standard (32/64-bit Intel)
+ARCHS = $(ARCHS_STANDARD_64_BIT)
+// Base SDK: Latest Mac OS X
+SDKROOT = macosx
+// Build Active Architecture Only: No
+ONLY_ACTIVE_ARCH = NO
+// Valid Architectures: i386 x86_64 armv6 armv7
+VALID_ARCHS = i386 x86_64 armv6 armv7
+
+// -- Build Locations -- //
+
+// Build Products Path: Products
+SYMROOT = $(CZKIT_ROOT)Products
+
+// -- Build Options -- //
+
+// Run Static Analyzer: Yes
+RUN_CLANG_STATIC_ANALYZER = YES
+
+// -- Packaging -- //
+PUBLIC_HEADERS_FOLDER_PATH = Headers/$(PRODUCT_NAME)
+
+// -- Compiler Version -- //
+
+// C/C++ Compiler Version: LLVM compiler 2.0
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+
+// -- Code Generation -- //
+
+// Optimization Level: Fastest, Smallest [-Os]
+GCC_OPTIMIZATION_LEVEL = s
+
+// -- Search Paths -- //
+
+// Always Search User Paths: No
+ALWAYS_SEARCH_USER_PATHS = NO
+
+// -- Language -- //
+
+// Precompile Prefix Header: Yes
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+// Prefix Header: Shared/Prefix.pch
+GCC_PREFIX_HEADER = $(CZKIT_ROOT)Shared/Prefix.pch
+
+// C Language Dialect: C99 [-std=c99]
+GCC_C_LANGUAGE_STANDARD = c99
+
+// -- Preprocessing -- //
+
+// -- Warnings -- //
+
+// -- Other Settings -- //
+PREBINDING = NO
