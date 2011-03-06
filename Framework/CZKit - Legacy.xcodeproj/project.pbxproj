@@ -7,24 +7,12 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		4AE50E1E11F92A0800E27282 /* CZKit Documentation */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 4AE50E2911F92A2000E27282 /* Build configuration list for PBXAggregateTarget "CZKit Documentation" */;
-			buildPhases = (
-				4AE50E1D11F92A0800E27282 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = "CZKit Documentation";
-			productName = Documentation;
-		};
 		4AE511FE11FA4DDA00E27282 /* Build All */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 4AE5121411FA4E2A00E27282 /* Build configuration list for PBXAggregateTarget "Build All" */;
 			buildPhases = (
 			);
 			dependencies = (
-				4AE5120811FA4DF600E27282 /* PBXTargetDependency */,
 				4AE5120411FA4DF600E27282 /* PBXTargetDependency */,
 			);
 			name = "Build All";
@@ -205,13 +193,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4AE50EA711F941D900E27282;
 			remoteInfo = "CZKit Unit Tests";
-		};
-		4AE5120711FA4DF600E27282 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A0A272111F90F5C00223866 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AE50E1E11F92A0800E27282;
-			remoteInfo = "CZKit Documentation";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -446,7 +427,7 @@
 				4AE50DC111F9266D00E27282 /* CZKit.m */,
 				4AE50DA811F9260600E27282 /* Info.plist */,
 			);
-			path = Framework;
+			name = Framework;
 			sourceTree = "<group>";
 		};
 		4AB4476A11F91F620063FC70 /* Libraries */ = {
@@ -457,7 +438,8 @@
 				4AE50DC911F9279A00E27282 /* CZUtilities */,
 				4AE50DFA11F928D500E27282 /* CZUI */,
 			);
-			path = Libraries;
+			name = Libraries;
+			path = ../Libraries;
 			sourceTree = "<group>";
 		};
 		4AB4476B11F91F830063FC70 /* CZCategories */ = {
@@ -488,7 +470,8 @@
 				4AE50C4911F923FF00E27282 /* Prefix.pch */,
 				4AE50C4A11F9248500E27282 /* Frameworks */,
 			);
-			path = Shared;
+			name = Shared;
+			path = ../Shared;
 			sourceTree = "<group>";
 		};
 		4AE50C4A11F9248500E27282 /* Frameworks */ = {
@@ -554,7 +537,8 @@
 				4AE50EC211F9424A00E27282 /* Info.plist */,
 				4AE50EC311F9424A00E27282 /* Resources */,
 			);
-			path = Tests;
+			name = Tests;
+			path = ../Tests;
 			sourceTree = "<group>";
 		};
 		4AE50EC311F9424A00E27282 /* Resources */ = {
@@ -754,7 +738,6 @@
 				4ABCBFCC11F9130800851859 /* CZCategories */,
 				4AE50DD211F927A900E27282 /* CZUtilities */,
 				4AE50DFD11F928DD00E27282 /* CZUI */,
-				4AE50E1E11F92A0800E27282 /* CZKit Documentation */,
 				4AE50E5F11F93B2C00E27282 /* CZKit Headers */,
 				4AE50EA711F941D900E27282 /* CZKit Unit Tests */,
 			);
@@ -781,19 +764,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4AE50E1D11F92A0800E27282 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "DOXYGEN_PATH=$(which doxygen)\nDocumentation/appledoc -p \"$PROJECT_NAME\" -i ./ -o Documentation -c Documentation/Doxyfile --docset -d /usr/local/bin/doxygen -t Documentation/Templates --docid com.cz.documentation.CZKit --docplist Documentation/DocSet-Info.plist --clean-temp-files\nrm -rf Products/$BUILD_STYLE$EFFECTIVE_PLATFORM_NAME/CZKit.docset\nmkdir -p Products/$BUILD_STYLE$EFFECTIVE_PLATFORM_NAME/CZKit.docset\nmv Documentation/docset Products/$BUILD_STYLE$EFFECTIVE_PLATFORM_NAME/CZKit.docset\nexit 0;";
-		};
 		4AE50EA611F941D900E27282 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -929,11 +899,6 @@
 			target = 4AE50EA711F941D900E27282 /* CZKit Unit Tests */;
 			targetProxy = 4AE5120311FA4DF600E27282 /* PBXContainerItemProxy */;
 		};
-		4AE5120811FA4DF600E27282 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AE50E1E11F92A0800E27282 /* CZKit Documentation */;
-			targetProxy = 4AE5120711FA4DF600E27282 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -953,7 +918,7 @@
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.6;
-				SYMROOT = Products;
+				SYMROOT = ../Products;
 				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970 x86_64 armv6 armv7";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -980,7 +945,7 @@
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.6;
-				SYMROOT = Products;
+				SYMROOT = ../Products;
 				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970 x86_64 armv6 armv7";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -1005,8 +970,8 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
-				INFOPLIST_FILE = Framework/Info.plist;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1027,8 +992,8 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
-				INFOPLIST_FILE = Framework/Info.plist;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1045,7 +1010,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZCore;
@@ -1058,7 +1023,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZCore;
@@ -1071,7 +1036,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CZCategories.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZCategories;
@@ -1084,7 +1049,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CZCategories.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZCategories;
@@ -1097,7 +1062,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZUtilities;
@@ -1110,7 +1075,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZUtilities;
@@ -1123,7 +1088,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZUI;
@@ -1136,24 +1101,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CZUI;
-			};
-			name = Release;
-		};
-		4AE50E1F11F92A0800E27282 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "CZKit Documentation";
-			};
-			name = Debug;
-		};
-		4AE50E2011F92A0800E27282 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "CZKit Documentation";
 			};
 			name = Release;
 		};
@@ -1179,8 +1130,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
-				INFOPLIST_FILE = Tests/Info.plist;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
+				INFOPLIST_FILE = ../Tests/Info.plist;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
@@ -1196,8 +1147,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Shared/Prefix.pch;
-				INFOPLIST_FILE = Tests/Info.plist;
+				GCC_PREFIX_HEADER = ../Shared/Prefix.pch;
+				INFOPLIST_FILE = ../Tests/Info.plist;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
@@ -1275,15 +1226,6 @@
 			buildConfigurations = (
 				4AE50E0711F928DD00E27282 /* Debug */,
 				4AE50E0811F928DD00E27282 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AE50E2911F92A2000E27282 /* Build configuration list for PBXAggregateTarget "CZKit Documentation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AE50E1F11F92A0800E27282 /* Debug */,
-				4AE50E2011F92A0800E27282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
