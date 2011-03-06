@@ -6,6 +6,8 @@
 //  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
 //
 
+#if !TARGET_OS_IPHONE
+
 #import "CZClickActionRecognizer.h"
 #import "CZActionRecognizerSubclass.h"
 
@@ -48,3 +50,5 @@
 	self.events = nil;
 }
 @end
+
+#endif // !TARGET_OS_IPHONE

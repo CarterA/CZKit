@@ -10,6 +10,6 @@
 
 @implementation CZDebuggerTest
 - (void)testDebuggerCheck {
-	STAssertFalse([CZDebugger debuggerIsAttached], @"CZDebugger's debugger check is broken (or this test is being run with a debugger attached.");
+	STAssertTrue([CZDebugger debuggerIsAttached], @"CZDebugger's debugger check is broken (or this test is being run without a debugger attached.");
 }
 @end
