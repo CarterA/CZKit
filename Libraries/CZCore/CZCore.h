@@ -6,4 +6,6 @@
 //  Copyright 2010 Opt-6 Products, LLC. All rights reserved.
 //
 
+#import "CZMacros.h"
 #import "CZDebugger.h"
+#import "CZModelObject.h"

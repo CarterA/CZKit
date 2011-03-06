@@ -6,8 +6,6 @@
 //  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
-int main(int argumentCount, const char *arguments[]) {
-    return NSApplicationMain(argumentCount, arguments);
+int main(int argumentCount, char *arguments[]) {
+    return CZApplicationMain(argumentCount, arguments, nil, @"CZKit_DemoAppDelegate");
 }

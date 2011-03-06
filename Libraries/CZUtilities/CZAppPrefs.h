@@ -34,10 +34,6 @@
  
  */
 
-/** A utility class for reading and writing to and from applications other then your own.
-
-*/
-
 #if !TARGET_OS_IPHONE
 
 #import <Cocoa/Cocoa.h>
@@ -52,6 +48,7 @@ typedef enum {
 	CZAppPrefsKeyNotOfExpectedType /**< The value of the specified key was not of the expected type. */
 } CZAppPrefsResponse;
 
+/** A utility class for reading and writing to and from applications other then your own. */
 @interface CZAppPrefs : NSObject {
 	BOOL global;
 	NSString *bundleID;

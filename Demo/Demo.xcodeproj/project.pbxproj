@@ -7,14 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A42676412FCFA4800B0CDDD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A42676312FCFA4800B0CDDD /* Cocoa.framework */; };
 		4A42677112FCFA4800B0CDDD /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42677012FCFA4800B0CDDD /* Core.m */; };
 		4A42677712FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */; };
-		4A4267A612FCFDA100B0CDDD /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A512FCFDA100B0CDDD /* CZKit.framework */; };
+		4A4267A612FCFDA100B0CDDD /* CZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A512FCFDA100B0CDDD /* CZKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4A4267A812FCFDBF00B0CDDD /* CZKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A512FCFDA100B0CDDD /* CZKit.framework */; };
-		4A4267AA12FD012800B0CDDD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4267A912FD012800B0CDDD /* QuartzCore.framework */; };
+		4A45A11E13121ECA002745AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A11D13121ECA002745AB /* QuartzCore.framework */; };
+		4A45A12813121EDB002745AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A12713121EDB002745AB /* Foundation.framework */; };
+		4A45A12A13121EDB002745AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A12913121EDB002745AB /* CoreGraphics.framework */; };
+		4A45A13F13121FAC002745AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A13E13121FAC002745AB /* UIKit.framework */; };
+		4A45A14413121FC2002745AB /* libCZCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A14013121FC2002745AB /* libCZCategories.a */; };
+		4A45A14513121FC2002745AB /* libCZCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A14113121FC2002745AB /* libCZCore.a */; };
+		4A45A14613121FC2002745AB /* libCZUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A14213121FC2002745AB /* libCZUI.a */; };
+		4A45A14713121FC2002745AB /* libCZUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A14313121FC2002745AB /* libCZUtilities.a */; };
+		4A45A14913122056002745AB /* CZKit_DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */; };
+		4A45A14A13122062002745AB /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42677012FCFA4800B0CDDD /* Core.m */; };
+		4A45A1561312219A002745AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A1551312219A002745AB /* Cocoa.framework */; };
 		4AEAA82312FCFBAB003674BB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEAA82212FCFBAB003674BB /* MainMenu.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A45A14B131220A0002745AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9F9461120DF52B004CBE02;
+			remoteInfo = CZCore;
+		};
+		4A45A14D131220A0002745AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ABCBFCC11F9130800851859;
+			remoteInfo = CZCategories;
+		};
+		4A45A14F131220A0002745AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE50DD211F927A900E27282;
+			remoteInfo = CZUtilities;
+		};
+		4A45A151131220A0002745AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE50DFD11F928DD00E27282;
+			remoteInfo = CZUI;
+		};
+		4A45A153131220A0002745AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE50E5F11F93B2C00E27282;
+			remoteInfo = "CZKit Headers";
+		};
+		4A5D82531311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A0A272F11F90F5D00223866;
+			remoteInfo = CZKit;
+		};
+		4A5D82551311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A9F946E120DF52B004CBE02;
+			remoteInfo = CZCore;
+		};
+		4A5D82571311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4ABCBFCD11F9130800851859;
+			remoteInfo = CZCategories;
+		};
+		4A5D82591311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AE50DDB11F927A900E27282;
+			remoteInfo = CZUtilities;
+		};
+		4A5D825B1311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AE50E0911F928DD00E27282;
+			remoteInfo = CZUI;
+		};
+		4A5D825D1311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AE50E6011F93B2C00E27282;
+			remoteInfo = "CZKit Headers";
+		};
+		4A5D825F1311DB5B0017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AE50EA811F941D900E27282;
+			remoteInfo = "CZKit Unit Tests";
+		};
+		4A5D82611311DB680017A337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A0A272E11F90F5D00223866;
+			remoteInfo = CZKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4A4267A712FCFDAD00B0CDDD /* Copy Frameworks */ = {
@@ -32,17 +135,23 @@
 
 /* Begin PBXFileReference section */
 		4A42675F12FCFA4800B0CDDD /* CZKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CZKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A42676312FCFA4800B0CDDD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		4A42676612FCFA4800B0CDDD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		4A42676712FCFA4800B0CDDD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4A42676812FCFA4800B0CDDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A42676B12FCFA4800B0CDDD /* CZKit_Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZKit_Demo-Info.plist"; sourceTree = "<group>"; };
 		4A42676F12FCFA4800B0CDDD /* CZKit_Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZKit_Demo-Prefix.pch"; sourceTree = "<group>"; };
 		4A42677012FCFA4800B0CDDD /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		4A42677512FCFA4800B0CDDD /* CZKit_DemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZKit_DemoAppDelegate.h; sourceTree = "<group>"; };
 		4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZKit_DemoAppDelegate.m; sourceTree = "<group>"; };
 		4A4267A512FCFDA100B0CDDD /* CZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A4267A912FD012800B0CDDD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4A45A11D13121ECA002745AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4A45A12313121EDB002745AB /* CZKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CZKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A45A12713121EDB002745AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A45A12913121EDB002745AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4A45A13E13121FAC002745AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../../Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4A45A14013121FC2002745AB /* libCZCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCZCategories.a; sourceTree = SOURCE_ROOT; };
+		4A45A14113121FC2002745AB /* libCZCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCZCore.a; sourceTree = SOURCE_ROOT; };
+		4A45A14213121FC2002745AB /* libCZUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCZUI.a; sourceTree = SOURCE_ROOT; };
+		4A45A14313121FC2002745AB /* libCZUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCZUtilities.a; sourceTree = SOURCE_ROOT; };
+		4A45A1551312219A002745AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZKit.xcodeproj; path = ../CZKit.xcodeproj; sourceTree = "<group>"; };
 		4AEAA82212FCFBAB003674BB /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,9 +160,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4267AA12FD012800B0CDDD /* QuartzCore.framework in Frameworks */,
-				4A42676412FCFA4800B0CDDD /* Cocoa.framework in Frameworks */,
+				4A45A1561312219A002745AB /* Cocoa.framework in Frameworks */,
+				4A45A11E13121ECA002745AB /* QuartzCore.framework in Frameworks */,
 				4A4267A612FCFDA100B0CDDD /* CZKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A45A12013121EDB002745AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A45A14413121FC2002745AB /* libCZCategories.a in Frameworks */,
+				4A45A14513121FC2002745AB /* libCZCore.a in Frameworks */,
+				4A45A14613121FC2002745AB /* libCZUI.a in Frameworks */,
+				4A45A14713121FC2002745AB /* libCZUtilities.a in Frameworks */,
+				4A45A13F13121FAC002745AB /* UIKit.framework in Frameworks */,
+				4A45A12813121EDB002745AB /* Foundation.framework in Frameworks */,
+				4A45A12A13121EDB002745AB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,14 +186,11 @@
 		4A42675412FCFA4800B0CDDD = {
 			isa = PBXGroup;
 			children = (
-				4A42677512FCFA4800B0CDDD /* CZKit_DemoAppDelegate.h */,
-				4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */,
-				4A42676B12FCFA4800B0CDDD /* CZKit_Demo-Info.plist */,
-				4A42676F12FCFA4800B0CDDD /* CZKit_Demo-Prefix.pch */,
-				4AEAA82212FCFBAB003674BB /* MainMenu.xib */,
-				4A42677012FCFA4800B0CDDD /* Core.m */,
+				4A45A14813122021002745AB /* Shared */,
+				4A45A13D13121F5D002745AB /* Mac */,
 				4A42676212FCFA4800B0CDDD /* Frameworks */,
 				4A42676012FCFA4800B0CDDD /* Products */,
+				4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				4A42675F12FCFA4800B0CDDD /* CZKit Demo.app */,
+				4A45A12313121EDB002745AB /* CZKit Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,30 +206,60 @@
 		4A42676212FCFA4800B0CDDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A42676312FCFA4800B0CDDD /* Cocoa.framework */,
+				4A45A14013121FC2002745AB /* libCZCategories.a */,
+				4A45A14113121FC2002745AB /* libCZCore.a */,
+				4A45A14213121FC2002745AB /* libCZUI.a */,
+				4A45A14313121FC2002745AB /* libCZUtilities.a */,
+				4A45A13E13121FAC002745AB /* UIKit.framework */,
+				4A45A1551312219A002745AB /* Cocoa.framework */,
+				4A45A11D13121ECA002745AB /* QuartzCore.framework */,
 				4A4267A512FCFDA100B0CDDD /* CZKit.framework */,
-				4A42676512FCFA4800B0CDDD /* Other Frameworks */,
+				4A45A12713121EDB002745AB /* Foundation.framework */,
+				4A45A12913121EDB002745AB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A42676512FCFA4800B0CDDD /* Other Frameworks */ = {
+		4A45A13D13121F5D002745AB /* Mac */ = {
 			isa = PBXGroup;
 			children = (
-				4A42676612FCFA4800B0CDDD /* AppKit.framework */,
-				4A4267A912FD012800B0CDDD /* QuartzCore.framework */,
-				4A42676712FCFA4800B0CDDD /* CoreData.framework */,
-				4A42676812FCFA4800B0CDDD /* Foundation.framework */,
+				4AEAA82212FCFBAB003674BB /* MainMenu.xib */,
 			);
-			name = "Other Frameworks";
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		4A45A14813122021002745AB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A42677512FCFA4800B0CDDD /* CZKit_DemoAppDelegate.h */,
+				4A42677612FCFA4800B0CDDD /* CZKit_DemoAppDelegate.m */,
+				4A42676F12FCFA4800B0CDDD /* CZKit_Demo-Prefix.pch */,
+				4A42677012FCFA4800B0CDDD /* Core.m */,
+				4A42676B12FCFA4800B0CDDD /* CZKit_Demo-Info.plist */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		4A5D82481311DB5B0017A337 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A5D82541311DB5B0017A337 /* CZKit.framework */,
+				4A5D82561311DB5B0017A337 /* libCZCore.a */,
+				4A5D82581311DB5B0017A337 /* libCZCategories.a */,
+				4A5D825A1311DB5B0017A337 /* libCZUtilities.a */,
+				4A5D825C1311DB5B0017A337 /* libCZUI.a */,
+				4A5D825E1311DB5B0017A337 /* CZKit Headers.bundle */,
+				4A5D82601311DB5B0017A337 /* CZKitUnitTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A42675E12FCFA4800B0CDDD /* CZKit Demo */ = {
+		4A42675E12FCFA4800B0CDDD /* CZKit Demo - Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A42677D12FCFA4800B0CDDD /* Build configuration list for PBXNativeTarget "CZKit Demo" */;
+			buildConfigurationList = 4A42677D12FCFA4800B0CDDD /* Build configuration list for PBXNativeTarget "CZKit Demo - Mac" */;
 			buildPhases = (
 				4A42675B12FCFA4800B0CDDD /* Sources */,
 				4A42675C12FCFA4800B0CDDD /* Frameworks */,
@@ -118,10 +269,33 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A5D82621311DB680017A337 /* PBXTargetDependency */,
 			);
-			name = "CZKit Demo";
+			name = "CZKit Demo - Mac";
 			productName = "CZKit Demo";
 			productReference = 4A42675F12FCFA4800B0CDDD /* CZKit Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A45A12213121EDB002745AB /* CZKit Demo - iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A45A13A13121EDB002745AB /* Build configuration list for PBXNativeTarget "CZKit Demo - iOS" */;
+			buildPhases = (
+				4A45A11F13121EDB002745AB /* Sources */,
+				4A45A12013121EDB002745AB /* Frameworks */,
+				4A45A12113121EDB002745AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A45A14C131220A0002745AB /* PBXTargetDependency */,
+				4A45A14E131220A0002745AB /* PBXTargetDependency */,
+				4A45A150131220A0002745AB /* PBXTargetDependency */,
+				4A45A152131220A0002745AB /* PBXTargetDependency */,
+				4A45A154131220A0002745AB /* PBXTargetDependency */,
+			);
+			name = "CZKit Demo - iOS";
+			productName = "CZKit Demo";
+			productReference = 4A45A12313121EDB002745AB /* CZKit Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,12 +316,71 @@
 			mainGroup = 4A42675412FCFA4800B0CDDD;
 			productRefGroup = 4A42676012FCFA4800B0CDDD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A5D82481311DB5B0017A337 /* Products */;
+					ProjectRef = 4A5D82471311DB5B0017A337 /* CZKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				4A42675E12FCFA4800B0CDDD /* CZKit Demo */,
+				4A42675E12FCFA4800B0CDDD /* CZKit Demo - Mac */,
+				4A45A12213121EDB002745AB /* CZKit Demo - iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4A5D82541311DB5B0017A337 /* CZKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CZKit.framework;
+			remoteRef = 4A5D82531311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A5D82561311DB5B0017A337 /* libCZCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCZCore.a;
+			remoteRef = 4A5D82551311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A5D82581311DB5B0017A337 /* libCZCategories.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCZCategories.a;
+			remoteRef = 4A5D82571311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A5D825A1311DB5B0017A337 /* libCZUtilities.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCZUtilities.a;
+			remoteRef = 4A5D82591311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A5D825C1311DB5B0017A337 /* libCZUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCZUI.a;
+			remoteRef = 4A5D825B1311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A5D825E1311DB5B0017A337 /* CZKit Headers.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CZKit Headers.bundle";
+			remoteRef = 4A5D825D1311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A5D82601311DB5B0017A337 /* CZKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CZKitUnitTests.octest;
+			remoteRef = 4A5D825F1311DB5B0017A337 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4A42675D12FCFA4800B0CDDD /* Resources */ = {
@@ -155,6 +388,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEAA82312FCFBAB003674BB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A45A12113121EDB002745AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,23 +410,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A45A11F13121EDB002745AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A45A14913122056002745AB /* CZKit_DemoAppDelegate.m in Sources */,
+				4A45A14A13122062002745AB /* Core.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A45A14C131220A0002745AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZCore;
+			targetProxy = 4A45A14B131220A0002745AB /* PBXContainerItemProxy */;
+		};
+		4A45A14E131220A0002745AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZCategories;
+			targetProxy = 4A45A14D131220A0002745AB /* PBXContainerItemProxy */;
+		};
+		4A45A150131220A0002745AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZUtilities;
+			targetProxy = 4A45A14F131220A0002745AB /* PBXContainerItemProxy */;
+		};
+		4A45A152131220A0002745AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZUI;
+			targetProxy = 4A45A151131220A0002745AB /* PBXContainerItemProxy */;
+		};
+		4A45A154131220A0002745AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CZKit Headers";
+			targetProxy = 4A45A153131220A0002745AB /* PBXContainerItemProxy */;
+		};
+		4A5D82621311DB680017A337 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZKit;
+			targetProxy = 4A5D82611311DB680017A337 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4A42677B12FCFA4800B0CDDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 				SYMROOT = ../Products;
 			};
 			name = Debug;
@@ -195,13 +475,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx;
 				SYMROOT = ../Products;
 			};
 			name = Release;
@@ -210,13 +488,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZKit_Demo-Prefix.pch";
 				INFOPLIST_FILE = "CZKit_Demo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Products/Release\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "CZKit Demo";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -225,13 +511,80 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZKit_Demo-Prefix.pch";
 				INFOPLIST_FILE = "CZKit_Demo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Products/Release\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "CZKit Demo";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4A45A13B13121EDB002745AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../Products/Release;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CZKit_Demo-Prefix.pch";
+				INFOPLIST_FILE = "CZKit_Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					../Products/Release,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "CZKit Demo";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A45A13C13121EDB002745AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = ../Products/Release;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CZKit_Demo-Prefix.pch";
+				INFOPLIST_FILE = "CZKit_Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					../Products/Release,
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "CZKit Demo";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -248,11 +601,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A42677D12FCFA4800B0CDDD /* Build configuration list for PBXNativeTarget "CZKit Demo" */ = {
+		4A42677D12FCFA4800B0CDDD /* Build configuration list for PBXNativeTarget "CZKit Demo - Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A42677E12FCFA4800B0CDDD /* Debug */,
 				4A42677F12FCFA4800B0CDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A45A13A13121EDB002745AB /* Build configuration list for PBXNativeTarget "CZKit Demo - iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A45A13B13121EDB002745AB /* Debug */,
+				4A45A13C13121EDB002745AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

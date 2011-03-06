@@ -6,9 +6,7 @@
 //  Copyright 2011 Opt-6 Products, LLC. All rights reserved.
 //
 
-#import <CZKit/CZKit.h>
-
-@interface CZKit_DemoAppDelegate : NSObject <NSApplicationDelegate> {}
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet CZView *view;
+@interface CZKit_DemoAppDelegate : NSObject <CZ_DYNAMIC_TYPE(NSApplicationDelegate, UIApplicationDelegate), CZTableViewDelegate, CZTableViewDataSource> {}
+@property (nonatomic, retain) CZWindow *window;
+@property (nonatomic, retain) CZTableView *tableView;
 @end

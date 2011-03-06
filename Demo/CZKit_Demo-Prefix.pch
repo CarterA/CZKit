@@ -3,5 +3,5 @@
 //
 
 #ifdef __OBJC__
-	#import <Cocoa/Cocoa.h>
+	#import <CZKit/CZKit.h>
 #endif
