@@ -66,7 +66,7 @@
 
 #pragma mark -
 #pragma mark Subclass Methods
-- (void)receivedEvent:(CZ_DYNAMIC_TYPE(NSEvent, UIEvent) *)event {
+- (void)receivedEvent:(NSEvent *)event {
 	
 }
 - (void)reset { self.state = CZActionRecognizerStatePossible; }
