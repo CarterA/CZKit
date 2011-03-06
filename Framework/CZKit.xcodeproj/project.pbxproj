@@ -275,6 +275,7 @@
 				4A3D4B2A13236DD700F2A075 /* Shared */,
 				4A0A273011F90F5D00223866 /* Products */,
 				4AE50C4811F923FF00E27282 /* Shared */,
+				4AF623BC1324512A00E9EEC5 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,7 +343,7 @@
 		4A975E2213236A0600B9683F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A975E2F13236A0600B9683F /* libCZUI.a */,
+				4A975E2F13236A0600B9683F /* libCZUtilities.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -520,6 +521,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4AF623BC1324512A00E9EEC5 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				4A975DA01323609300B9683F /* Debug.xcconfig */,
+				4A975DA11323609300B9683F /* Release.xcconfig */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -667,10 +677,9 @@
 			remoteRef = 4A975E2B13236A0600B9683F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4A975E2F13236A0600B9683F /* libCZUI.a */ = {
+		4A975E2F13236A0600B9683F /* libCZUtilities.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			name = libCZUI.a;
 			path = libCZUtilities.a;
 			remoteRef = 4A975E2E13236A0600B9683F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
