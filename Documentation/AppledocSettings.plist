@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--project-name</key>
+	<string>CZKit</string>
+	<key>--project-company</key>
+	<string>Opt-6 Products, LLC</string>
+	<key>--company-id</key>
+	<string>com.opt-6</string>
+	<key>--output</key>
+	<string>../Products/Documentation</string>
+	<key>--templates</key>
+	<string>./Templates</string>
+	<key>--verbose</key>
+	<integer>3</integer>
+	<key>--ignore</key>
+	<array>
+		<string>.</string>
+		<string>.m</string>
+	</array>
+	<key>--input</key>
+	<array>
+		<string>../Libraries</string>
+	</array>
+</dict>
+</plist>

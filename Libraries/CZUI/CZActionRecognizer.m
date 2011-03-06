@@ -17,10 +17,10 @@
 @implementation CZActionRecognizer
 
 #pragma mark -
-@synthesize handlers;
-@synthesize state;
-@synthesize enabled;
-@synthesize view;
+@synthesize handlers=_handlers;
+@synthesize state=_state;
+@synthesize enabled=_enabled;
+@synthesize view=_view;
 
 #pragma mark -
 #pragma mark Initializers
@@ -41,15 +41,15 @@
 #pragma mark -
 #pragma mark Custom Setters
 - (void)setState:(CZActionRecognizerState)aState {
-	state = aState;
-	if (state == CZActionRecognizerStateRecognized || state == CZActionRecognizerStateChanged) {
-		for (CZActionHandler handler in [self.handlers objectForKey:[NSNumber numberWithInteger:state]]) handler(self);
+	_state = aState;
+	if (_state == CZActionRecognizerStateRecognized || _state == CZActionRecognizerStateChanged) {
+		for (CZActionHandler handler in [self.handlers objectForKey:[NSNumber numberWithInteger:_state]]) handler(self);
 		[self reset];
 	}
 }
 - (void)setEnabled:(BOOL)isEnabled {
-	enabled = isEnabled;
-	if (!enabled) self.state = CZActionRecognizerStateCancelled;
+	_enabled = isEnabled;
+	if (!_enabled) self.state = CZActionRecognizerStateCancelled;
 }
 
 #pragma mark -
@@ -66,7 +66,7 @@
 
 #pragma mark -
 #pragma mark Subclass Methods
-- (void)receivedEvent:(NSEvent *)event {
+- (void)receivedEvent:(CZ_DYNAMIC_TYPE(NSEvent, UIEvent) *)event {
 	
 }
 - (void)reset { self.state = CZActionRecognizerStatePossible; }
@@ -74,7 +74,7 @@
 #pragma mark -
 #pragma mark Memory Management
 - (void)dealloc {
-	[self.handlers release];
+	[_handlers release];
 	[super dealloc];
 }
 
