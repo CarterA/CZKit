@@ -784,7 +784,7 @@
 /* Begin XCBuildConfiguration section */
 		4A0A273811F90F5D00223866 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A975DA01323609300B9683F /* Debug.xcconfig */;
+			baseConfigurationReference = 4A3D4B2D13236DD700F2A075 /* Debug.xcconfig */;
 			buildSettings = {
 				CZKIT_ROOT = ../;
 				PREBINDING = NO;
@@ -793,7 +793,7 @@
 		};
 		4A0A273911F90F5D00223866 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A975DA11323609300B9683F /* Release.xcconfig */;
+			baseConfigurationReference = 4A3D4B2E13236DD700F2A075 /* Release.xcconfig */;
 			buildSettings = {
 				CZKIT_ROOT = ../;
 				PREBINDING = NO;
